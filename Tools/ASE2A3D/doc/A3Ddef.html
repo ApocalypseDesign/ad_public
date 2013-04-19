@@ -1,0 +1,468 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (Win98; I) [Netscape]">
+   <title>DEFINIZIONE A3D FORMAT</title>
+</head>
+<body>
+
+<h1>
+A3D Format 1.0.1 <i><font size=+0>Extensibility is design!</font></i></h1>
+
+<h2>
+<i>Definizione del formato <font size=-1>- Apocalypse Design - 1999</font></i></h2>
+
+<h3>
+Caratteristiche:</h3>
+Per rendere il formato facilmente estensibile e modificabile la strutura
+gerarchica &egrave; indispensabile,
+<br>A differenza del formato 3DS per&ograve; la gestione della gerarchia
+sar&agrave; molto pi&ugrave; semplice, perch&egrave;
+<br>sar&agrave; sempre possibile esplorare tutti i nodi, anche quelli sconosciuti.
+<br>Il loading quindi sar&agrave; molto semplice e sar&agrave; incapsulato
+in un oggetto, che volendo si pu&ograve;
+<br>a sua volta mettere in una DLL.
+<br>Esempio di come si user&agrave; l'oggetto:
+<br>&nbsp;
+<blockquote><tt>A3D.loadFromFile("TOPOLIN.A3D");</tt>
+<br><tt>if (A3D.keyExists("A3D/MESH_LIST"))</tt>
+<br><tt>&nbsp;&nbsp; int pippo = A3D.getKeyUINT4("A3D/MESH_LIST");</tt>
+<br><tt>float pluto = A3D.getKeyFLOAT4("A3D/SCENE/TIME");</tt>
+<br><tt>A3D.free();</tt>
+<br><tt></tt>&nbsp;</blockquote>
+
+<h3>
+Tipi utilizzati:</h3>
+
+<ul>
+<li>
+END - indica la fine del blocco di subchunks - TipoID: "x"</li>
+
+<li>
+ENDFILE - indica la fine del file - TipoID: "X"</li>
+
+<li>
+NOTHING - indica che il chunk non contiene dati - TipoID: "n"</li>
+
+<li>
+PCHAR - stringa zero-terminated - TipoID: "S"</li>
+
+<li>
+FLOAT4 - floating point da 4 bytes - TipoID: "F"</li>
+
+<li>
+UINT4 - unsigned integer da 4 bytes - TipoID: "U"</li>
+
+<li>
+VECT12 - struttura composta da 3 FLOAT4 - TipoID: "V"</li>
+
+<li>
+INTVECT12 - struttura composta da 3 UINT4 - TipoID: "W"</li>
+
+<li>
+QUAT16 - struttura composta da 4 FLOAT4 - TipoID: "Q"</li>
+</ul>
+
+<h3>
+Struttura di un chunk:</h3>
+
+<ul>
+<li>
+PCHAR NomeChunk</li>
+
+<li>
+CHAR TipoID</li>
+
+<li>
+DATI...</li>
+
+<li>
+<i>SUBCHUNKS...</i></li>
+
+<li>
+<i>CHUNKS...</i></li>
+</ul>
+
+<h3>
+Struttura della gerarchia:</h3>
+<b><i>N.B. Per ora la gerarchia comprende solo le informazioni + importanti,
+per tenerla il pi&ugrave; possibile semplificata</i></b>
+<br><b><i>all'inizio, quando tutto questo funzioner&agrave; passeremo ad
+aggiungere bones, luci spot, ecc.</i></b>
+<br><b><i>Le coordinate delle texture sono tenute separate dai vertici,
+perch&egrave; solo in questo modo si pu&ograve; supportare</i></b>
+<br><b><i>il tmap usato da MAX. (e secondo me &egrave; anche il modo migliore)</i></b>
+<br><b><i>Per semplificare sono stati omessi i chunk di tipo END e ENDFILE</i></b>
+<ul>
+<li>
+A3D</li>
+
+<ul>
+<li>
+SCENE<i><font size=-1>&nbsp;&nbsp;&nbsp; PCHAR nome_scena (contiene informazioni
+riguardanti tutta la scena)</font></i></li>
+
+<ul>
+<li>
+TIME<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 durata_in_secondi</font></i></li>
+</ul>
+
+<li>
+MESH_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_mesh</font></i></li>
+
+<ul>
+<li>
+MESH0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+NAME<i><font size=-1>&nbsp;&nbsp;&nbsp; PCHAR nome_scena</font></i></li>
+
+<li>
+VT_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_vt</font></i></li>
+
+<ul>
+<li>
+VT0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+VT<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 coordinate</font></i></li>
+</ul>
+
+<li>
+VT1 ...</li>
+
+<ul>
+<li>
+...</li>
+</ul>
+
+<li>
+VT2 ...</li>
+
+<ul>
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+
+<li>
+TR_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_tr</font></i></li>
+
+<ul>
+<li>
+TR0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+IVT<i><font size=-1>&nbsp;&nbsp;&nbsp; INTVECT12 vertici</font></i></li>
+
+<li>
+SMOOT<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 smoothing_group</font></i></li>
+</ul>
+
+<li>
+TR1 ...</li>
+
+<ul>
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+
+<li>
+TVT_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_tvt</font></i></li>
+
+<ul>
+<li>
+TVT0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+UVW<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 coordinate_texture(0..1)</font></i></li>
+</ul>
+
+<li>
+TVT1 ...</li>
+
+<ul>
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+
+<li>
+TTR_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_ttr</font></i></li>
+
+<ul>
+<li>
+TTR0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+IVT<i><font size=-1>&nbsp;&nbsp;&nbsp; INTVECT12 vertici_texture</font></i></li>
+</ul>
+
+<li>
+TTR1 ...</li>
+
+<ul>
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+
+<li>
+TCB_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_tcb_keys</font></i></li>
+
+<ul>
+<li>
+TCB0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+POS<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 posizione_timeline(0..1)</font></i></li>
+
+<li>
+TCB<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 valori_tcb</font></i></li>
+</ul>
+
+<li>
+TCB1 ...</li>
+
+<ul>
+<li>
+...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+
+<li>
+ROT_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_rot_keys</font></i></li>
+
+<ul>
+<li>
+ROT0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+POS<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 posizione_timeline(0..1)</font></i></li>
+
+<li>
+QUAT<i><font size=-1>&nbsp;&nbsp;&nbsp; QUAT16 quaternione</font></i></li>
+</ul>
+
+<li>
+ROT1 ...</li>
+
+<ul>
+<li>
+...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+</ul>
+
+<li>
+MESH1 ...</li>
+
+<li>
+MESH2 ...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+CAMERA_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_camera</font></i></li>
+
+<ul>
+<li>
+CAMERA0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+NAME<i><font size=-1>&nbsp;&nbsp;&nbsp; PCHAR nome_scena</font></i></li>
+
+<li>
+CAM_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_settings_camera</font></i></li>
+
+<ul>
+<li>
+CAM0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+POS<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 posizione_timeline(0..1)</font></i></li>
+
+<li>
+FOV<i><font size=-1>&nbsp;&nbsp; FLOAT4 field_of_view</font></i></li>
+</ul>
+</ul>
+
+<li>
+TCB_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_tcb_keys</font></i></li>
+
+<ul>
+<li>
+TCB0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+POS<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 posizione_timeline(0..1)</font></i></li>
+
+<li>
+TCB<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 valori_tcb</font></i></li>
+</ul>
+
+<li>
+TCB1 ...</li>
+
+<ul>
+<li>
+...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+
+<li>
+TARGET</li>
+
+<ul>
+<li>
+TCB_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_tcb_keys</font></i></li>
+
+<ul>
+<li>
+TCB0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+POS<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 posizione_timeline(0..1)</font></i></li>
+
+<li>
+TCB<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 valori_tcb</font></i></li>
+</ul>
+
+<li>
+TCB1 ...</li>
+
+<ul>
+<li>
+...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+</ul>
+</ul>
+</ul>
+
+<li>
+OMNI_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_omni</font></i></li>
+
+<ul>
+<li>
+OMNI0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+NAME<i><font size=-1>&nbsp;&nbsp;&nbsp; PCHAR nome_scena</font></i></li>
+
+<li>
+OMN_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_settings_omni</font></i></li>
+
+<ul>
+<li>
+OMN0&nbsp;<i><font size=-1>&nbsp;&nbsp; NOTHING</font></i></li>
+</ul>
+</ul>
+</ul>
+
+<ul>
+<ul>
+<ul>
+<ul>
+<li>
+COLOR<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 valori_rgb(0..1)</font></i></li>
+
+<li>
+INTENSITY&nbsp;&nbsp;&nbsp; <i><font size=-1>FLOAT4 intensit&agrave;_luce</font></i></li>
+</ul>
+
+<li>
+OMN1 ...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+TCB_LIST<i><font size=-1>&nbsp;&nbsp;&nbsp; UINT4 numero_di_tcb_keys</font></i></li>
+
+<ul>
+<li>
+TCB0<i><font size=-1>&nbsp;&nbsp;&nbsp; NOTHING</font></i></li>
+
+<ul>
+<li>
+POS<i><font size=-1>&nbsp;&nbsp;&nbsp; FLOAT4 posizione_timeline(0..1)</font></i></li>
+
+<li>
+TCB<i><font size=-1>&nbsp;&nbsp;&nbsp; VECT12 valori_tcb</font></i></li>
+</ul>
+
+<li>
+TCB1 ...</li>
+
+<ul>
+<li>
+...</li>
+
+<li>
+...</li>
+</ul>
+
+<li>
+...</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+
+</body>
+</html>
