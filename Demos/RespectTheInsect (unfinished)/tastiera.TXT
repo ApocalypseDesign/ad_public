@@ -1,0 +1,266 @@
+Turbo ROX as usual !! 
+First frame : 0
+Last frame : 150
+Frame speed : 30
+
+
+Material list 
+numero di materiali 1
+Size del chunk lista materiali = 52
+Materiale composto, numero sotto-materiali : 3
+Material Global ID = 0
+Material name : Material #2 
+Opacity : 100% 
+Two sided : no 
+Map ID : MAP_DIFFUSE 
+Map name : Map #0 
+Map class name : Bitmap 
+Map filename: D:\Documenti\Sorgenti\VCpp-Code\invitro2002\ch.jpg 
+Mapping type: 4
+Mapping type2: 0
+GetMapChannel: 1
+
+
+Material Global ID = 1
+Material name : Material #3 
+Opacity : 100% 
+Two sided : no 
+Map ID : MAP_DIFFUSE 
+Map name : Map #1 
+Map class name : Bitmap 
+Map filename: D:\Documenti\Sorgenti\VCpp-Code\invitro2002\sc.jpg 
+Mapping type: 4
+Mapping type2: 0
+GetMapChannel: 1
+
+
+Material Global ID = 2
+Material name : Material #5 
+Opacity : 100% 
+Two sided : no 
+Map ID : MAP_DIFFUSE 
+Map name : Map #0 
+Map class name : Bitmap 
+Map filename: D:\Documenti\Sorgenti\VCpp-Code\invitro2002\chbk.jpg 
+Mapping type: 4
+Mapping type2: 0
+GetMapChannel: 1
+
+
+***Elenco dei nodi***
+
+Name: Box01, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Geometric object found
+Name : Box01
+Name parent : Scene Root
+Material used : 1 - Default
+Local coord. system row0 : 1,000000, 0,000000, 0,000000
+Local coord. system row1 : 0,000000, 1,000000, 0,000000
+Local coord. system row2 : 0,000000, 0,000000, 1,000000
+World position : x=14,569534, y=1,620996, z=0,000000
+Pivot point : 0,000000, 0,000000, 0,000000
+mod cid A=F72B1, B=0
+mod cid A=50, B=0
+Number of vertex : 994
+Number of triangles : 1504
+Numero di vertici texture : 0
+Object position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+key settings : t=0,000000, c=0,000000, b=0,000000, et=0,000000, ef=0,000000
+timepos : 0,  value 14,569534, 1,620996, 0,000000
+Object rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+key settings : t=0,000000, c=0,000000, b=0,000000, et=0,000000, ef=0,000000
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+key settings : t=0,000000, c=0,000000, b=0,000000, et=0,000000, ef=0,000000
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Camera found
+Type : target
+Name : Camera01
+Znear = 2,000000 
+Zfar = 1000,000000 
+FOV (rad) = 0,785398 
+Roll (rad) = 0,000000 
+Camera world position : x=5,211665, y=200,352707, z=-9,430092
+Target world position : x=11,285371, y=6,779380, z=0,000000
+Camera position track present.
+ Type is Bezier
+Number of keys : 6
+timepos : 0,  value 5,211665, 200,352707, -9,430092
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 72,979095, 281,770447, -12,214654 2880,000000
+timepos : 18,  value -14,565188, 288,386200, 12,031256
+inTan: -112,532806, -105,703445, 55,137348, -2880,000000
+outTan: -93,777344, -88,086205, 45,947792 2400,000000
+timepos : 33,  value -172,756378, 65,760460, 81,365158
+inTan: -11,938778, -135,655655, -18,345757, -2400,000000
+outTan: -9,551023, -108,524521, -14,676605 1920,000000
+timepos : 45,  value -88,705856, 12,896785, 10,573573
+inTan: 91,428383, -25,902733, -31,682686, -1920,000000
+outTan: 68,571281, -19,427050, -23,762014 1440,000000
+timepos : 54,  value -15,984529, 8,635264, 8,810316
+inTan: 99,588951, -6,650109, 4,068804, -1440,000000
+outTan: 66,392632, -4,433406, 2,712536 960,000000
+timepos : 60,  value 62,349266, 3,140263, 14,114880
+inTan: 90,274956, -6,556596, 7,896591, -960,000000
+outTan: 0,000000, 0,000000, 0,000000
+ Type is Bezier
+Number of keys : 6
+timepos : 0,  value 5,211665, 200,352707, -9,430092
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 72,979095, 281,770447, -12,214654 2880,000000
+timepos : 18,  value -14,565188, 288,386200, 12,031256
+inTan: -112,532806, -105,703445, 55,137348, -2880,000000
+outTan: -93,777344, -88,086205, 45,947792 2400,000000
+timepos : 33,  value -172,756378, 65,760460, 81,365158
+inTan: -11,938778, -135,655655, -18,345757, -2400,000000
+outTan: -9,551023, -108,524521, -14,676605 1920,000000
+timepos : 45,  value -88,705856, 12,896785, 10,573573
+inTan: 91,428383, -25,902733, -31,682686, -1920,000000
+outTan: 68,571281, -19,427050, -23,762014 1440,000000
+timepos : 54,  value -15,984529, 8,635264, 8,810316
+inTan: 99,588951, -6,650109, 4,068804, -1440,000000
+outTan: 66,392632, -4,433406, 2,712536 960,000000
+timepos : 60,  value 62,349266, 3,140263, 14,114880
+inTan: 90,274956, -6,556596, 7,896591, -960,000000
+outTan: 0,000000, 0,000000, 0,000000
+Target position track present.
+ Type is Bezier
+Number of keys : 6
+timepos : 0,  value 11,285371, 6,779380, 0,000000
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -2,834761, 4,783548, 16,650555 2880,000000
+timepos : 18,  value 12,694247, 2,751021, 0,999259
+inTan: 5,652514, -12,840265, -14,652036, -2880,000000
+outTan: 4,710428, -10,700221, -12,210031 2400,000000
+timepos : 33,  value 20,351646, -14,068580, -22,079725
+inTan: 29,488852, -0,128635, -12,380988, -2400,000000
+outTan: 23,591082, -0,102908, -9,904791 1920,000000
+timepos : 45,  value 57,914856, -3,489270, -25,137800
+inTan: 51,154339, 17,503103, 14,716491, -1920,000000
+outTan: 38,365753, 13,127328, 11,037368 1440,000000
+timepos : 54,  value 103,925621, 13,532691, -4,102240
+inTan: 59,878963, -1,410286, 12,106240, -1440,000000
+outTan: 39,919312, -0,940190, 8,070827 960,000000
+timepos : 60,  value 150,008575, 4,400391, 0,000000
+inTan: 52,246597, -17,324409, 0,133653, -960,000000
+outTan: 0,000000, 0,000000, 0,000000
+ Type is Bezier
+Number of keys : 6
+timepos : 0,  value 11,285371, 6,779380, 0,000000
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -2,834761, 4,783548, 16,650555 2880,000000
+timepos : 18,  value 12,694247, 2,751021, 0,999259
+inTan: 5,652514, -12,840265, -14,652036, -2880,000000
+outTan: 4,710428, -10,700221, -12,210031 2400,000000
+timepos : 33,  value 20,351646, -14,068580, -22,079725
+inTan: 29,488852, -0,128635, -12,380988, -2400,000000
+outTan: 23,591082, -0,102908, -9,904791 1920,000000
+timepos : 45,  value 57,914856, -3,489270, -25,137800
+inTan: 51,154339, 17,503103, 14,716491, -1920,000000
+outTan: 38,365753, 13,127328, 11,037368 1440,000000
+timepos : 54,  value 103,925621, 13,532691, -4,102240
+inTan: 59,878963, -1,410286, 12,106240, -1440,000000
+outTan: 39,919312, -0,940190, 8,070827 960,000000
+timepos : 60,  value 150,008575, 4,400391, 0,000000
+inTan: 52,246597, -17,324409, 0,133653, -960,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Omni light found
+Name : Omni01
+Color : R=1,000000, G=1,000000, B=1,000000
+Intensity : 1,000000
+World position : x=-1,095657, y=68,651955, z=106,896591
+
+
+Name: Omni02, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Omni light found
+Name : Omni02
+Color : R=1,000000, G=1,000000, B=1,000000
+Intensity : 1,000000
+World position : x=24,504417, y=0,000002, z=-42,125984
+
+
+Name: Camera02, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Camera found
+Type : target
+Name : Camera02
+Znear = 2,000000 
+Zfar = 1000,000000 
+FOV (rad) = 1,142675 
+Roll (rad) = 0,000000 
+Camera world position : x=14,355953, y=-86,385307, z=58,233604
+Target world position : x=14,762508, y=-6,475103, z=10,882740
+Camera position track present.
+ Type is Bezier
+Number of keys : 4
+timepos : 60,  value 14,355953, -86,385307, 58,233604
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 0,000000, 5,387850, 43,516285 3200,000000
+timepos : 80,  value 14,355953, -20,898750, 87,244461
+inTan: 0,000000, 125,585258, 14,505428, -3200,000000
+outTan: 0,000000, 125,585258, 14,505428 3200,000000
+timepos : 100,  value 14,355953, 164,785217, 87,244461
+inTan: -0,056736, 182,316193, 22,153500, -3200,000000
+outTan: -0,141840, 455,790497, 55,383751 8000,000000
+timepos : 150,  value 13,859514, 599,527222, 281,087585
+inTan: -0,851038, 413,693481, 332,302490, -8000,000000
+outTan: 0,000000, 0,000000, 0,000000
+ Type is Bezier
+Number of keys : 4
+timepos : 60,  value 14,355953, -86,385307, 58,233604
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 0,000000, 5,387850, 43,516285 3200,000000
+timepos : 80,  value 14,355953, -20,898750, 87,244461
+inTan: 0,000000, 125,585258, 14,505428, -3200,000000
+outTan: 0,000000, 125,585258, 14,505428 3200,000000
+timepos : 100,  value 14,355953, 164,785217, 87,244461
+inTan: -0,056736, 182,316193, 22,153500, -3200,000000
+outTan: -0,141840, 455,790497, 55,383751 8000,000000
+timepos : 150,  value 13,859514, 599,527222, 281,087585
+inTan: -0,851038, 413,693481, 332,302490, -8000,000000
+outTan: 0,000000, 0,000000, 0,000000
+Target position track present.
+ Type is Bezier
+Number of keys : 3
+timepos : 60,  value 14,762508, -6,475103, 10,882740
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -11,112779, 0,000000, 0,000000 3680,000000
+timepos : 83,  value 8,023342, -6,475103, 10,882740
+inTan: -2,365554, 0,000000, 0,000000, -3680,000000
+outTan: -3,599756, 0,000000, 0,000000 5600,000000
+timepos : 118,  value 14,551517, -6,475103, 10,882740
+inTan: 16,656107, 0,000000, 0,000000, -5600,000000
+outTan: 0,000000, 0,000000, 0,000000
+ Type is Bezier
+Number of keys : 3
+timepos : 60,  value 14,762508, -6,475103, 10,882740
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -11,112779, 0,000000, 0,000000 3680,000000
+timepos : 83,  value 8,023342, -6,475103, 10,882740
+inTan: -2,365554, 0,000000, 0,000000, -3680,000000
+outTan: -3,599756, 0,000000, 0,000000 5600,000000
+timepos : 118,  value 14,551517, -6,475103, 10,882740
+inTan: 16,656107, 0,000000, 0,000000, -5600,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+Name: Camera02.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0

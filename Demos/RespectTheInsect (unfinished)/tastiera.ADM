@@ -1,0 +1,22 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  material "Material #2" 
+  {
+    texture="D:\Documenti\Sorgenti\VCpp-Code\invitro2002\ch.jpg";
+    lightmixtype="BLEND50";
+  }
+
+  material "Material #3" 
+  {
+    texture="D:\Documenti\Sorgenti\VCpp-Code\invitro2002\sc.jpg";
+    lightmixtype="BLEND50";
+  }
+
+  material "Material #5" 
+  {
+    texture="D:\Documenti\Sorgenti\VCpp-Code\invitro2002\chbk.jpg";
+    lightmixtype="BLEND50";
+  }
+

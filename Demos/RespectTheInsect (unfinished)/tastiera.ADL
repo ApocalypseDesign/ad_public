@@ -1,0 +1,22 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Light script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  light "Omni01"
+  {
+    texture="NONE";
+    scale_x="160";
+    scale_y="160";
+    near_radius="999999,000000";
+    far_radius="999999,000000";
+  }
+
+  light "Omni02"
+  {
+    texture="NONE";
+    scale_x="160";
+    scale_y="160";
+    near_radius="999999,000000";
+    far_radius="999999,000000";
+  }
+
