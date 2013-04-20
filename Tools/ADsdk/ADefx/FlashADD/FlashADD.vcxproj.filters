@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="EFX">
+      <UniqueIdentifier>{d7221c07-9915-468f-bbce-b67b6cff018f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Import-Export">
+      <UniqueIdentifier>{f97a7adb-5c1d-4034-ab16-9d9cc1de7820}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="myefx.cpp">
+      <Filter>EFX</Filter>
+    </ClCompile>
+    <ClCompile Include="ADefx.cpp">
+      <Filter>Import-Export</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myefx.h">
+      <Filter>EFX</Filter>
+    </ClInclude>
+    <ClInclude Include="ADefx.h">
+      <Filter>Import-Export</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ADefx.def">
+      <Filter>Import-Export</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

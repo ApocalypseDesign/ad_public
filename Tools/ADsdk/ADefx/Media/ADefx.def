@@ -1,0 +1,7 @@
+LIBRARY ADefx
+EXPORTS
+    ADEFX_GetInfo			@1
+	ADEFX_Create			@2
+
+SECTIONS
+	.data READ WRITE
