@@ -66,7 +66,7 @@
       <ObjectFileName>.\DebugSW\</ObjectFileName>
       <ProgramDataBaseFileName>.\DebugSW\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <AdditionalIncludeDirectories>..\..\Tools\ADrender\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Tools\ADrender\;..\..\Tools\ADrender\libsw</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -106,7 +106,7 @@
       <PrecompiledHeaderOutputFile>.\ReleaseSW\DEMO_SW.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\ReleaseSW\</ObjectFileName>
       <ProgramDataBaseFileName>.\ReleaseSW\</ProgramDataBaseFileName>
-      <AdditionalIncludeDirectories>..\..\Tools\ADrender\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\Tools\ADrender\;..\..\Tools\ADrender\libsw</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>

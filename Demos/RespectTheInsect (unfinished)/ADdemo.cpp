@@ -92,9 +92,9 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
   switch (message) {
     case WM_INITDIALOG:
 
-     // enumerazione dei driver directx 8
+     // enumerazione dei driver directx 9
      driver=Enumerate_DrawDriver(&tabella_dev);
-	 if (driver<=0) debug_error(hdwnd, "No DirectX 8 drivers present");
+	 if (driver<=0) debug_error(hdwnd, "No DirectX 9 drivers or required display modes present");
 	 for (ww=0; ww<(unsigned int)driver; ww++)
 	   SendDlgItemMessage(hdwnd, IDC_COMBO2, CB_ADDSTRING, 0, (LPARAM)tabella_dev[ww].strDesc);
 
@@ -107,7 +107,8 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
                                       tabella_dev[0].SupportedModes[ww].Bpp);
         SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_ADDSTRING, 0, (LPARAM)modo_str);
 	 }
-	 // cerco una res 640x480 (prima 32bpp poi 16bpp)
+	 
+	 // cerco una res 320x240 (prima 32bpp poi 16bpp)
 	 i=search_res(tabella_dev, current_sel_driver, 320, 240, 32);
      if (i==-1)
 	 {

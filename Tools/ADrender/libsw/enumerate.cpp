@@ -51,14 +51,14 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
    D3DFORMAT      formats[20];
    DWORD dwNumFormats      = 0;
    DWORD dwNumModes        = 0;
-   DWORD dwNumAdapterModes = g_pD3D->GetAdapterModeCount(0, D3DFMT_A8R8G8B8);
+   DWORD dwNumAdapterModes = g_pD3D->GetAdapterModeCount(0, D3DFMT_X8R8G8B8);
    DWORD dwNumDevices=0;
 
    for(i=0; i < dwNumAdapterModes; i++)
    {
       // Get the display mode attributes
       D3DDISPLAYMODE DisplayMode;
-      g_pD3D->EnumAdapterModes(0, D3DFMT_A8R8G8B8, i, &DisplayMode);
+      g_pD3D->EnumAdapterModes(0, D3DFMT_X8R8G8B8, i, &DisplayMode);
 
       // Check if the mode already exists (to filter out refresh rates)
       for(j=0; j<dwNumModes; j++)
