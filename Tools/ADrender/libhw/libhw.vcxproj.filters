@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09b73970-14c5-4528-805c-820bf46fc5c6}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\HW code">
+      <UniqueIdentifier>{f44204e5-8730-4d42-9dc3-5fdc3ac6b016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8b1f137b-7867-47b7-834f-565e7b2155fa}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\HW include">
+      <UniqueIdentifier>{98c0407c-d3b1-4c53-8cf0-81e1d15cfd48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADrender.cpp">
+      <Filter>Source Files\HW code</Filter>
+    </ClCompile>
+    <ClCompile Include="enumerate.cpp">
+      <Filter>Source Files\HW code</Filter>
+    </ClCompile>
+    <ClCompile Include="rasters.cpp">
+      <Filter>Source Files\HW code</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>Source Files\HW code</Filter>
+    </ClCompile>
+    <ClCompile Include="setmat.cpp">
+      <Filter>Source Files\HW code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ADbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\d3dutility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fastmath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="extrend.h">
+      <Filter>Header Files\HW include</Filter>
+    </ClInclude>
+    <ClInclude Include="rasters.h">
+      <Filter>Header Files\HW include</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>Header Files\HW include</Filter>
+    </ClInclude>
+    <ClInclude Include="setmat.h">
+      <Filter>Header Files\HW include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ADbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ADrender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\d3dutility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fastmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

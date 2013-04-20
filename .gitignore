@@ -1,6 +1,10 @@
 *.opensdf
 *.sdf
 *.suo
+/Tools/ADrender/libsw/Debug
+/Tools/ADrender/libsw/Release
+/Tools/ADrender/libhw/Debug
+/Tools/ADrender/libhw/Release
 /Tools/ADsdk/ADbase/Debug
 /Tools/ADsdk/ADbase/Release
 /Tools/ADsdk/ADsystem/Debug

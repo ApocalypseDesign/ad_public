@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{beb007dd-37a2-45b8-b6ad-8f5c69237467}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SW code">
+      <UniqueIdentifier>{96c67a77-55da-4baa-a4e7-60b86a04801f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fffc967b-5e64-4545-9260-cf9977023804}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SW include">
+      <UniqueIdentifier>{2dd0ab86-dceb-432f-be37-f3eab0626719}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADrender.cpp">
+      <Filter>Source Files\SW code</Filter>
+    </ClCompile>
+    <ClCompile Include="enumerate.cpp">
+      <Filter>Source Files\SW code</Filter>
+    </ClCompile>
+    <ClCompile Include="rasters.cpp">
+      <Filter>Source Files\SW code</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>Source Files\SW code</Filter>
+    </ClCompile>
+    <ClCompile Include="scanline.cpp">
+      <Filter>Source Files\SW code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ADbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\d3dutility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fastmath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="extrend.h">
+      <Filter>Header Files\SW include</Filter>
+    </ClInclude>
+    <ClInclude Include="rasters.h">
+      <Filter>Header Files\SW include</Filter>
+    </ClInclude>
+    <ClInclude Include="scanline.h">
+      <Filter>Header Files\SW include</Filter>
+    </ClInclude>
+    <ClInclude Include="trimacro.h">
+      <Filter>Header Files\SW include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ADbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ADrender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\d3dutility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
