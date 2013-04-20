@@ -1,0 +1,98 @@
+LIBRARY ADsystem
+EXPORTS
+	ADSYSTEM_Init			@1
+	ADSYSTEM_Update			@2
+	ADSYSTEM_Paint			@3
+	ADSYSTEM_Close			@4
+	ADSYSTEM_LoadFromFile	@5
+	ADSYSTEM_SaveToFile		@6
+
+	ADSYSTEM_Reset			@10
+	ADSYSTEM_ChunkWrite		@20
+	ADSYSTEM_ChunkRead		@21
+
+	ADSYSTEM_SoundLoad		@30
+	ADSYSTEM_SoundPlay		@31
+	ADSYSTEM_SoundStop		@32
+
+	ADSYSTEM_Image_Import		@50
+	ADSYSTEM_Image_Count		@51
+	ADSYSTEM_Image_SetCurrent	@52
+	ADSYSTEM_Image_GetData		@53
+	ADSYSTEM_Image_GetInfo		@54
+
+	ADSYSTEM_Channel_Count			@100
+	ADSYSTEM_Channel_Create			@101
+	ADSYSTEM_Channel_SetCurrent		@102	
+	ADSYSTEM_Channel_GetInfo		@103
+	ADSYSTEM_Channel_SetInfo		@104
+	ADSYSTEM_Channel_Delete			@105
+	ADSYSTEM_Channel_GetCurrent     @106
+	ADSYSTEM_Channel_MoveUp			@115
+	ADSYSTEM_Channel_MoveDown		@116
+
+	ADSYSTEM_CLevel_Count			@200
+	ADSYSTEM_CLevel_SetCurrent		@202
+	ADSYSTEM_CLevel_GetInfo			@203
+
+	ADSYSTEM_CLevelControl_Count	  @220
+	ADSYSTEM_CLevelControl_SetCurrent @222
+	ADSYSTEM_CLevelControl_GetInfo    @223 
+	ADSYSTEM_CLevelControl_GetBase    @227
+
+	ADSYSTEM_CLevelChannel_Count	  @240
+	ADSYSTEM_CLevelChannel_SetCurrent @242
+	ADSYSTEM_CLevelChannel_GetInfo    @243
+
+	ADSYSTEM_CLevelImage_Count		@260
+	ADSYSTEM_CLevelImage_SetCurrent @262
+	ADSYSTEM_CLevelImage_GetInfo    @263
+
+	ADSYSTEM_Level_Count			@300
+	ADSYSTEM_Level_Create			@301
+	ADSYSTEM_Level_SetCurrent		@302
+	ADSYSTEM_Level_GetInfo			@303
+	ADSYSTEM_Level_SetInfo			@304
+	ADSYSTEM_Level_Delete			@305
+	ADSYSTEM_Level_GetClass			@306
+	ADSYSTEM_Level_MoveUp			@307
+	ADSYSTEM_Level_MoveDown			@308
+	ADSYSTEM_Level_LoadFromMemory	@309
+	ADSYSTEM_Level_SaveToMemory		@310
+	ADSYSTEM_Level_FreeSavedMemory	@311
+	ADSYSTEM_Level_Edit				@312
+
+	ADSYSTEM_LevelControl_Count				@320
+	ADSYSTEM_LevelControl_Create			@321
+	ADSYSTEM_LevelControl_SetCurrent		@322
+	ADSYSTEM_LevelControl_GetInfo			@323
+	ADSYSTEM_LevelControl_GetClass			@326
+	ADSYSTEM_LevelControl_GetBase			@327
+	ADSYSTEM_LevelControl_LoadFromMemory	@330
+	ADSYSTEM_LevelControl_SaveToMemory		@331
+	ADSYSTEM_LevelControl_FreeSavedMemory	@332
+	ADSYSTEM_LevelControl_GetValue			@333
+
+	ADSYSTEM_LevelControlKey_Count			@334
+	ADSYSTEM_LevelControlKey_GetPos			@335
+	ADSYSTEM_LevelControlKey_Add			@336
+	ADSYSTEM_LevelControlKey_Move			@337
+	ADSYSTEM_LevelControlKey_Delete			@338
+	ADSYSTEM_LevelControlKey_Edit			@339
+
+	ADSYSTEM_LevelChannel_SetCurrent @342
+	ADSYSTEM_LevelChannel_GetChannel @348
+	ADSYSTEM_LevelChannel_SetChannel @349
+
+	ADSYSTEM_LevelImage_SetCurrent	@362
+	ADSYSTEM_LevelImage_GetImage	@368
+	ADSYSTEM_LevelImage_SetImage	@369
+
+	ADSYSTEM_CControl_Count			@400
+	ADSYSTEM_CControl_SetCurrent	@402
+	ADSYSTEM_CControl_GetInfo		@403
+	ADSYSTEM_CControl_GetBase		@407
+
+
+SECTIONS
+	.data READ WRITE
