@@ -1,0 +1,10 @@
+LIBRARY inJPEG
+EXPORTS
+
+	IMAGE_GetExtensions		@1
+	IMAGE_GetPluginInfo		@2
+
+	IMAGE_LoadFromMemory	@3
+
+SECTIONS
+	.data READ WRITE
