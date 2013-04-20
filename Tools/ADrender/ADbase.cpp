@@ -1,6 +1,6 @@
 #include <windows.h>
 #include <stdio.h>
-#include <d3d8.h>
+#include <d3d9.h>
 #include "adbase.h"
 
 void debug_error_lib(HWND hWnd, char *messaggio)

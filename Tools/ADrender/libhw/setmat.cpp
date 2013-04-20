@@ -1,4 +1,4 @@
-#include <d3d8.h>
+#include <d3d9.h>
 #include <math.h>
 #include "setmat.h"
 #include "..\ADrender.h"
@@ -8,8 +8,8 @@
 
 #define MAXTEXTURES 100
 
-extern  LPDIRECT3DDEVICE8       g_pd3dDevice;
-extern  LPDIRECT3DTEXTURE8      g_pD3DTexture[MAXTEXTURES];
+extern  LPDIRECT3DDEVICE9       g_pd3dDevice;
+extern  LPDIRECT3DTEXTURE9      g_pD3DTexture[MAXTEXTURES];
 extern  material                *matold;
 extern  HWND                    hWindow;
 extern  FILE                    *fdebug;
@@ -32,7 +32,7 @@ void setRGB(void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_DIFFUSE);
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, NULL);
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 		                               HW_numvert/3,
 									   (void *)HW_texrgb,
@@ -54,7 +54,7 @@ void setRGB_tADD(void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, NULL);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 									   HW_numvert/3,
                                        (void *)HW_texrgb,
@@ -76,7 +76,7 @@ void setRGB_lBLEND3DS(void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, NULL);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texrgb,
@@ -101,7 +101,7 @@ void setTex (void)
 //    check_dx_hwlib(hWindow, hr, "Device->SetTransform");
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texrgb,
@@ -133,7 +133,7 @@ void setTex_tBLENDalpha (void)
 
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texrgb,
@@ -161,7 +161,7 @@ void setTex_tMAPalpha (void)
     hr = g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     hr = g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texrgb,
@@ -185,7 +185,7 @@ void setTex_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texrgb,
@@ -210,7 +210,7 @@ void setTex_lBLEND3DS (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE);
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_MODULATE);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -234,7 +234,7 @@ void setTex_lADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE);
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_ADD);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -258,7 +258,7 @@ void setTex_lSUB (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE);
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SUBTRACT);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -287,7 +287,7 @@ void setTex_lBLEND3DS_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -316,7 +316,7 @@ void setTex_lBLEND3DS_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							          HW_numvert/3,		                          
                                       (void *)HW_texrgb,
@@ -345,7 +345,7 @@ void setTex_lBLEND3DS_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							          HW_numvert/3,		                          
                                       (void *)HW_texrgb,
@@ -374,7 +374,7 @@ void setTex_lADD_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -403,7 +403,7 @@ void setTex_lADD_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -432,7 +432,7 @@ void setTex_lADD_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -461,7 +461,7 @@ void setTex_lSUB_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -490,7 +490,7 @@ void setTex_lSUB_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -519,7 +519,7 @@ void setTex_lSUB_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -547,7 +547,7 @@ void setEnv (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -575,7 +575,7 @@ void setEnv_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -603,7 +603,7 @@ void setEnv_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -627,7 +627,7 @@ void setEnv_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -652,7 +652,7 @@ void setEnv_lBLEND3DS (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_MODULATE);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -677,7 +677,7 @@ void setEnv_lADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_ADD);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -702,7 +702,7 @@ void setEnv_lSUB (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SUBTRACT);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -731,7 +731,7 @@ void setEnv_lBLEND3DS_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -760,7 +760,7 @@ void setEnv_lBLEND3DS_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -789,7 +789,7 @@ void setEnv_lBLEND3DS_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -818,7 +818,7 @@ void setEnv_lADD_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -847,7 +847,7 @@ void setEnv_lADD_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -876,7 +876,7 @@ void setEnv_lADD_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -905,7 +905,7 @@ void setEnv_lSUB_tBLENDalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -934,7 +934,7 @@ void setEnv_lSUB_tADD (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -963,7 +963,7 @@ void setEnv_lSUB_tMAPalpha (void)
     g_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX1RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX1RGBVERTEX_FORMAT);
     hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,		                          
                                        (void *)HW_texrgb,
@@ -996,7 +996,7 @@ void setTexEnv_mBLEND3DS(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1056,7 +1056,7 @@ void setTexEnv_mADD(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1085,7 +1085,7 @@ void setTexEnv_mTEXSUBENV(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1114,7 +1114,7 @@ void setTexEnv_mENVSUBTEX(void)
     g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 	g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1152,7 +1152,7 @@ void setTexEnv_mBLEND3DS_tBLENDalpha(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1188,7 +1188,7 @@ void setTexEnv_mBLEND3DS_tADD(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1223,7 +1223,7 @@ void setTexEnv_mBLEND3DS_tMAPalpha(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1258,7 +1258,7 @@ void setTexEnv_mADD_tBLENDalpha(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1294,7 +1294,7 @@ void setTexEnv_mADD_tADD(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1329,7 +1329,7 @@ void setTexEnv_mADD_tMAPalpha(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1362,7 +1362,7 @@ void setTexEnv_mADD_lADD(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1427,7 +1427,7 @@ void setTexEnv_mADD_lSUB(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1457,7 +1457,7 @@ void setTexEnv_mADD_lBLEND3DS(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1487,7 +1487,7 @@ void setTexEnv_mBLEND3DS_lADD(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1517,7 +1517,7 @@ void setTexEnv_mBLEND3DS_lSUB(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,
@@ -1547,7 +1547,7 @@ void setTexEnv_mBLEND3DS_lBLEND3DS(void)
 	g_pd3dDevice->SetTexture(0, g_pD3DTexture[matold->texture_ptr->HW_ADRender_Pos]);
     g_pd3dDevice->SetTexture(1, g_pD3DTexture[matold->envmap_ptr->HW_ADRender_Pos]);
 
-    g_pd3dDevice->SetVertexShader(TEX2RGBVERTEX_FORMAT);
+    g_pd3dDevice->SetFVF(TEX2RGBVERTEX_FORMAT);
 	hr = g_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 							           HW_numvert/3,
                                        (void *)HW_texenv,

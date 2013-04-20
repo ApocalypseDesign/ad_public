@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "..\ADRender.h"
 
-extern LPDIRECT3D8  g_pD3D;   // in ADrender.cpp
+extern LPDIRECT3D9  g_pD3D;   // in ADrender.cpp
 D3DDEVICEINFO g_Devices[5];
 
 char D3DFormat2Bpp (D3DFORMAT format)
@@ -19,6 +19,7 @@ char D3DFormat2Bpp (D3DFORMAT format)
       case D3DFMT_A8R8G8B8:
       case D3DFMT_X8R8G8B8: return(32);
 		                    break;
+	  default: return(-1);
    }
 }
 
@@ -106,19 +107,19 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
    BOOL bHALIsDesktopCompatible = FALSE;
    BOOL bHALIsSampleCompatible = FALSE;
 
-   g_pD3D = Direct3DCreate8(D3D_SDK_VERSION);
+   g_pD3D = Direct3DCreate9(D3D_SDK_VERSION);
    D3DDISPLAYMODE modes[100];
    D3DFORMAT      formats[20];
    DWORD dwNumFormats      = 0;
    DWORD dwNumModes        = 0;
-   DWORD dwNumAdapterModes = g_pD3D->GetAdapterModeCount(0);
+   DWORD dwNumAdapterModes = g_pD3D->GetAdapterModeCount(0, D3DFMT_A8R8G8B8);
    DWORD dwNumDevices;
 
    for(i=0; i < dwNumAdapterModes; i++)
    {
       // Get the display mode attributes
       D3DDISPLAYMODE DisplayMode;
-      g_pD3D->EnumAdapterModes(0, i, &DisplayMode);
+      g_pD3D->EnumAdapterModes(0, D3DFMT_A8R8G8B8, i, &DisplayMode);
 
       // Check if the mode already exists (to filter out refresh rates)
       for(j=0; j<dwNumModes; j++)
@@ -185,7 +186,7 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
         {
            // This system has a HAL device
            bHALExists = TRUE;
-           if(pDevice->d3dCaps.Caps2 & D3DCAPS2_CANRENDERWINDOWED)
+           if(pDevice->d3dCaps.Caps2)
            {
                // HAL can run in a window for some mode
                bHALIsWindowedCompatible = TRUE;
@@ -262,7 +263,7 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
               }
          }
 	 }
-     if (pDevice->d3dCaps.Caps2 & D3DCAPS2_CANRENDERWINDOWED) pDevice->bCanDoWindowed = TRUE;
+     if (pDevice->d3dCaps.Caps2) pDevice->bCanDoWindowed = TRUE;
      if (pDevice->dwNumModes > 0) dwNumDevices++;
    }
 

@@ -4,7 +4,7 @@
 #include "Adrender.h"
 
 BOOL is_texture_pow2 (texture *tex);
-int CopyRGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE8 s);
-int CopyARGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE8 s);
+int CopyRGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE9 s);
+int CopyARGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE9 s);
 
 #endif

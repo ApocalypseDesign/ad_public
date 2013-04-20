@@ -17,11 +17,11 @@ float RGB_PRECISION     = 1.0f;
 float RGB_MAXVALUE      = 1.0f*255.0f;
 
 char enumeration_done=0;    // =0 se non e' stata fatta l'enumerazione
-LPDIRECT3D8                 g_pD3D=NULL;
-LPDIRECT3DDEVICE8           g_pd3dDevice=NULL;
+LPDIRECT3D9                 g_pD3D=NULL;
+LPDIRECT3DDEVICE9           g_pd3dDevice=NULL;
 D3DPRESENT_PARAMETERS       g_d3dpp;
 D3DFORMAT                   video_format;
-LPDIRECT3DTEXTURE8        g_pD3DTexture[MAXTEXTURES];
+LPDIRECT3DTEXTURE9        g_pD3DTexture[MAXTEXTURES];
 int num_texture;
 
 HWND hWindow;
@@ -169,15 +169,15 @@ imagebuffer *Open_Screen (HWND hWnd, D3DDEVICEINFO *devinf)
   g_pd3dDevice->SetRenderState(D3DRS_ZWRITEENABLE, TRUE);
   g_pd3dDevice->SetRenderState(D3DRS_ALPHABLENDENABLE, FALSE);
   
-  g_pd3dDevice->SetTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_LINEAR);
-  g_pd3dDevice->SetTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_LINEAR);
-  g_pd3dDevice->SetTextureStageState(0, D3DTSS_ADDRESSU, D3DTADDRESS_WRAP);
-  g_pd3dDevice->SetTextureStageState(0, D3DTSS_ADDRESSV, D3DTADDRESS_WRAP);
+  g_pd3dDevice->SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);
+  g_pd3dDevice->SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR);
+  g_pd3dDevice->SetSamplerState(0, D3DSAMP_ADDRESSU, D3DTADDRESS_WRAP);
+  g_pd3dDevice->SetSamplerState(0, D3DSAMP_ADDRESSV, D3DTADDRESS_WRAP);
 
-  g_pd3dDevice->SetTextureStageState(1, D3DTSS_MAGFILTER, D3DTEXF_LINEAR);
-  g_pd3dDevice->SetTextureStageState(1, D3DTSS_MINFILTER, D3DTEXF_LINEAR);
-  g_pd3dDevice->SetTextureStageState(1, D3DTSS_ADDRESSU, D3DTADDRESS_WRAP);
-  g_pd3dDevice->SetTextureStageState(1, D3DTSS_ADDRESSV, D3DTADDRESS_WRAP);
+  g_pd3dDevice->SetSamplerState(1, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);
+  g_pd3dDevice->SetSamplerState(1, D3DSAMP_MINFILTER, D3DTEXF_LINEAR);
+  g_pd3dDevice->SetSamplerState(1, D3DSAMP_ADDRESSU, D3DTADDRESS_WRAP);
+  g_pd3dDevice->SetSamplerState(1, D3DSAMP_ADDRESSV, D3DTADDRESS_WRAP);
   g_pd3dDevice->SetTextureStageState(1, D3DTSS_COLOROP,   D3DTOP_DISABLE);
   g_pd3dDevice->SetTextureStageState(1, D3DTSS_ALPHAOP,   D3DTOP_DISABLE);
   g_pd3dDevice->SetTexture(1, NULL);
@@ -351,32 +351,32 @@ int AddUpdate_Texture (texture *t)
     hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 		                           video_format,
 		                           D3DPOOL_MANAGED,
-								   &g_pD3DTexture[num_texture]);
+								   &g_pD3DTexture[num_texture], NULL);
 	// cerco in sequenza 24, 32, 16, 15
 	if (hr != D3D_OK)
 	{
       hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 	                                 D3DFMT_R8G8B8,
 		                             D3DPOOL_MANAGED,
-								     &g_pD3DTexture[num_texture]);
+								     &g_pD3DTexture[num_texture], NULL);
 	  if (hr != D3D_OK)
 	  {
         hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 	  	                               D3DFMT_X8R8G8B8,
 		                               D3DPOOL_MANAGED,
-								       &g_pD3DTexture[num_texture]);
+								       &g_pD3DTexture[num_texture], NULL);
 	    if (hr != D3D_OK)
 		{
           hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 	  	                                 D3DFMT_R5G6B5,
 		                                 D3DPOOL_MANAGED,
-								         &g_pD3DTexture[num_texture]);
+								         &g_pD3DTexture[num_texture], NULL);
 	      if (hr != D3D_OK)
 		  {
             hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 	  	                                   D3DFMT_X1R5G5B5,
 		                                   D3DPOOL_MANAGED,
-								           &g_pD3DTexture[num_texture]);
+								           &g_pD3DTexture[num_texture], NULL);
 			
 			if (hr != D3D_OK) debug_error_lib(hWindow, "Not good texture formats found");
 		  }
@@ -419,7 +419,7 @@ int AddUpdate_AlphaTexture (texture *t)
        hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 		                              D3DFMT_A8R8G8B8,
 		                              D3DPOOL_MANAGED,
-								      &g_pD3DTexture[num_texture]);
+								      &g_pD3DTexture[num_texture], NULL);
 	}
 	
 	// cerco a 16 bit
@@ -428,7 +428,7 @@ int AddUpdate_AlphaTexture (texture *t)
        hr=g_pd3dDevice->CreateTexture(t->dimx, t->dimy, 1, 0,
 		                              D3DFMT_A1R5G5B5,
 		                              D3DPOOL_MANAGED,
-								      &g_pD3DTexture[num_texture]);
+								      &g_pD3DTexture[num_texture], NULL);
 	   if (hr != D3D_OK) debug_error_lib(hWindow, "Not good alpha texture formats found");
 	}
     t->HW_ADRender_Pos=num_texture;

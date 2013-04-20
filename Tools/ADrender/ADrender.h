@@ -5,7 +5,7 @@
 #include <ddraw.h>
 #define WIN32_LEAN_AND_MEAN	
 #define D3D_OVERLOADS // deve stare prima di #include <d3d.h>
-#include <d3d8.h>
+#include <d3d9.h>
 
 typedef struct
 {
@@ -34,7 +34,7 @@ typedef struct
     D3DMULTISAMPLE_TYPE MultiSampleType;  // livelli di FSAA
 
     D3DDEVTYPE   DeviceType;      // Reference, HAL, etc.
-    D3DCAPS8     d3dCaps;         // Capabilities of this device
+    D3DCAPS9     d3dCaps;         // Capabilities of this device
 
 }D3DDEVICEINFO;
 

@@ -14,8 +14,8 @@ float RGB_PRECISION     = 65536.0f;
 float RGB_MAXVALUE      = 254.0f*65536.0f;
 
 // usate per supporto alle DirectX/DirectDraw
-LPDIRECT3D8                 g_pD3D=NULL;
-LPDIRECT3DDEVICE8           g_pd3dDevice=NULL;
+LPDIRECT3D9                 g_pD3D=NULL;
+LPDIRECT3DDEVICE9           g_pd3dDevice=NULL;
 D3DPRESENT_PARAMETERS       g_d3dpp;
 D3DFORMAT                   video_format;
 
@@ -376,13 +376,13 @@ ciclo:
 
 void Update_Screen(void)
 {
-	IDirect3DSurface8  *g_pBackBuffer;
+	IDirect3DSurface9  *g_pBackBuffer;
 	D3DLOCKED_RECT     Locked_Rect;
 	unsigned int *srcbuf, *dstbuf;
 	HRESULT hr;
 
 	srcbuf=image->uint32ptr;
-	hr=g_pd3dDevice->GetBackBuffer(0, D3DBACKBUFFER_TYPE_MONO, &g_pBackBuffer);
+	hr=g_pd3dDevice->GetBackBuffer(0, D3DBACKBUFFER_TYPE_MONO, D3DBACKBUFFER_TYPE_MONO, &g_pBackBuffer);
     //hr=g_pd3dDevice->GetFrontBuffer(&g_pBackBuffer);
 	hr=g_pBackBuffer->LockRect(&Locked_Rect, NULL, NULL);
 	dstbuf=(unsigned int *)Locked_Rect.pBits;

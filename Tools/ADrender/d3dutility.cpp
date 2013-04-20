@@ -16,7 +16,7 @@ BOOL is_texture_pow2 (texture *tex)
   else return(TRUE);
 }
 
-int CopyRGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE8 s)
+int CopyRGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE9 s)
 {
 	int pixel_ofs=0;
 
@@ -69,7 +69,7 @@ int CopyRGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE8 s)
 }
 
 
-int CopyARGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE8 s)
+int CopyARGBTetxureToSurface (texture *t, LPDIRECT3DTEXTURE9 s)
 {
 	int pixel_ofs=0;
 
