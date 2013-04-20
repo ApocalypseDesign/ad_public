@@ -48,6 +48,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADefx_skeleton", "ADefx\ADe
 		{65515626-80AB-44F6-9862-0DD46FF7DE1A} = {65515626-80AB-44F6-9862-0DD46FF7DE1A}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lowpass", "ADefx\Lowpass\Lowpass.vcxproj", "{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_NO_FMOD|Win32 = Debug_NO_FMOD|Win32
@@ -136,6 +138,14 @@ Global
 		{E97DBC35-9601-4100-BB31-E8E73D5B26C4}.Release_NO_FMOD|Win32.Build.0 = Release|Win32
 		{E97DBC35-9601-4100-BB31-E8E73D5B26C4}.Release|Win32.ActiveCfg = Release|Win32
 		{E97DBC35-9601-4100-BB31-E8E73D5B26C4}.Release|Win32.Build.0 = Release|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Debug_NO_FMOD|Win32.ActiveCfg = Debug|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Debug_NO_FMOD|Win32.Build.0 = Debug|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Debug|Win32.Build.0 = Debug|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Release_NO_FMOD|Win32.ActiveCfg = Release|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Release_NO_FMOD|Win32.Build.0 = Release|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Release|Win32.ActiveCfg = Release|Win32
+		{AADD78FB-6A8F-48F9-B38E-01AC5BF8600E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
