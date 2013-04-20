@@ -4,7 +4,7 @@
 #include "..\camera.h"
 #include "..\keyframe.h"
 #include "..\lights.h"
-#include "..\..\ADrender.h"
+#include "ADrender.h"
 #include "..\..\Math\vect3D.h"
 #include "..\..\types.h"
 

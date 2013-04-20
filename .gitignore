@@ -1,6 +1,10 @@
 *.opensdf
 *.sdf
 *.suo
+/Demos/RespectTheInsect (unfinished)/DebugHW
+/Demos/RespectTheInsect (unfinished)/ReleaseHW
+/Demos/RespectTheInsect (unfinished)/DebugSW
+/Demos/RespectTheInsect (unfinished)/ReleaseSW
 /Tools/ADrender/libsw/Debug
 /Tools/ADrender/libsw/Release
 /Tools/ADrender/libhw/Debug

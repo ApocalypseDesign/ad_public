@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{425358D3-EB47-41BE-AB29-FEAF2B034F40}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\DebugSW\</OutDir>
+    <IntDir>.\DebugSW\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\ReleaseSW\</OutDir>
+    <IntDir>.\ReleaseSW\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\DebugSW\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\DebugSW\DEMO_SW.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\DebugSW\</ObjectFileName>
+      <ProgramDataBaseFileName>.\DebugSW\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>..\..\Tools\ADrender\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\DebugSW\DEMO_SW.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0410</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\DebugSW\DEMO_SW.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\DebugSW\DEMO_SW.exe</OutputFile>
+      <AdditionalDependencies>dependencies\fmodapi375-win32\lib\fmodvc.lib;dependencies\libpng-1.2.37-win32\lib\libpng.lib;dependencies\libjpeg-6b-win32\lib\jpeg.lib;..\..\Tools\ADrender\libsw\Debug\libsw.lib;comctl32.lib;d3d9.lib;dxguid.lib;ddraw.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseSW\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\ReleaseSW\DEMO_SW.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\ReleaseSW\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseSW\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\Tools\ADrender\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\ReleaseSW\DEMO_SW.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0410</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseSW\DEMO_SW.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\ReleaseSW\DEMO_SW.exe</OutputFile>
+      <AdditionalDependencies>dependencies\fmodapi375-win32\lib\fmodvc.lib;dependencies\libpng-1.2.37-win32\lib\libpng.lib;dependencies\libjpeg-6b-win32\lib\jpeg.lib;..\..\Tools\ADrender\libsw\Debug\libsw.lib;comctl32.lib;d3d9.lib;dxguid.lib;ddraw.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LIB_aux\include\ADrender.h" />
+    <ClInclude Include="ADmain.h" />
+    <ClInclude Include="dtimer.h" />
+    <ClInclude Include="efx2D.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="Efx2D\blur2D.h" />
+    <ClInclude Include="Efx2D\bump2D.h" />
+    <ClInclude Include="Efx2D\fade2D.h" />
+    <ClInclude Include="Efx2D\flash2D.h" />
+    <ClInclude Include="Efx2D\lowpass2D.h" />
+    <ClInclude Include="Efx2D\noise.h" />
+    <ClInclude Include="Efx2D\painter2D.h" />
+    <ClInclude Include="Efx2D\plasm2D.h" />
+    <ClInclude Include="Efx2D\postfilters2D.h" />
+    <ClInclude Include="Efx2D\quadro2d.h" />
+    <ClInclude Include="Efx2D\spline.h" />
+    <ClInclude Include="Efx2D\sprite.h" />
+    <ClInclude Include="Efx2D\TextScroller2D.h" />
+    <ClInclude Include="Efx2D\tomato2D.h" />
+    <ClInclude Include="Engines\Camera.h" />
+    <ClInclude Include="Engines\Keyframe.h" />
+    <ClInclude Include="Engines\lights.h" />
+    <ClInclude Include="Engines\object3D.h" />
+    <ClInclude Include="Engines\OSMobj.h" />
+    <ClInclude Include="Engines\particle.h" />
+    <ClInclude Include="Engines\patch.h" />
+    <ClInclude Include="Engines\Scene3d.h" />
+    <ClInclude Include="Engines\triangle.h" />
+    <ClInclude Include="Engines\UtilsA3D.h" />
+    <ClInclude Include="Engines\utilsscript.h" />
+    <ClInclude Include="Engines\WSMobj.h" />
+    <ClInclude Include="Engines\Raytracing\rayt_kernel.h" />
+    <ClInclude Include="Engines\Raytracing\rayt_material.h" />
+    <ClInclude Include="Engines\Raytracing\rayt_object.h" />
+    <ClInclude Include="Engines\Raytracing\rayt_scene.h" />
+    <ClInclude Include="Engines\Raytracing\rayt_utilsscript.h" />
+    <ClInclude Include="Engines\Raytracing\utilsRAY.h" />
+    <ClInclude Include="Math\fastmath.h" />
+    <ClInclude Include="Math\matrix.h" />
+    <ClInclude Include="Math\quater.h" />
+    <ClInclude Include="Math\vect3d.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADdemo.cpp" />
+    <ClCompile Include="dtimer.cpp" />
+    <ClCompile Include="efx2D.cpp" />
+    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="Efx2D\blur2D.cpp" />
+    <ClCompile Include="Efx2D\bump2D.cpp" />
+    <ClCompile Include="Efx2D\fade2D.cpp" />
+    <ClCompile Include="Efx2D\flash2D.cpp" />
+    <ClCompile Include="Efx2D\lowpass2D.cpp" />
+    <ClCompile Include="Efx2D\noise.cpp" />
+    <ClCompile Include="Efx2D\painter2D.cpp" />
+    <ClCompile Include="Efx2D\plasm2D.cpp" />
+    <ClCompile Include="Efx2D\postfilters2D.cpp" />
+    <ClCompile Include="Efx2D\quadro2d.cpp" />
+    <ClCompile Include="Efx2D\spline.cpp" />
+    <ClCompile Include="Efx2D\sprite.cpp" />
+    <ClCompile Include="Efx2D\TextScroller2D.cpp" />
+    <ClCompile Include="Efx2D\tomato2D.cpp" />
+    <ClCompile Include="Engines\Camera.cpp" />
+    <ClCompile Include="Engines\Keyframe.cpp" />
+    <ClCompile Include="Engines\EngineSW\lights.cpp" />
+    <ClCompile Include="Engines\EngineSW\Object3d.cpp" />
+    <ClCompile Include="Engines\OSMobj.cpp" />
+    <ClCompile Include="Engines\EngineSW\particle.cpp" />
+    <ClCompile Include="Engines\EngineSW\patch.cpp" />
+    <ClCompile Include="Engines\EngineSW\Scene3d.cpp" />
+    <ClCompile Include="Engines\EngineSW\triangle.cpp" />
+    <ClCompile Include="Engines\UtilsA3D.cpp" />
+    <ClCompile Include="Engines\utilsscript.cpp" />
+    <ClCompile Include="Engines\WSMobj.cpp" />
+    <ClCompile Include="Engines\Raytracing\rayt_kernel.cpp" />
+    <ClCompile Include="Engines\Raytracing\rayt_object.cpp" />
+    <ClCompile Include="Engines\Raytracing\rayt_scene.cpp" />
+    <ClCompile Include="Engines\Raytracing\rayt_utilsscript.cpp" />
+    <ClCompile Include="Engines\Raytracing\utilsRAY.cpp" />
+    <ClCompile Include="Math\fastmath.cpp" />
+    <ClCompile Include="Math\matrix.cpp" />
+    <ClCompile Include="Math\quater.cpp" />
+    <ClCompile Include="Math\vect3d.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ADdemo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cursor1.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

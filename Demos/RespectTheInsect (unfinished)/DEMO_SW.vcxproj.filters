@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demo System">
+      <UniqueIdentifier>{16b26bf1-554c-4edb-8da3-3c5495f16799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo System\AD Render LIB">
+      <UniqueIdentifier>{1528533f-3b21-469e-b98f-f433d8329bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo System\Main Program No. 1">
+      <UniqueIdentifier>{37a89822-0927-4ac3-a128-a995ccaa340b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo System\Resources">
+      <UniqueIdentifier>{f5a0c0a9-ca54-48e0-b9ef-a8e448a444f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effetti 2D">
+      <UniqueIdentifier>{dcb157c3-0c68-4068-b516-0e7eeb163179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine3D">
+      <UniqueIdentifier>{17c1a063-596a-49b2-b7c0-716b4ffe3a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine_Raytracing">
+      <UniqueIdentifier>{464ff26c-cb6d-42db-9388-64e77965c32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{e0b84efa-64d3-4c68-8066-0bc039f52af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effetti 3D">
+      <UniqueIdentifier>{ffcddae9-522b-4c14-a316-7e796d82e18e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LIB_aux\include\ADrender.h">
+      <Filter>Demo System\AD Render LIB</Filter>
+    </ClInclude>
+    <ClInclude Include="ADmain.h">
+      <Filter>Demo System\Main Program No. 1</Filter>
+    </ClInclude>
+    <ClInclude Include="dtimer.h">
+      <Filter>Demo System</Filter>
+    </ClInclude>
+    <ClInclude Include="efx2D.h">
+      <Filter>Demo System</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>Demo System</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\blur2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\bump2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\fade2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\flash2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\lowpass2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\noise.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\painter2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\plasm2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\postfilters2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\quadro2d.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\spline.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\sprite.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\TextScroller2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Efx2D\tomato2D.h">
+      <Filter>Effetti 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Camera.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Keyframe.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\lights.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\object3D.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\OSMobj.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\particle.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\patch.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Scene3d.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\triangle.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\UtilsA3D.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\utilsscript.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\WSMobj.h">
+      <Filter>Engine3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Raytracing\rayt_kernel.h">
+      <Filter>Engine_Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Raytracing\rayt_material.h">
+      <Filter>Engine_Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Raytracing\rayt_object.h">
+      <Filter>Engine_Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Raytracing\rayt_scene.h">
+      <Filter>Engine_Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Raytracing\rayt_utilsscript.h">
+      <Filter>Engine_Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="Engines\Raytracing\utilsRAY.h">
+      <Filter>Engine_Raytracing</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\fastmath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\quater.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\vect3d.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADdemo.cpp">
+      <Filter>Demo System\Main Program No. 1</Filter>
+    </ClCompile>
+    <ClCompile Include="dtimer.cpp">
+      <Filter>Demo System</Filter>
+    </ClCompile>
+    <ClCompile Include="efx2D.cpp">
+      <Filter>Demo System</Filter>
+    </ClCompile>
+    <ClCompile Include="utility.cpp">
+      <Filter>Demo System</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\blur2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\bump2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\fade2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\flash2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\lowpass2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\noise.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\painter2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\plasm2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\postfilters2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\quadro2d.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\spline.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\sprite.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\TextScroller2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Efx2D\tomato2D.cpp">
+      <Filter>Effetti 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Camera.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Keyframe.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\EngineSW\lights.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\EngineSW\Object3d.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\OSMobj.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\EngineSW\particle.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\EngineSW\patch.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\EngineSW\Scene3d.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\EngineSW\triangle.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\UtilsA3D.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\utilsscript.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\WSMobj.cpp">
+      <Filter>Engine3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Raytracing\rayt_kernel.cpp">
+      <Filter>Engine_Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Raytracing\rayt_object.cpp">
+      <Filter>Engine_Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Raytracing\rayt_scene.cpp">
+      <Filter>Engine_Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Raytracing\rayt_utilsscript.cpp">
+      <Filter>Engine_Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="Engines\Raytracing\utilsRAY.cpp">
+      <Filter>Engine_Raytracing</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\fastmath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\matrix.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\quater.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\vect3d.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ADdemo.rc">
+      <Filter>Demo System\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="cursor1.cur" />
+  </ItemGroup>
+</Project>

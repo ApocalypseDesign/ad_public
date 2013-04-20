@@ -8,7 +8,7 @@
 #include <math.h>
 #include "..\patch.h"
 #include "..\..\Math\fastmath.h"
-#include "..\..\ADrender.h"
+#include "ADrender.h"
 
 extern int counter_for_resetting_vertex;
 extern AD_Tria3D **list_to_paint_trasparent;  // lista dei triangoli trasparenti
