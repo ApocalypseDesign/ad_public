@@ -1,5 +1,7 @@
 *.opensdf
 *.sdf
-/tools/adbase/Debug
-/Tools/ADBase/Release
 *.suo
+/Tools/ADsdk/ADbase/Debug
+/Tools/ADsdk/ADbase/Release
+/Tools/ADsdk/ADsystem/Debug
+/Tools/ADsdk/ADsystem/Release
