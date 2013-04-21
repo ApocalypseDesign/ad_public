@@ -19,6 +19,6 @@ Apocalypse Design tools, in a more or less chronological order:
 
 * **ADsdk** is a C++ SDK for software-rendered effects (with no 3D accelleration). Each effect could be written ad compiled as a separate plugin. These plugins could then be used directly in VAdesso to compose a demo, then the demo-sequencing file could be saved and played in our demo-player ADplayer.
 
-* **inJPEG** is a library used by VAdesso and ADplayer to download JPEG textures.
+* **inJPEG** is a library used by VAdesso and ADplayer to load JPEG textures.
 
 * **ADrender** is the base for our latest 3D engine, it is a library that abstracts 3D rasterization and texture management, so that we could write both software and hardware-accelerated demos using almost the same code. The first versions used DirectX 6, we then ugraded to version 7 and then to version 8. The version here has been upgraded to DirectX 9.
