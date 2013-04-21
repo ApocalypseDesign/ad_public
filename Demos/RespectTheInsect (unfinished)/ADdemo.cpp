@@ -107,22 +107,24 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
                                       tabella_dev[0].SupportedModes[ww].Bpp);
         SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_ADDSTRING, 0, (LPARAM)modo_str);
 	 }
-	 /*
-	 // cerco una res 320x240 (prima 32bpp poi 16bpp)
+
+	 // cerco una res 320x240
 	 i=search_res(tabella_dev, current_sel_driver, 320, 240, 32);
      if (i==-1)
 	 {
-	   i=search_res(tabella_dev, current_sel_driver, 320, 240, 16);
-	   if (i==-1) debug_error(miawin, "This intro need a 320x240 resolution support!");
-	   //if (i==-1) SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, 0, (LPARAM)0);
-	   else SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, i, (LPARAM)0);
+		// cerco 640x480
+		i=search_res(tabella_dev, current_sel_driver, 640, 480, 32);
+		if (i==-1) i=0; // scegli la prima disponibile
+		//if (i==-1) debug_error(miawin, "This intro need a 320x240 resolution support!");
+	    //if (i==-1) SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, 0, (LPARAM)0);
 	 }
-	 else SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, i, (LPARAM)0);
-	 */
+	 SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, i, (LPARAM)0);
 
-     // setto fullscreen di default
-     SendDlgItemMessage(hdwnd, IDC_RADIO1, BM_SETCHECK, 0, 0);
-     SendDlgItemMessage(hdwnd, IDC_RADIO2, BM_SETCHECK, 1, 0);
+     // setto windowed di default
+	 SendDlgItemMessage(hdwnd, IDC_RADIO1, BM_SETDONTCLICK, 1, 0);
+     SendDlgItemMessage(hdwnd, IDC_RADIO1, BM_SETCHECK, 1, 0);
+     SendDlgItemMessage(hdwnd, IDC_RADIO2, BM_SETCHECK, 0, 0);
+
      SendDlgItemMessage(hdwnd, IDC_CHECK1, BM_SETCHECK, 0, 0);
 	 break;
 
@@ -195,7 +197,8 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
 			   else MessageBox(hdwnd, "You MUST select a 320x240 resolution", "AD-Debug", NULL); 
 			   */
 
-			   driver_to_use.bFullscreen=RunFullscreen;
+			   //driver_to_use.bFullscreen=RunFullscreen;
+			   driver_to_use.bFullscreen=false; // Fullscreen non supportato
 			   EndDialog(hdwnd, 1);
 			   return 1;
 		}
@@ -424,10 +427,11 @@ WinMain(HINSTANCE hInstance,
 			   ADmainLoop();
 			   if (curpos>=1.0)
 			   {
-	             //curpos=0;
-                 //demotimer.init(2);
-                 //demotimer.start();
-				 PostMessage(miawin, WM_CLOSE, 0, 0);
+				 // Repeat forever
+	             curpos=0;
+                 demotimer.init(2);
+                 demotimer.start();
+				 // PostMessage(miawin, WM_CLOSE, 0, 0); // To quit at the end
 			   }
 			}
 			else

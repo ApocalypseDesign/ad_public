@@ -117,21 +117,23 @@ void ADmainEnter() //codice iniziale
       if (!mod) debug_error(miawin, "FMOD error: file del modulo non presente");
   }
   */
+  
+  float global_scaling = max(driver_to_use.WantedMode.Width / 320, driver_to_use.WantedMode.Height / 240);
 
   img1.set_imagebuffer(global_ib);
   img1.load("data\\ok1.jpg",RGBINTERLEAVED);
-  img1.set_render_type(RENDER_NOSCALING | RENDER_CLIP 
+  img1.set_render_type(RENDER_SCALING | RENDER_CLIP 
 	                   | RENDER_OVERWRITE); 
-  img1.add_key(0,0,0,0,0);
-  img1.add_key(1,0,-202,0,0);
+  img1.add_key(0,0,0,		global_scaling, global_scaling);
+  img1.add_key(1,0,-202,	global_scaling, global_scaling);
   img1.set_pos(0.0f,0.2f);
   img1.init();
 
   img2.set_imagebuffer(global_ib);
   img2.load("data\\ok2.jpg",RGBINTERLEAVED);
-  img2.set_render_type(RENDER_NOSCALING | RENDER_CLIP 
+  img2.set_render_type(RENDER_SCALING | RENDER_CLIP 
 	                   | RENDER_OVERWRITE); 
-  img2.add_key(0,0,0,0,0);
+  img2.add_key(0,0,0,		global_scaling, global_scaling);
   img2.set_pos(0.2f,0.4f);
   img2.init();
 
@@ -139,9 +141,9 @@ void ADmainEnter() //codice iniziale
   img3.load("data\\ok3.jpg",RGBINTERLEAVED);
   img3.set_render_type(RENDER_SCALING | RENDER_CLIP 
 	                   | RENDER_OVERWRITE); 
-  img3.add_key(0,0,0,1,1);
-  img3.add_key(0.5,80,0,1,1);
-  img3.add_key(1,-260,-150,4,4);
+  img3.add_key(0,0,0,		1. * global_scaling, 1. * global_scaling);
+  img3.add_key(0.5,80,0,	1. * global_scaling, 1. * global_scaling);
+  img3.add_key(1,-260,-150,	4. * global_scaling, 4. * global_scaling);
   img3.set_pos(0.4f,0.6f);
   img3.init();
 
@@ -150,13 +152,13 @@ void ADmainEnter() //codice iniziale
   img4.set_render_type(RENDER_SCALING | RENDER_CLIP 
 	                   | RENDER_OVERWRITE); 
 
-  img4.add_key(0,0,0,0.5614,0.625);
-  img4.add_key(0.3,-1,-1,1,1);
-  img4.add_key(0.4,-150,0,1,1);
-  img4.add_key(0.5,-50,-80,1,1);
-  img4.add_key(0.6,-150,-100,1,1);
-  img4.add_key(0.8,0,0,0.5614,0.625);
-  img4.add_key(1,0,0,0.5614,0.625);
+  img4.add_key(0,0,0,			0.5614 * global_scaling, 0.625 * global_scaling);
+  img4.add_key(0.3,-1,-1,		1. * global_scaling, 1. * global_scaling);
+  img4.add_key(0.4,-150,0,		1. * global_scaling, 1. * global_scaling);
+  img4.add_key(0.5,-50,-80,		1. *global_scaling, 1. * global_scaling);
+  img4.add_key(0.6,-150,-100,	1. * global_scaling, 1. * global_scaling);
+  img4.add_key(0.8,0,0,			0.5614 * global_scaling, 0.625 * global_scaling);
+  img4.add_key(1,0,0,			0.5614 * global_scaling, 0.625 * global_scaling);
   img4.set_pos(0.6f,1.0f);
   img4.init();
 
@@ -211,12 +213,14 @@ void ADmainExit() // codice finale
 //     FSOUND_Close();
   }
 
+  /*
   str=fcvt(demotimer.get_stepsPerSecond(), 4, &dec, &sign);
   str[dec+1]=str[dec];
   str[dec]='.';
   str[dec+2]=0;
   strcat(str," fps");
   debug_error(miawin, str);
+  */
 }
 
 #endif
