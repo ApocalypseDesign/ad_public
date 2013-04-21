@@ -88,8 +88,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <OutputFile>.\DebugSW\DEMO_SW.exe</OutputFile>
-      <AdditionalDependencies>dependencies\fmodapi375-win32\lib\fmodvc.lib;dependencies\libpng-1.2.37-win32\lib\libpng.lib;..\..\Tools\ADrender\dependencies\libjpeg-8d-win32\lib\jpeg.lib;..\..\Tools\ADrender\libsw\Debug\libsw.lib;comctl32.lib;d3d9.lib;dxguid.lib;ddraw.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>DebugSW\RespectTheInsect-debug.exe</OutputFile>
+      <AdditionalDependencies>dependencies\fmodapi375-win32\lib\fmodvc.lib;..\..\Tools\ADrender\dependencies\zlib-1.2.7-win32\lib\zlib.lib;..\..\Tools\ADrender\dependencies\libpng-1.6.1-win32\lib\libpng16.lib;..\..\Tools\ADrender\dependencies\libjpeg-8d-win32\lib\jpeg.lib;..\..\Tools\ADrender\libsw\Debug\libsw.lib;comctl32.lib;d3d9.lib;dxguid.lib;ddraw.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -127,8 +127,8 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
       <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <OutputFile>.\ReleaseSW\DEMO_SW.exe</OutputFile>
-      <AdditionalDependencies>dependencies\fmodapi375-win32\lib\fmodvc.lib;dependencies\libpng-1.2.37-win32\lib\libpng.lib;..\..\Tools\ADrender\dependencies\libjpeg-8d-win32\lib\jpeg.lib;..\..\Tools\ADrender\libsw\Debug\libsw.lib;comctl32.lib;d3d9.lib;dxguid.lib;ddraw.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>ReleaseSW\RespectTheInsect.exe</OutputFile>
+      <AdditionalDependencies>dependencies\fmodapi375-win32\lib\fmodvc.lib;..\..\Tools\ADrender\dependencies\zlib-1.2.7-win32\lib\zlib.lib;..\..\Tools\ADrender\dependencies\libpng-1.6.1-win32\lib\libpng16.lib;..\..\Tools\ADrender\dependencies\libjpeg-8d-win32\lib\jpeg.lib;..\..\Tools\ADrender\libsw\Debug\libsw.lib;comctl32.lib;d3d9.lib;dxguid.lib;ddraw.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
