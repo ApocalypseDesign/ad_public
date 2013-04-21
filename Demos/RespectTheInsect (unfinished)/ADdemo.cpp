@@ -107,7 +107,7 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
                                       tabella_dev[0].SupportedModes[ww].Bpp);
         SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_ADDSTRING, 0, (LPARAM)modo_str);
 	 }
-	 
+	 /*
 	 // cerco una res 320x240 (prima 32bpp poi 16bpp)
 	 i=search_res(tabella_dev, current_sel_driver, 320, 240, 32);
      if (i==-1)
@@ -118,6 +118,7 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
 	   else SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, i, (LPARAM)0);
 	 }
 	 else SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_SETCURSEL, i, (LPARAM)0);
+	 */
 
      // setto fullscreen di default
      SendDlgItemMessage(hdwnd, IDC_RADIO1, BM_SETCHECK, 0, 0);
@@ -183,6 +184,7 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
 			   i=SendDlgItemMessage(hdwnd, IDC_COMBO1, CB_GETCURSEL, 0, 0L);
 			   driver_to_use=tabella_dev[current_sel_driver];
 			   driver_to_use.WantedMode=tabella_dev[current_sel_driver].SupportedModes[i];
+			   /*
 			   if ((driver_to_use.WantedMode.Width == 320) ||
                    (driver_to_use.WantedMode.Height == 240))
 			   {
@@ -191,6 +193,11 @@ int CALLBACK MyDialogFunc(HWND hdwnd, UINT message, WPARAM wParam, LPARAM lParam
 			      return 1;
 			   }
 			   else MessageBox(hdwnd, "You MUST select a 320x240 resolution", "AD-Debug", NULL); 
+			   */
+
+			   driver_to_use.bFullscreen=RunFullscreen;
+			   EndDialog(hdwnd, 1);
+			   return 1;
 		}
   }
   return(0);
@@ -359,7 +366,7 @@ InitApp(HINSTANCE hInstance, int nCmdShow)
                           TITLE,
                           WS_POPUP | WS_CAPTION | WS_SYSMENU |
 						  WS_THICKFRAME | WS_MAXIMIZEBOX| WS_MINIMIZEBOX,
-                          (GetSystemMetrics(SM_CXSCREEN)-driver_to_use.WantedMode.Width)/2,
+						  (GetSystemMetrics(SM_CXSCREEN)-driver_to_use.WantedMode.Width)/2,
                           (GetSystemMetrics(SM_CYSCREEN)-driver_to_use.WantedMode.Height)/2,
                           driver_to_use.WantedMode.Width+GetSystemMetrics(SM_CXSIZEFRAME)*2,
 						  driver_to_use.WantedMode.Height+GetSystemMetrics(SM_CYSIZEFRAME)*2
@@ -417,10 +424,10 @@ WinMain(HINSTANCE hInstance,
 			   ADmainLoop();
 			   if (curpos>=1.0)
 			   {
-	             curpos=0;
-                 demotimer.init(2);
-                 demotimer.start();
-			     //if (curpos>=1.0) PostMessage(miawin, WM_CLOSE, 0, 0);
+	             //curpos=0;
+                 //demotimer.init(2);
+                 //demotimer.start();
+				 PostMessage(miawin, WM_CLOSE, 0, 0);
 			   }
 			}
 			else
