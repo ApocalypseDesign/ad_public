@@ -13,7 +13,8 @@ Furthermore if you can understand Italian you may find some funny comments in th
 Most of the C++ code has been updated and fixed to work on current PCs.
 We ported all projects to *Visual Studio Express 2012 for Windows Desktop* (which is a free download) and upgraded DirectX code to version 9. We have also updated third-party libraries to the latest versions.
 
-We have not yet decided the license for this stuff - stay tuned, we will update this page shortly.
+We are releasing all this code and data as Public Domain. This means you can do anything you like with it.
+(Obviously this does not apply to external libraries, which have their own license)
 
 Apocalypse Design members in random order:
 
