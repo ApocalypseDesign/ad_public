@@ -20,8 +20,8 @@
 //-----------------------------------------------------------------------------
 // Local definitions
 //-----------------------------------------------------------------------------
-#define NAME                "And now design"
-#define TITLE               "And now design"
+#define NAME                "Respect The Insect"
+#define TITLE               "Respect The Insect"
 
 //-----------------------------------------------------------------------------
 // Global data

@@ -182,7 +182,7 @@ imagebuffer *Open_Screen (HWND hWnd, D3DDEVICEINFO *devinf)
 
   // Create the device
   hr = g_pD3D->CreateDevice(D3DADAPTER_DEFAULT, 
-	                        D3DDEVTYPE_REF,
+	                        D3DDEVTYPE_HAL,
                             hWnd,
 							D3DCREATE_SOFTWARE_VERTEXPROCESSING,
 							&g_d3dpp,

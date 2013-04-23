@@ -72,15 +72,15 @@ IDC_ADCURSOR            CURSOR  DISCARDABLE     "cursor1.cur"
 IDD_DIALOG1 DIALOG DISCARDABLE  100, 100, 233, 102
 STYLE DS_MODALFRAME | DS_NOIDLEMSG | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
     WS_CAPTION | WS_SYSMENU
-CAPTION "Webbit 2001 invitation intro, by Apocalypse Design"
+CAPTION "Apocalypse Design"
 FONT 8, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,120,82,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,176,82,50,14
     CONTROL         "Windowed",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,171,37,
                     48,10
-    //CONTROL         "Full Screen",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,116,
-    //                36,50,10
+    CONTROL         "Full Screen",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,116,
+                    36,50,10
     LTEXT           "Select video mode/colors",IDC_STATIC,7,27,78,8
     LTEXT           "Select Device",IDC_STATIC,7,3,43,8
     EDITTEXT        IDC_EDIT2,7,79,90,12,ES_AUTOHSCROLL | NOT WS_VISIBLE

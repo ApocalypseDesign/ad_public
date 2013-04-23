@@ -44,6 +44,7 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
    unsigned int i, j, k;
    const DWORD dwNumDeviceTypes = 1;
    devDesc strDeviceDescs[2] = { "HAL", "REF" };
+   int deviceIndex = 0;
    const D3DDEVTYPE DeviceTypes[] = { D3DDEVTYPE_HAL, D3DDEVTYPE_REF };
 
    g_pD3D = Direct3DCreate9(D3D_SDK_VERSION);
@@ -92,12 +93,12 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
    // Fill in device info
    D3DDEVICEINFO *pDevice;
    pDevice  = &g_Devices[0];
-   pDevice->DeviceType = DeviceTypes[1];
-   strcpy(pDevice->strDesc, strDeviceDescs[1]);
+   pDevice->DeviceType = DeviceTypes[deviceIndex];
+   strcpy(pDevice->strDesc, strDeviceDescs[deviceIndex]);
 
    // se non ci sono devices REF ritorna errore
-   if (g_pD3D->GetDeviceCaps(0, D3DDEVTYPE_REF, &pDevice->d3dCaps)!=D3D_OK)
-	    return(-1);
+   /*if (g_pD3D->GetDeviceCaps(0, D3DDEVTYPE_REF, &pDevice->d3dCaps)!=D3D_OK)
+	    return(-1);*/
 
 
    // Add all enumerated display modes with confirmed formats to the
@@ -119,7 +120,7 @@ int EnumerateDriver(D3DDEVICEINFO **tabdev)
               }
          }
    }
-   if (pDevice->d3dCaps.Caps2) pDevice->bCanDoWindowed = TRUE;
+   pDevice->bCanDoWindowed = TRUE;
    if (pDevice->dwNumModes > 0) dwNumDevices++;
 
    if(0 == dwNumDevices)
