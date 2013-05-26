@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SceneExport - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Release/SceneExport.res" /d "NDEBUG" "D:\Redshift\Plugin\SceneExport.rc"" 
+Creating temporary file "C:\DOCUME~1\matteo\LOCALS~1\Temp\RSP44.tmp" with contents
+[
+/nologo /G5 /MD /W3 /Gi /GX /O2 /I "..\..\..\..\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SCENEEXPORT_EXPORTS" /Fp"Release/SceneExport.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Redshift\Plugin\ANI_rottrack2.cpp"
+"D:\Redshift\Plugin\Biped.cpp"
+"D:\Redshift\Plugin\Bones.cpp"
+"D:\Redshift\Plugin\Camera.cpp"
+"D:\Redshift\Plugin\exp_ANI.cpp"
+"D:\Redshift\Plugin\Geometric_Objects.cpp"
+"D:\Redshift\Plugin\Helpers.cpp"
+"D:\Redshift\Plugin\Keyframer.cpp"
+"D:\Redshift\Plugin\Lights.cpp"
+"D:\Redshift\Plugin\Maps.cpp"
+"D:\Redshift\Plugin\Materials.cpp"
+"D:\Redshift\Plugin\Materials_Tracks.cpp"
+"D:\Redshift\Plugin\Mesh.cpp"
+"D:\Redshift\Plugin\OSMs.cpp"
+"D:\Redshift\Plugin\Particles_Systems.cpp"
+"D:\Redshift\Plugin\Patches.cpp"
+"D:\Redshift\Plugin\Solid_Objects.cpp"
+"D:\Redshift\Plugin\WSMs.cpp"
+"D:\Redshift\Plugin\ConfigMgr.cpp"
+"D:\Redshift\Plugin\DoExport.cpp"
+"D:\Redshift\Plugin\Plugin.cpp"
+"D:\Redshift\Plugin\SceneExport.cpp"
+"D:\Redshift\Plugin\Utility.cpp"
+"D:\Redshift\Plugin\ray_objects.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\matteo\LOCALS~1\Temp\RSP44.tmp" 
+Creating temporary file "C:\DOCUME~1\matteo\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+core.lib geom.lib gfx.lib bmm.lib maxutil.lib mesh.lib paramblk2.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /base:"0x08BB0000" /dll /incremental:yes /pdb:"Release/a3d-exp.pdb" /machine:I386 /def:".\Plugin.def" /out:".\Release\a3d-exp.dle" /implib:"Release/a3d-exp.lib" /libpath:"..\..\..\..\lib" /release 
+.\Release\ANI_rottrack2.obj
+.\Release\Biped.obj
+.\Release\Bones.obj
+.\Release\Camera.obj
+.\Release\exp_ANI.obj
+.\Release\Geometric_Objects.obj
+.\Release\Helpers.obj
+.\Release\Keyframer.obj
+.\Release\Lights.obj
+.\Release\Maps.obj
+.\Release\Materials.obj
+.\Release\Materials_Tracks.obj
+.\Release\Mesh.obj
+.\Release\OSMs.obj
+.\Release\Particles_Systems.obj
+.\Release\Patches.obj
+.\Release\Solid_Objects.obj
+.\Release\WSMs.obj
+.\Release\ConfigMgr.obj
+.\Release\DoExport.obj
+.\Release\Plugin.obj
+.\Release\SceneExport.obj
+.\Release\Utility.obj
+.\Release\ray_objects.obj
+.\Release\SceneExport.res
+]
+Creating command line "link.exe @C:\DOCUME~1\matteo\LOCALS~1\Temp\RSP45.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ANI_rottrack2.cpp
+Biped.cpp
+Bones.cpp
+Camera.cpp
+exp_ANI.cpp
+Geometric_Objects.cpp
+Helpers.cpp
+Keyframer.cpp
+Lights.cpp
+Maps.cpp
+Materials.cpp
+Materials_Tracks.cpp
+Mesh.cpp
+OSMs.cpp
+Particles_Systems.cpp
+Patches.cpp
+Solid_Objects.cpp
+WSMs.cpp
+ConfigMgr.cpp
+DoExport.cpp
+Plugin.cpp
+SceneExport.cpp
+Utility.cpp
+ray_objects.cpp
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /RELEASE specification
+   Creating library Release/a3d-exp.lib and object Release/a3d-exp.exp
+
+
+
+<h3>Results</h3>
+a3d-exp.dle - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

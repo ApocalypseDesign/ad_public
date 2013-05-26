@@ -1,0 +1,327 @@
+#include "SceneExport.h"
+#include "A3Dfile.h"
+#include "bipexp.h"
+#include "UtilFunc.h"
+
+
+void SkeletonExporter::export_bipedbone(INode *node)
+{
+  int sz, type;
+  INode *padre=node->GetParentNode();
+  ObjectState os = node->EvalWorldState(0);
+
+  type=BONE_HELPER;
+  sz=strlen(padre->GetName())+1;
+  write_chunk_header(fA3D, HELPER_OBJECT_ID,
+	                 node->GetName(), 4+sz+12+12);
+  fprintf(fTXT, "Nome padre : %s\n", padre->GetName());
+  fwrite(&type, sizeof(int), 1, fA3D);
+  write_string0(fA3D, padre->GetName());
+
+  Matrix3 mat = node->GetNodeTM(0);
+  Point3 row;
+
+  // posizione nel mondo
+  row = mat.GetRow(3);
+  fprintf(fTXT, "World position : %f,  %f,  %f\n", row.x, row.y, row.z);
+  fwrite(&row.x, sizeof(float), 1, fA3D);
+  fwrite(&row.y, sizeof(float), 1, fA3D);
+  fwrite(&row.z, sizeof(float), 1, fA3D);
+
+  // punto di pivot
+  GetPivotOffset(node, &row);
+  fprintf(fTXT, "Pivot : %f,  %f,  %f\n", row.x, row.y, row.z);
+  fwrite(&row.x, sizeof(float), 1, fA3D);
+  fwrite(&row.y, sizeof(float), 1, fA3D);
+  fwrite(&row.z, sizeof(float), 1, fA3D);
+
+  Control *cc=node->GetTMController();
+  if ((cc->ClassID() == BIPSLAVE_CONTROL_CLASS_ID) ||
+      (cc->ClassID() == BIPBODY_CONTROL_CLASS_ID) ||
+      (cc->ClassID() == FOOTPRINT_CLASS_ID))
+       export_bipedtracks(node);
+
+  fprintf(fTXT, "\n\n");
+}
+
+
+void SkeletonExporter::export_bipedtracks(INode *node)
+{
+// Il metodo usato è quello di ricavarsi il tempo nella timeline
+// di ciascuna key (visto che il controller non permette di
+// avere direttamente le key; una volta ottenuto il tempo della
+// key estraggo la NodeTM relativa e da questa decompongo
+// le parti affini
+  Matrix3 m, mf, m_af;
+  Point3 row, qaxis;
+  AffineParts parts;
+  TimeValue tv, tv2;
+  int size_key, num_keys, keytime;
+  unsigned char type;
+  float qang;
+  BOOL cic;
+  INode *p=node->GetParentNode();
+  Control *c = node->GetTMController();
+  ObjectState os = node->EvalWorldState(0);
+
+  m=node->GetNodeTM(0);
+  fprintf(fTXT, "GetNodeTM(0)\n");
+  row = m.GetRow(0);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m.GetRow(1);
+  fprintf(fTXT, "Row1 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m.GetRow(2);
+  fprintf(fTXT, "Row2 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m.GetRow(3);
+  fprintf(fTXT, "Row3 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  fflush(fTXT);
+
+  // Get the Biped Export Interface from the controller 
+  IBipedExport *BipIface = (IBipedExport *) c->GetInterface(I_BIPINTERFACE);
+ 
+  // Remove the non uniform scale
+  BipIface->RemoveNonUniformScale(1);
+
+  m=node->GetNodeTM(0);
+  fprintf(fTXT, "GetNodeTM(0) senza lo scaling non uniforme\n");
+  row = m.GetRow(0);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m.GetRow(1);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m.GetRow(2);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  fflush(fTXT);
+
+
+  // Esportiamo comunque una key in posizione 0
+  m=node->GetNodeTM(0);
+  mf=p->GetNodeTM(0);
+  m_af=m*Inverse(mf);
+  fprintf(fTXT, "Relative matrix\n");
+  row = m_af.GetRow(0);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m_af.GetRow(1);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m_af.GetRow(2);
+  fprintf(fTXT, "Row0 : %f,  %f,  %f\n", row.x, row.y, row.z);
+  row = m_af.GetRow(3);
+  fprintf(fTXT, "Row3 : %f,  %f,  %f\n", row.x, row.y, row.z);
+
+  
+  // ***********    KEYFRAME    *****************
+  //
+  // Conto il numero di key
+  // Almeno una key: key in posizione 0
+  num_keys=1; 
+  tv=0;
+  cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  while ((cic) && (tv2>tv))
+  {
+	num_keys++;
+	tv=tv2;
+    cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  }
+  fprintf(fTXT, "Key counting: %d\n", num_keys);
+
+  // Come tipo di controller uso le LINEAR sia per posizione
+  // rotazione e scaling
+  type=LINEAR_CONTROLLER;
+
+  // ---------------------------------------------------------
+  // ########################  POSIZIONE  ####################
+  // ---------------------------------------------------------
+  fprintf(fTXT, "Biped position track present.\n");
+  size_key=16;
+  write_chunk_header(fA3D, POSITION_TRACK_ID,
+	                    node->GetName(), 1+4+num_keys*size_key);
+  fwrite(&type, sizeof(unsigned char), 1, fA3D);
+  fwrite(&num_keys, sizeof(int), 1, fA3D);
+  
+  // Scrittura key 0
+  keytime=0;
+  m=node->GetNodeTM(0);
+  if(IsNodeBone(node->GetParentNode()))
+  {
+	mf = GetBoneTM(node->GetParentNode(), 0);
+	m = m * Inverse(mf);
+  }
+//  mf=p->GetNodeTM(0);
+//  m_af=m*Inverse(mf);
+//  FixCoordSys(m_af);
+
+  row = m.GetTrans();
+  fwrite(&keytime, sizeof(int), 1, fA3D);
+  fwrite(&row.x, sizeof(float), 1, fA3D);
+  fwrite(&row.y, sizeof(float), 1, fA3D);
+  fwrite(&row.z, sizeof(float), 1, fA3D);
+  fprintf(fTXT, "timepos : %d,  value %f, %f, %f\n",
+	      keytime, row.x, row.y, row.z);
+
+  tv=0;
+  cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  while ((cic) && (tv2>tv))
+  {
+    m=node->GetNodeTM(tv2);
+    if(IsNodeBone(node->GetParentNode()))
+	{
+	  mf = GetBoneTM(node->GetParentNode(), tv2);
+	  m = m * Inverse(mf);
+	}
+//    mf=p->GetNodeTM(tv2);
+//    m_af=m*Inverse(mf);
+//    FixCoordSys(m_af);
+    row = m.GetTrans();
+	keytime=tv2/GetTicksPerFrame();
+    fwrite(&keytime, sizeof(int), 1, fA3D);
+    fwrite(&row.x, sizeof(float), 1, fA3D);
+    fwrite(&row.y, sizeof(float), 1, fA3D);
+    fwrite(&row.z, sizeof(float), 1, fA3D);
+    fprintf(fTXT, "timepos : %d,  value %f, %f, %f\n",
+            keytime, row.x, row.y, row.z);
+
+	tv=tv2;
+    cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  }
+
+  // ---------------------------------------------------------
+  // ######################  ROTAZIONE  ######################
+  // ---------------------------------------------------------
+  fprintf(fTXT, "Biped rotation track present.\n");
+  size_key=20;
+  write_chunk_header(fA3D, ROTATION_TRACK_ID,
+	                    node->GetName(), 1+4+num_keys*size_key);
+  fwrite(&type, sizeof(unsigned char), 1, fA3D);
+  fwrite(&num_keys, sizeof(int), 1, fA3D);
+  
+  // Scrittura key 0
+  keytime=0;
+  m=node->GetNodeTM(0);
+  if(IsNodeBone(node->GetParentNode()))
+  {
+	mf = GetBoneTM(node->GetParentNode(), 0);
+	m = m * Inverse(mf);
+  }
+//  mf=p->GetNodeTM(0);
+//  m_af=m*Inverse(mf);
+//  FixCoordSys(m_af);
+
+  decomp_affine(m, &parts);
+  AngAxisFromQ(parts.q, &qang, qaxis);
+
+  Quat quat;
+/*
+  Point3 euler;
+  QuatToEuler(quat, &euler.x);
+  EulerToQuat(euler, quat);
+*/
+  quat.x=qaxis.x;
+  quat.y=qaxis.y;
+  quat.z=qaxis.z;
+  quat.w=qang;
+
+  fprintf(fTXT, "timepos : %d,  value %f, %f, %f,  %f\n",
+	      keytime, quat.x, quat.y, quat.z, quat.w);
+
+  fwrite(&keytime, sizeof(int), 1, fA3D);  // timepos=0
+  fwrite(&quat.x, sizeof(float), 1, fA3D);
+  fwrite(&quat.y, sizeof(float), 1, fA3D);
+  fwrite(&quat.z, sizeof(float), 1, fA3D);
+  fwrite(&quat.w, sizeof(float), 1, fA3D);
+
+  tv=0;
+  cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  while ((cic) && (tv2>tv))
+  {
+    m=node->GetNodeTM(tv2);
+    if(IsNodeBone(node->GetParentNode()))
+    {
+	  mf = GetBoneTM(node->GetParentNode(), tv2);
+	  m = m * Inverse(mf);
+	}
+//    mf=p->GetNodeTM(tv2);
+//    m_af=m*Inverse(mf);
+//    FixCoordSys(m_af);
+
+    decomp_affine(m, &parts);
+    AngAxisFromQ(parts.q, &qang, qaxis);
+    quat.x=qaxis.x;
+    quat.y=qaxis.y;
+    quat.z=qaxis.z;
+    quat.w=qang;
+
+	keytime=tv2/GetTicksPerFrame();
+    fprintf(fTXT, "timepos : %d,  value %f, %f, %f,  %f\n",
+	      keytime, quat.x, quat.y, quat.z, quat.w);
+    fwrite(&keytime, sizeof(int), 1, fA3D);  // timepos=0
+    fwrite(&quat.x, sizeof(float), 1, fA3D);
+    fwrite(&quat.y, sizeof(float), 1, fA3D);
+    fwrite(&quat.z, sizeof(float), 1, fA3D);
+    fwrite(&quat.w, sizeof(float), 1, fA3D);
+
+	tv=tv2;
+    cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  }
+
+
+  // ---------------------------------------------------------  
+  // ########################  SCALING  ######################
+  // ---------------------------------------------------------
+  fprintf(fTXT, "Biped scaling track present.\n");
+  size_key=16;
+  write_chunk_header(fA3D, SCALE_TRACK_ID,
+	                    node->GetName(), 1+4+num_keys*size_key);
+  fwrite(&type, sizeof(unsigned char), 1, fA3D);
+  fwrite(&num_keys, sizeof(int), 1, fA3D);
+  
+  // Scrittura key 0
+  keytime=0;
+  m=node->GetNodeTM(0);
+  if(IsNodeBone(node->GetParentNode()))
+  {
+	mf = GetBoneTM(node->GetParentNode(), 0);
+	m = m * Inverse(mf);
+  }
+//  mf=p->GetNodeTM(0);
+//  m_af=m*Inverse(mf);
+//  FixCoordSys(m_af);
+  decomp_affine(m, &parts);
+  row=parts.k;
+  fwrite(&keytime, sizeof(int), 1, fA3D);
+  fwrite(&row.x, sizeof(float), 1, fA3D);
+  fwrite(&row.y, sizeof(float), 1, fA3D);
+  fwrite(&row.z, sizeof(float), 1, fA3D);
+  fprintf(fTXT, "timepos : %d,  value %f, %f, %f\n",
+	      keytime, row.x, row.y, row.z);
+
+  tv=0;
+  cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  while ((cic) && (tv2>tv))
+  {
+    m=node->GetNodeTM(tv2);
+    if(IsNodeBone(node->GetParentNode()))
+	{
+	  mf = GetBoneTM(node->GetParentNode(), tv2);
+	  m = m * Inverse(mf);
+	}
+//    mf=p->GetNodeTM(tv2);
+//    m_af=m*Inverse(mf);
+//    FixCoordSys(m_af);
+    decomp_affine(m, &parts);
+    row=parts.k;
+	keytime=tv2/GetTicksPerFrame();
+    fwrite(&keytime, sizeof(int), 1, fA3D);
+    fwrite(&row.x, sizeof(float), 1, fA3D);
+    fwrite(&row.y, sizeof(float), 1, fA3D);
+    fwrite(&row.z, sizeof(float), 1, fA3D);
+    fprintf(fTXT, "timepos : %d,  value %f, %f, %f\n",
+            keytime, row.x, row.y, row.z);
+
+	tv=tv2;
+    cic=c->GetNextKeyTime(tv, NEXTKEY_RIGHT, tv2);
+  }
+
+
+  // Release the interface when you are done with it
+  BipIface->RemoveNonUniformScale(0);
+  c->ReleaseInterface(I_BIPINTERFACE, BipIface);
+}
