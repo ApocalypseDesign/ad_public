@@ -1,0 +1,1078 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\froman\fcharset0 Times New Roman;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green0\blue0;}
+\viewkind4\uc1\pard\lang1040\ul\b\f0\fs28 Apocalypse Design\ulnone  presents you : A3D file format\par
+\fs24 Official Version 2.1\par
+Internal Version 2.15\par
+Data: 09/04/2002\par
+\b0\f1\fs20\par
+\par
+Formato di un Chunk\par
+\{\par
+    UINT4  ID;\par
+    PCHAR name_owner;\par
+    UINT4 size;\par
+    BYTE *dati;\par
+\}\par
+\par
+Il campo size indica la lunghezza in byte del chunk escluso ID e name/owner.\par
+\par
+Il campo name/owner indica il nome dell'entita' a cui il chunk si riferisce, ovvero per chunk quali\par
+TRI_MESH_ID / PATCH_MESH_ID / CAMERA_ID / OMNI_LIGHT_ID / HELPER_ID il campo\par
+conterra' il nome dell'oggetto, per i chunk di traccia il campo conterra' il nome del possessore di\par
+quella traccia. Il campo name_owner e' una stringa ASCII0 (ovvero viene scritto anche il \\0 nel file)\par
+\par
+Come si nota la gestione dei chaunk non 'e gerarchica in senso stretto, in quanto ogni chuck definisce\par
+solo certi dati e non ha riferimenti a sottochunk, ovvero su file si puo' trovare una cosa cosi' (riferita a\par
+quanto detto sopra)\par
+\par
+TRI_MESH_ID    (ID)\par
+"Oggetto1"            (name/owner)\par
+24                          (size)\par
+10.45                     (posizione.x, 4 byte)\par
+20.4                       (posizione.y, 4 byte)\par
+-100.2                   (posizione.z, 4 byte)\par
+"material #1"        (nome materiale di riferimento, in questo caso 12 byte)\par
+\par
+\par
+VERTEX_LIST_ID\par
+"Oggetto1"\par
+40                          (4+3*12)\par
+3                            (numero di vertici geometrici, intero a 4 byte)\par
+0.1                         (coordinata.x,  primo vertice)\par
+30.2                       (coordinata.y  primo vertice)\par
+-2.3                        (coordinata.z  primo vertice)\par
+0.1                         (coordinata.x,  secondo vertice)\par
+30.2                       (coordinata.y  secondo vertice)\par
+-2.3                        (coordinata.z  secondo vertice)\par
+0.1                         (coordinata.x,  terzo vertice)\par
+30.2                       (coordinata.y  terzo vertice)\par
+-2.3                        (coordinata.z  terzo vertice)\par
+\par
+\par
+TRIANGLES_LIST_ID\par
+"Oggetto1"\par
+16                         \par
+1                           (numero di triangoli, intero a 4 byte)\par
+0                           (numero vertice 1 del triangolo, intero a 4 byte)\par
+1                           (numero vertice 2 del triangolo, intero a 4 byte)\par
+2                           (numero vertice 3 del triangolo, intero a 4 byte)\par
+\par
+\par
+Penso sia molto estendibile, ad esempio si puo' aggiungere tutto quello che si vuole in fondo al file, ad \par
+esempio un traccia di colore per una luce, tanto poi il campo owner ci dira' a chi riferirsi.\par
+Il campo size ci vuole cosi' se un lettore non riconsoce un certo tipo di chunk puo' saltarlo.\par
+\par
+\par
+\par
+\b\fs32 |-------------------------------------------------------|\par
+|  DEFINIZIONE DEI SINGOLI CHUNK    |\par
+|-------------------------------------------------------|\b0\fs20\par
+\par
+\b Chunk delle informazioni generali della scena\par
+\b0 ---------------------------------------------------------------\par
+ID = SCENE_GENERAL_INFO_ID\par
+name_owner = "Scene Root"\par
+size=36\par
+\par
+Dati\par
+  \ul first frame\ulnone : intero a 32 bit\par
+  \ul last frame\ulnone : intero a 32 bit\par
+  \ul frame speed\ulnone : intero a 32 bit\par
+  \ul bbox min\ulnone : vettore (x, y, z) di float che indica il punto minimo della bounding box contenente TUTTA la scena\par
+  \ul bbox max\ulnone : vettore (x, y, z) di float che indica il punto massimo della bounding box contenente TUTTA la scena\par
+\par
+\par
+\b Chunk lista di materiali\par
+\b0 ----------------------------------\par
+ID = MATERIAL_LIST_ID\par
+name_owner = "Scene Root"\par
+size=variabile\par
+\par
+Dati\par
+  seguono in sequenza un numero variabile di coppie del tipo\par
+     \ul id globale del materiale\ulnone  = intero a 2 byte\par
+     \ul nome del materiale\ulnone  = stringa ASCII0\par
+\par
+Per sapere quando la lista di coppie finisce basta verificare l'occorrenza del primo id che risulta minore\par
+di zero. Cio' significa che non seguira' il nome per quell'id negativo e che la lista e' finita.\par
+\par
+\par
+\b NB: le lunghezze dei nomi comprendono anche il  '\\0' di fine stringa !!!\par
+\b0\par
+\par
+\b Chunk di un generico oggetto geometrico\par
+\b0 ---------------------------------------------------------\par
+Descrizione : indica la presenza di un oggetto geometrico\par
+ID = TRI_GEOMETRICOBJECT_ID\par
+name_owner = nome oggetto\par
+size=variabile\par
+\par
+Dati\par
+  \ul tipo di oggetto, intero a 4 byte \ulnone :  0=DUMMY,  1=POINT,  2=BoxGizmo,  3=SphereGizmo,  4=SOLIDO,  5=BONE,  6=(unknown)\par
+  \ul is a children\ulnone  = int che se diverso da zero indica che e' figlio di un altro oggetto di cui seguira'  il nome\par
+  \ul name_father\ulnone  = nome dell'oggetto padre (ci sara' se il campo prima sara' diverso da zero)\par
+  \ul there_is_material\ulnone  = int che se settato a 0 indica che non seguira' il nome del materiale\par
+  \ul material reference name\ulnone  = stringa ASCII0 di caratteri che identifica il materiale di base; la stringa\par
+                                                e' presente solo se il campo precedente e' non zero. Se il materiale e' \par
+                                                presente, tutti i triangoli avranno questo materiale, a meno di specifiche\par
+                                                diverse incluse nel chunk  TRI_MESH_TEXTURE_FACES_LIST_ID\par
+  \ul pivot\ulnone  : 3 float (x, y, z)\par
+  \ul matrice di trasformazione in worldspace (al tempo t=0)\ulnone : vengono scritte in successione le 4 righe (ognuna di 3 float)\par
+                                                                                                   \b NB\b0 : la quarta riga contiene la world position\par
+  \ul bbox min\ulnone : vettore (x, y, z) di float che indica il punto minimo della AABB (in object space) contente il solo oggetto\par
+  \ul bbox max\ulnone : vettore (x, y, z) di float che indica il punto massimo della AABB (in object space) contente il solo oggetto\par
+  \ul has a mesh\ulnone : int che se diverso da zero indica che l'oggetto possiede una mesh di cui seguira' il nome\par
+  \ul mesh_name\ulnone : stringa ASCIIZ del nome della mesh \cf1 (viene garantito che i dati che descrivono la mesh sono presenti nel file prima \par
+                         di questo chunk)\cf0\par
+\par
+\par
+\b Lista di vertici geometrici di una mesh triangolare\par
+\b0 ---------------------------------------------------------------------\par
+Descrizione : lista di vertici geometrici di una mesh triangolare\par
+ID = TRI_MESH_VERTEX_LIST_ID\par
+name_owner = nome della mesh\par
+size=4+numeri_di_vertici*12\par
+\par
+Dati\par
+  \ul numero di vertici\ulnone  : intero a 4 byte\par
+  tripla di float (x, y, z) a 4 byte per ciascun vertice; le coordinate sono nello spazio "oggetto"\par
+\par
+\par
+\b\par
+Lista di triangoli geometrici  di una mesh triangolare\par
+\b0 -----------------------------------------------------------------------\par
+Descrizione : lista dei triangoli di una mesh triangolare\par
+ID = TRI_MESH_FACES_LIST_ID\par
+name_owner = nome della mesh\par
+size=variabile\par
+\par
+Dati\par
+  \ul numero di triangoli\ulnone  : intero a 4 byte\par
+  \ul numero di byte per ogni indice\ulnone : intero a 4 byte che puo' valere o 8 o 16 o 32\par
+  \ul triple di (byte/short/interi):\ulnone  ogni tripla indica l'indice (0-based) di un vertice geometrico\par
+  \ul gruppo di smoothing\ulnone : intero a 32 bit (ogni bit e' a 1 se il triangolo appartiene a quel gruppo di smoothing)\par
+\par
+\cf1 vale la relazione \ul numero di vertici(geometrici) \ulnone  <=  2^(\ul numero di byte per ogni indice)\ulnone\par
+\cf0\par
+\par
+\b Lista di vertici texture di una mesh triangolare\par
+\b0 ---------------------------------------------------------------\par
+Descrizione : lista di vertici che associano coordinate texture\par
+ID = TRI_MESH_TEXTURE_VERTEX_LIST_ID\par
+name_owner = nome della mesh\par
+size=4+4+numero_vertici*8\par
+\par
+Dati\par
+  \ul canale di mapping\ulnone : intero a 32bit che indica a quale canale di mapping si riferiscono le coordinate uv (parte da 1)\par
+  \ul numero di vertici-texture\ulnone  : intero a 4 byte\par
+  \ul coppie di float\ulnone  (u, v) a 4 byte; ogni coppia indica la coordinata texture\par
+  NB: le coordinate texture sono normalizzate in [0;1]\par
+\par
+\par
+\par
+\b Lista di facce texturizzate di una mesh triangolare\par
+\b0 --------------------------------------------------------------------\par
+Descrizione : lista di facce (triangoli texturizzati)\par
+ID = TRI_MESH_TEXTURE_FACES_LIST_ID\par
+name_owner = nome della mesh\par
+size=variabile\par
+\par
+Dati\par
+  \ul canale di mapping\ulnone : intero a 32bit che indica a quale canale di mapping si riferiscono gli indici (ta, tb, tc)\par
+  \ul numero di facce texturizzate\ulnone  : intero a 4 byte\par
+  \ul numero di byte per ogni indice\ulnone : intero a 4 byte che puo' valere o 8 o 16 o 32\par
+  per ogni faccia seguono\par
+     \ul triple di (byte/short/interi)  (ta, tb, tc):\ulnone  ogni tripla indica gli indici (0-based) dentro l'array di vertici-texture\par
+     \ul id globale del materiale\ulnone  a cui la faccia fa riferimento, intero a 2 byte\par
+\par
+\cf1 vale la relazione \ul numero di vertici-texture\ulnone   <=  2^(\ul numero di byte per ogni indice)\ulnone\par
+\cf0\par
+\par
+\par
+\b Telecamera targeted\par
+\b0 ----------------------------\par
+Descrizione: telecamera di tipo target\par
+ID = TARGETED_CAMERA_ID\par
+name_owner = nome della telecamera\par
+size = 4+4+4+4+12+12=40\par
+\par
+Dati\par
+  \ul Znear\ulnone , float\par
+  \ul Zfar\ulnone , float\par
+  \ul FOV\ulnone , float : angolo di FOV in radianti\par
+  \ul Roll\ulnone , float : angolo di roll in radianti\par
+  \ul Posizione, tripla (x, y, z) di float\ulnone : coordinate nello spazio mondo della posizione\par
+  \ul Target, tripla (x, y, z) di float\ulnone  : coordinate nello spazio mondo del target\par
+\par
+\par
+\b\par
+Luce di tipo omnidirezionale\par
+\b0 --------------------------------------\par
+Descrizione: luce omni\par
+ID = OMNI_LIGHT_ID\par
+name_owner = nome della luce\par
+size = variabile\par
+\par
+Dati\par
+  \ul is a children\ulnone  = int che se diverso da zero indica che e' figlio di un altro oggetto di cui seguira'  il nome\par
+  \ul name_father\ulnone  = nome dell'oggetto padre (ci sara' se il campo prima sara' diverso da zero)\par
+  \ul pivot\ulnone  : 3 float (x, y, z)\par
+  \ul matrice di trasformazione in worldspace\ulnone : vengono scritte in successione le 4 righe (ognuna di 3 float)\par
+                                                                          NB: la quarta riga contiene la world position\par
+  \ul Colore, tripla (r, g, b) di float\ulnone  : colore della luce, ogni componente sta nel range [0;1]\par
+\par
+\b\par
+\par
+Luce di tipo spot\par
+\b0 ----------------------\par
+Descrizione: luce omni\par
+ID = SPOT_LIGHT_ID\par
+name_owner = nome della luce\par
+size = variabile\par
+\par
+Dati\par
+  \ul is a children\ulnone  = int che se diverso da zero indica che e' figlio di un altro oggetto di cui seguira'  il nome\par
+  \ul name_father\ulnone  = nome dell'oggetto padre (ci sara' se il campo prima sara' diverso da zero)\par
+  \ul pivot\ulnone  : 3 float (x, y, z)\par
+  \ul matrice di trasformazione in worldspace\ulnone : vengono scritte in successione le 4 righe (ognuna di 3 float)\par
+                                                                          NB: la quarta riga contiene la world position\par
+  \ul Colore, tripla (r, g, b) di float\ulnone  : colore della luce, ogni componente sta nel range [0;1]\par
+  \ul falloff\ulnone : float, angolo in radianti\par
+  \ul hotspot\ulnone : float, angolo in radianti\par
+\b\par
+\par
+\par
+Particle system\par
+\b0 ----------------------\par
+Descrizione: sistema particellare spary\par
+ID = SPRAY_PARTICLE_SYSTEM_ID\par
+name_owner = nome del sistema particellare\par
+size = variabile\par
+\par
+Dati\par
+  \ul is a children\ulnone  = int che se diverso da zero indica che e' figlio di un altro oggetto di cui seguira'  il nome\par
+  \ul name_father\ulnone  = nome dell'oggetto padre (ci sara' se il campo prima sara' diverso da zero)\par
+  \ul there_is_material\ulnone  = int che se settato a 0 indica che non seguira' il nome del materiale\par
+  \ul material reference name\ulnone  = stringa ASCII0 di caratteri che identifica il materiale di base; la stringa\par
+                                                e' presente solo se il campo precedente e' non zero.\par
+  \ul pivot\ulnone  : 3 float (x, y, z)\par
+  \ul matrice di trasformazione in worldspace (al tempo t=0)\ulnone : vengono scritte in successione le 4 righe (ognuna di 3 float)\par
+                                                                                                   \b NB\b0 : la quarta riga contiene la world position\par
+  \ul has an object\ulnone : int che se diverso da zero indica che il sistema particellare usera un oggetto geometrico per le particelle\par
+  \ul object_name\ulnone : stringa ASCIIZ del nome della mesh \cf1 (viene garantito che i dati che descrivono l'oggetto sono presenti nel file prima \par
+                         di questo chunk)\cf0\par
+  \ul emitter width\ulnone  = float, larghezza della sorgente\par
+  \ul emitter height\ulnone  = float, altezza della sorgente\par
+  \ul emitter speed (init vel)\ulnone  = float, velocita' iniziale dei particle generati\par
+  \ul emitter variation\ulnone  = float, variazione di spostamento\par
+  \ul life\ulnone  = int, vita dei particle espressa in numero di frame\par
+  \ul start time\ulnone  = int, tempo nella frameline di inizio genereazione particle\par
+  \ul stop time\ulnone  = int, tempo nella frameline di fine genereazione particle\par
+  \ul max particles\ulnone  = int, numero massimo di particle che possono essere "vivi" contemporanemente\par
+  \ul number_modifier\ulnone  = int, indica il numero di particle system modifier associati (i nomi seguono dopo)\par
+  \ul names of modifiers\ulnone  = nome dei modificatori associati a questo particle system, sono number_modifier   \par
+                                        stringhe ASCII0\par
+\b\par
+\fs24\par
+\fs20 Wind Modifier\par
+\b0 --------------------\par
+Descrizione: modificatore vento\par
+ID = WIND_MODIFIER_ID\par
+name_owner = nome del modificatore\par
+size = 4+nome_padre+12+48+6*4\par
+\par
+Dati\par
+  \ul is a children\ulnone  = int che se diverso da zero indica che e' figlio di un altro oggetto di cui seguira'  il nome\par
+  \ul name_father\ulnone  = nome dell'oggetto padre (se il campo prima e' diverso da zero)\par
+  \ul pivot\ulnone  : 3 float (x, y, z)\par
+  \ul matrice di trasformazione in worldspace (al tempo t=0)\ulnone : vengono scritte in successione le 4 righe (ognuna di 3 float)\par
+                                                                                                   \b NB\b0 : la quarta riga contiene la world position\par
+  \ul strenght\ulnone  = float\par
+  \ul decay\ulnone  = float\par
+  \ul plan_spher\ulnone  = int\par
+  \ul turbolence\ulnone  = float\par
+  \ul frequency\ulnone  = float\par
+  \ul scale\ulnone  = float\par
+\b\par
+\par
+Gravity Modifier\par
+\b0 -----------------------\par
+Descrizione: modificatore gravit\'e0\par
+ID = GRAVITY_MODIFIER_ID\par
+name_owner = nome del modificatore\par
+size = 4+nome_padre+12+48+3*4\par
+\par
+Dati\par
+  \ul is a children\ulnone  = int che se diverso da zero indica che e' figlio di un altro oggetto di cui seguira'  il nome\par
+  \ul name_father\ulnone  = nome dell'oggetto padre (se il campo prima e' diverso da zero)\par
+  \ul pivot\ulnone  : 3 float (x, y, z)\par
+  \ul matrice di trasformazione in worldspace (al tempo t=0)\ulnone : vengono scritte in successione le 4 righe (ognuna di 3 float)\par
+                                                                                                   \b NB\b0 : la quarta riga contiene la world position\par
+  \ul strenght\ulnone  = float\par
+  \ul decay\ulnone  = float\par
+  \ul plan_spher\ulnone  = int\par
+\b\fs24\par
+\par
+\fs20 Twist  Modifier (OSM)\par
+\b0 -------------------------------\par
+Descrizione: modificatore twist\par
+ID = TWIST_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 4+4+4+4+4+4+3*4+1=37\par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Angle\ulnone : float, in gradi\par
+  \ul Bias\ulnone : float, in gradi\par
+  \ul Asse\ulnone : int,  0=X,    1=Y,    2=Z\par
+  \ul Upper limit\ulnone : float\par
+  \ul Lower limit\ulnone : float\par
+  \ul use_limits\ulnone : int, se =0 allora i limiti non vengono usati, se >0 i limiti vengono usati\b\par
+\b0   \ul Posizione nello spazio oggetto\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\par
+\b\par
+Ripple  Modifier (OSM)\par
+\b0 --------------------------------\par
+Descrizione: modificatore ripple\par
+ID = RIPPLE_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 4+4+4+4+4+3*4+1 = 33\par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Amplitude1\ulnone : float\par
+\b   \ul\b0 Amplitude2\ulnone : float\par
+  \ul Wavelenght\ulnone : float\par
+  \ul Phase\ulnone : float\par
+  \ul Decay\ulnone : float\par
+  \ul Posizione nello spazio oggetto\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\par
+\b\fs24\par
+\fs20 Bend  Modifier (OSM)\par
+\b0 -------------------------------\par
+Descrizione: modificatore bend\par
+ID = BEND_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 4+4+4+4+4+4+3*4+1=37\par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Angle\ulnone : float, in gradi\par
+  \ul Direction\ulnone : float, in gradi\par
+  \ul Asse\ulnone : int,  0=X,    1=Y,    2=Z\par
+  \ul Upper limit\ulnone : float\par
+  \ul Lower limit\ulnone : float\par
+  \ul use_limits\ulnone : int, se =0 allora i limiti non vengono usati, se >0 i limiti vengono usati\b\par
+\b0   \ul Posizione nello spazio oggetto\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\b\fs24\par
+\fs20\par
+Melt  Modifier (OSM)\par
+\b0 ------------------------------\par
+Descrizione: modificatore melt\par
+ID = MELT_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 4+4+4+4+4+4+4+3*4+1 = 41\par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Amount\ulnone : float\par
+  \ul Spread\ulnone : float\par
+  \ul Solidity\ulnone : float\par
+  \ul Asse\ulnone : int,  0=Z,    1=Y,    2=X\par
+  \ul NegAsse\ulnone : int,  0=non negare,    1=negare\par
+  \ul Confine\ulnone : int\par
+  \ul Zbr\ulnone : float\par
+  \ul Posizione nello spazio oggetto\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\b\fs24\par
+\par
+\fs20 Stretch  Modifier (OSM)\par
+\b0 ---------------------------------\par
+Descrizione: modificatore bend\par
+ID = STRETCH_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 4+4+4+4+4+4+3*4+1=37\par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Stretch\ulnone : float\par
+  \ul Amplify\ulnone : float\par
+  \ul Asse\ulnone : int,  0=X,    1=Y,    2=Z\par
+  \ul Upper limit\ulnone : float\par
+  \ul Lower limit\ulnone : float\par
+  \ul use_limits\ulnone : int, se =0 allora i limiti non vengono usati, se >0 i limiti vengono usati\b\par
+\b0   \ul Posizione nello spazio oggetto\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\b\fs24\par
+\par
+\fs20 Taper  Modifier (OSM)\par
+\b0 -------------------------------\par
+Descrizione: modificatore taper\par
+ID = TAPER_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 45\par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Amount\ulnone : float\par
+  \ul Curve\ulnone : float\par
+  \ul Asse\ulnone : int,  0=X,    1=Y,    2=Z\par
+  \ul EffectAsse\ulnone : int,  0=X,    1=Y,    2=XY\par
+  \ul Symmetry\ulnone : int,  se =0 allora la simmetria non viene usata, se >0 viene usata la simmetria\b\par
+\b0   \ul Upper limit\ulnone : float\par
+  \ul Lower limit\ulnone : float\par
+  \ul use_limits\ulnone : int, se =0 allora i limiti non vengono usati, se >0 i limiti vengono usati\b\par
+\b0   \ul Posizione nello spazio oggetto\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\b\fs24\par
+\par
+\fs20 FFD (Free Form Deformation)  Modifier (OSM)\par
+\b0 ----------------------------------------------------------------\par
+Descrizione: modificatore FFD\par
+ID = FFD_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = \par
+\b\par
+\b0 Dati\par
+\b   \ul\b0 Dimensione1\ulnone : int\par
+\b   \ul\b0 Dimensione2\ulnone : int\par
+\b   \ul\b0 Dimensione3\ulnone : int\par
+  \ul Deformation type\ulnone : int, 0=deforma solo i punti nel volume, 1=deforma tutti i punti\par
+  \ul Numero di control points\ulnone : int, per ogni control point segue\par
+        \ul posizione\ulnone : tripletta di float (x, y, z)\par
+  \ul Posizione del lattice\ulnone : tripletta (x,y,z) di float\par
+  \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\b\fs24\par
+\par
+\fs20 Noise Modifier (OSM)\par
+\b0 -------------------------------\par
+Descrizione: modificatore noise\par
+ID = NOISE_MODIFIER_ID\par
+name_owner = nome dell'oggetto a cui questo OSM e' applicato\par
+size = 45\par
+\b\par
+\b0 Dati\par
+  \ul seed:\ulnone  int, seme iniziale\ul\par
+\ulnone   \ul scale:\ulnone  float\ul\par
+\ulnone   \ul fractal:\ulnone  int\ul\par
+\ulnone   \ul rough:\ulnone  float\ul\par
+\ulnone   \ul iterations:\ulnone  float\ul\par
+\ulnone   \ul animate:\ulnone  int\ul\par
+\ulnone   \ul frequency:\ulnone  float\ul\par
+\ulnone   \ul phase:\ulnone  int\ul\par
+\ulnone   \ul strength:\ulnone  3 float\ul\par
+\ulnone   \ul numero_d'ordine_di_applicazione\ulnone : char, indica qual e' nella sequenza dei OSM da applicare\par
+\b\fs24\par
+\par
+####################################################################\par
+############################    KEYFRAMER   ########################\par
+####################################################################\par
+\par
+\fs20 Animazione visibilit\'e0 di un oggetto (NB: puo essere anche un helper o una patchmesh o un \par
+particle system o un world space modifier o una telecamera o una luce !!!)\par
+\b0 ------------------------------------------------------------------------------------------------------------\par
+ID = HIDING_TRACK_ID\par
+name_owner = nome dell'oggetto\par
+size=1+2+4+numero_di_key*4\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+\b\fs24\par
+\par
+\fs20 Animazione posizione di un oggetto (NB: puo essere anche un helper o una patchmesh o un \par
+particle system o un world space modifier o una telecamera o una luce !!!)\par
+\b0 ------------------------------------------------------------------------------------------------------------\par
+ID = POSITION_TRACK_ID\par
+name_owner = nome dell'oggetto\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 16 se il controller e' linear, 40 se di bezier, vale 36 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul tripla di float (x, y, z)\ulnone  : posizione dell'oggetto\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+      \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone       \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone\par
+\par
+\b Animazione rotazione di un oggetto (NB: puo essere anche un helper o una patchmesh o un \par
+particle system o un world space modifier o di una luce!!!)\par
+\b0 ------------------------------------------------------------------------------------------------------------\par
+ID = ROTATION_TRACK_ID\par
+name_owner = nome dell'oggetto\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 20 se il controller e' lineare o di bezier, vale 40 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul tripla di float (x, y, z)\ulnone  : asse di rotazione\par
+      \ul float\ulnone  : angolo di rotazione \ul in radianti\par
+\ulnone       se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+      \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone\par
+\par
+\b\par
+Animazione scaling di un oggetto (NB: pu\'f2 essere anche un helper o una patchmesh o un \par
+particle system  o una luce!!!)\par
+\b0 ------------------------------------------------------------------------------------------------------------------------\par
+ID = SCALE_TRACK_ID\par
+name_owner = nome dell'oggetto\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul tripla di float (sx, sy, sz)\ulnone  : fattori di scaling dell'oggetto\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone              \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone\b\par
+\b0\par
+\b\par
+Animazione target di una telecamera\par
+\b0 --------------------------------------------------\par
+ID = CAMERA_TARGET_TRACK_ID\par
+name_owner = nome della telecamera\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul tripla di float (x, y, z)\ulnone  : posizione del target\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone              \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone\par
+\b\par
+\b0\par
+\par
+\b Animazione colore di una luce (pu\'f2 essere anche una spotlight)\par
+\b0 -------------------------------------------------------------------------------------\par
+ID = COLOR_TRACK_ID\par
+name_owner = nome della luce\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul tripla di float (R, G, B)\ulnone  : colore della luce, le componenti sono normalizzate in [0;1]\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone              \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone\par
+\par
+\b Animazione angolo di hotspot di una luce spot\par
+\b0 --------------------------------------------------------------\par
+ID = HOTSPOT_TRACK_ID\par
+name_owner = nome della luce spot\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul float\ulnone  : angolo (\b espresso in radianti!\b0 ) di hotspot\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent :  float\par
+\ulnone              \ul outcoming tangent : float\par
+\ulnone\par
+\par
+\b Animazione angolo di falloff di una luce spot\par
+\b0 -------------------------------------------------------------\par
+ID = FALLOFF_TRACK_ID\par
+name_owner = nome della luce spot\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul float\ulnone  : angolo (\b espresso in radianti!\b0 ) di falloff\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent :  float\par
+\ulnone              \ul outcoming tangent : float\par
+\ulnone\par
+\par
+\par
+\b Animazione angolo di FOV di una telecamera\par
+\b0 -------------------------------------------------------------\par
+ID = CAMERA_FOV_TRACK_ID\par
+name_owner = nome della telecamera\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul float\ulnone  : angolo (\b espresso in radianti!\b0 ) di fov\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent :  float\par
+\ulnone              \ul outcoming tangent : float\par
+\ulnone\b\par
+\par
+Animazione angolo di roll di una telecamera\par
+\b0 ------------------------------------------------------------\par
+ID = CAMERA_ROLL_TRACK_ID\par
+name_owner = nome della telecamera\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul float\ulnone  : angolo (\b espresso in radianti!\b0 ) di roll\par
+      se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent :  float\par
+\ulnone              \ul outcoming tangent : float\par
+\ulnone\par
+\par
+\par
+\b Animazione dell'opacit\'e0 di un materiale\par
+\b0 ------------------------------------------------------\par
+ID = MATERIAL_OPACITY_TRACK_ID\par
+name_owner = nome del materiale\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul valore opacit\'e0, float\par
+\ulnone       se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent : float\par
+\ulnone              \ul outcoming tangent : float\par
+\ulnone\par
+\par
+\b Animazione delle trasformazioni UV\par
+\b0 --------------------------------------------------\par
+ID = U_TILE_TRACK_ID\par
+         V_TILE_TRACK_ID\par
+         U_OFFSET_TRACK_ID\par
+         V_OFFSET_TRACK_ID\par
+         U_ANGLE_TRACK_ID\par
+         V_ANGLE_TRACK_ID\par
+         W_ANGLE_TRACK_ID\par
+\par
+name_owner = nome del materiale\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+\par
+Dati\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul valore della propriet\'e0 animata, float (\b NB: gli angoli sono in radianti!\b0 )\par
+\ulnone       se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+             \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone       altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+             \ul incoming tangent : float\par
+\ulnone              \ul outcoming tangent : float\par
+\ulnone   \ul indice di mappa\ulnone : char, puo' essere 1 o 2\par
+\par
+\par
+\par
+--------------------------------------------------------------------\par
+\b\fs32 OSM (Object Space Modifiers)\par
+\b0\fs20 --------------------------------------------------------------------\par
+\par
+\par
+\b Animazione della posizione del gizmo\par
+ID = OSM_POSITION_TRACK_ID/lattice\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: \ul keytime (int), posizione(tripletta di float x,y,z)\par
+\ulnone             se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                 \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                 \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone                  \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\b Animazione della rotazione del gizmo/lattice\par
+ID = OSM_ROTATION_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 20 se il controller e' lineare o di bezier, vale 40 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul numero di key\ulnone , intero a 4 byte\par
+  per ogni key\par
+      \ul posizione nella timeline\ulnone  (intero 4 byte)\par
+      \ul tripla di float (x, y, z)\ulnone  : asse di rotazione\par
+      \ul float\ulnone  : angolo di rotazione \ul in radianti\par
+\ulnone       se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+      \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\b\par
+Animazione della scala del gizmo/lattice\par
+ID = OSM_SCALE_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: \ul keytime (int), scala(tripletta di float sx,sy,sz)\par
+\ulnone             se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                 \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                 \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone                  \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+----------------------------------------------------------\par
+\b\fs24 TWIST MODIFIER KEYFRAME\par
+\b0\fs20 ----------------------------------------------------------\par
+\par
+\b ID = TWIST_ANGLE_TRACK_ID\par
+         TWIST_BIAS_TRACK_ID\par
+         TWIST_UPLIMIT_TRACK_ID\par
+         TWIST_LOWLIMIT_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), angolo(float in radianti)/bias(float)/uplim(float)/lowlim(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\par
+-----------------------------------------------------------\par
+\b\fs24 RIPPLE MODIFIER KEYFRAME\par
+\b0\fs20 -----------------------------------------------------------\par
+\par
+\b ID = RIPPLE_AMP1_TRACK_ID\par
+        RIPPLE_AMP2_TRACK_ID\par
+        RIPPLE_WAVELEN_TRACK_ID\par
+        RIPPLE_PHASE_TRACK_ID\par
+        RIPPLE_DECAY_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys valore Amplitude1\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), ampiezza1/ampiezza2/wavelength/phase/decay(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\par
+---------------------------------------------------------\par
+\b\fs24 BEND MODIFIER KEYFRAME\par
+\b0\fs20 ---------------------------------------------------------\par
+\par
+\b ID = BEND_ANGLE_TRACK_ID\par
+        BEND_DIR_TRACK_ID\par
+        BEND_UPLIMIT_TRACK_ID\par
+        BEND_LOWLIMIT_TRACK_ID\par
+\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys valore Angle\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), angolo(float in radianti)/direction(float in radianti)/uplim(float)/lowlim(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+---------------------------------------------------------\par
+\b\fs24 MELT MODIFIER KEYFRAME\par
+\b0\fs20 ---------------------------------------------------------\par
+\par
+\b ID = MELT_AMOUNT_TRACK_ID\par
+         MELT_SPREAD_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys valore Amount\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), amount(float)/spread(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\par
+----------------------------------------------------------------\par
+\b\fs24 STRETCH MODIFIER KEYFRAME\par
+\b0\fs20 ----------------------------------------------------------------\par
+\b ID = STRETCH_STRETCH_TRACK_ID\par
+        STRETCH_AMPLIFY_TRACK_ID\par
+        STRETCH_UPLIMIT_TRACK_ID\par
+        STRETCH_LOWLIMIT_TRACK_ID\par
+\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys valore Stretch\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), forza dello stretch (float)/amplify(float)/uplim(float)/lowlim(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\par
+-----------------------------------------------------------\par
+\b\fs24 TAPER MODIFIER KEYFRAME\par
+\b0\fs20 -----------------------------------------------------------\par
+\par
+\b ID = TAPER_AMOUNT_TRACK_ID\par
+        TAPER_CURVE_TRACK_ID\par
+        TAPER_UPLIMIT_TRACK_ID\par
+        TAPER_LOWLIMIT_TRACK_ID\par
+\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys valore Angle\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), amount(float)/curve(float)/uplim(float)/lowlim(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\par
+-----------------------------------------------------\par
+\b\fs24 FFD MODIFIER KEYFRAME\par
+\b0\fs20 -----------------------------------------------------\par
+\par
+\b Animazione di un control point del lattice\par
+ID = FFD_CONTROLPOINT_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1+4\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), posizione(tripletta di float x,y,z)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                 \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                 \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone                  \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+  \ul numero vertice\ulnone : int, indice nell'array di control point\par
+\par
+\par
+-----------------------------------------------------------\par
+\b\fs24 NOISE MODIFIER KEYFRAME\par
+\b0\fs20 -----------------------------------------------------------\par
+\par
+\b ID = NOISE_PHASE_TRACK_ID\par
+        NOISE_FREQUENCY_TRACK_ID\par
+        NOISE_SCALE_TRACK_ID\par
+\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), fase/frequenza/scale(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+\b ID = NOISE_STRENGTH_TRACK_ID\par
+\b0 name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key+1\par
+// size_key vale 16 se il controller e' lineare, 40 se di bezier, vale 36 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), strength(tripletta x,y,z di float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : tripletta di float (x,y,z)\par
+\ulnone                  \ul outcoming tangent : tripletta di float (x,y,z)\par
+\ulnone   \ul numero_d'ordine\ulnone : char\par
+\par
+\par
+--------------------------------------------------------------------\par
+\b\fs32 WSM (World Space Modifiers)\par
+\b0\fs20 --------------------------------------------------------------------\par
+\par
+\b\fs24 Wind Modifier\par
+\b0\fs20 ID = WIND_STRENGTH_TRACK_ID\par
+         WIND_DECAY_TRACK_ID\par
+         WIND_TURBOLENCE_TRACK_ID\par
+         WIND_FREQUENCY_TRACK_ID\par
+         WIND_SCALE_TRACK_ID\par
+\par
+name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), strength/decay/turbolence/frequency/scale(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone\par
+\par
+\b\fs24 Gravity Modifier\par
+\b0\fs20 ID = GRAVITY_STRENGTH_TRACK_ID\par
+         GRAVITY_DECAY_TRACK_ID\par
+name_owner = nome dell'oggetto (mesh) a cui l'OSM e' applicato\par
+size=1+2+4+numero_di_key*size_key\par
+// size_key vale 8 se il controller e' lineare, 16 se di bezier, vale 28 per le TCB\par
+  \ul tipo controller\ulnone , unsigned char  0=LINEAR,  1=BEZIER,  2=TCB\par
+  \ul ORT (out of range) before type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul ORT (out of range) after type\ulnone : unsigned char, 0=HOLD,   1=LOOP,   2=CYLCE,   3=PINGPONG,  4=LINEAR,   5=RELATIVE_REPEAT\par
+  \ul Num keys\ulnone : intero a 4 byte\par
+      - per ogni key seguono: keytime (int), strength/decay/turbolence/frequency/scale(float)\par
+            se il controller e' di tipo TCB seguono anche nell'ordine (tutti float)\par
+                  \ul tension, continuity, bias, easeto, easefrom\par
+\ulnone             altrimenti se il controller e' di tipo BEZIER seguono anche nell'ordine\par
+                  \ul incoming tangent : float\par
+\ulnone                  \ul outcoming tangent : float\par
+\ulnone\par
+\par
+\b Fine del file di scena\par
+\b0 ----------------------------\par
+ID = END_SCENE_ID\par
+name_owner = nome (di solito "Scene Root")\par
+size =4\par
+\par
+Dati\par
+  \ul intero a 4 byte:\ulnone  se diverso da zero indica la fine del file di scena\par
+\par
+\par
+*********************************************************************************\par
+\ul\b\par
+NOTE\par
+\par
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-720\li720\ulnone\b0 Le triplette geometriche fanno riferimento al sistema di coordinate adottate dal 3DStudio MAX che non e' destroso, per rendere le triplette compatibili con un sistema di coordinate destroso bisogna scambiare le y con le z di ogni tripletta geometrica (vertici, vettori, quaternioni, ecc).\par
+{\pntext\f2\'B7\tab}i dati, siano essi float, int o comunque di grandezza maggiore di un byte sono scritti su file secondo il formato big-endian (Intel), ovvero compaiono prima i byte meno significativi.\par
+{\pntext\f2\'B7\tab}Per estendere con dei chunk creati "a mano" un file A3D basta aprire il file, posizionarsi sul suo ultimo int (4 byte), scrivere un intero a 4 byte con valore zero (vedere la definizione del chunk END_SCENE_ID) e scrivere il nuovo chunk secondo il formato previsto. Infine scrivere una altro chunk END_SCENE_ID con valore di flag diverso da zero.\par
+{\pntext\f2\'B7\tab}Per personalizzare il formato A3D con la definizione di chunk personali basta attenersi al formato di un singolo chunk, facendo attenzione a scrivere il campo size correttamente. Un generico lettore di file A3D se non riconosce un chunk puo\rquote  limitarsi a saltarlo e basta. Da questo deriva una forte dote di modularita\rquote .\par
+}
+ 

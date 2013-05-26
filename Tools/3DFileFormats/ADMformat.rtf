@@ -1,0 +1,323 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1040\deflangfe1040{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green128\blue0;\red0\green0\blue255;\red128\green0\blue128;\red0\green0\blue0;}
+\viewkind4\uc1\pard\nowidctlpar\f0\fs20 -----------------------------------------------------------------------\par
+Informazioni sullo scripting dei materiali / scena, by [AD]Turbo\par
+\pard\brdrb\brdrs\brdrw20\brsp20 \nowidctlpar                     Data: 10-04-2002\par
+\pard\nowidctlpar -----------------------------------------------------------------------\par
+\par
+Lo script dei materiali consiste in una lista di bitmap/texture seguite da un elenco di materiali che usano queste bitmap.\par
+\par
+-----------------------------------------------------------------------\par
+\par
+La generica bitmap ha il seguente formato:\par
+\par
+  \lang1033 bitmap "\cf1\b 0\cf0\b0 " \par
+  \{\par
+    \cf2\b id="0";\cf0\b0\par
+    \cf3\b filename="D:\\redshift\\bump2.jpg";\cf0\b0\par
+    \cf4\lang1040\b mipmaplevels="1";\par
+    \cf5\b0\i // questa riga \'e8 un commento e non viene elaborata\par
+\i0     \b start_time\b0 ="0";\par
+    \b playback_rate\b0 ="1.5";\par
+    \b end_condition\b0 ="PINGPONG";\cf0\par
+  \}\par
+\par
+\cf1\b Il nome tra virgolette\cf0  \b0 deve essere pari \cf2\b all'id\cf0\b0  e devono essere tassativamente dei numeri positivi (zero compreso) e non decimali.\par
+\cf3\b Il filename\b0  \cf0 indica (l'eventuale) percorso e nome del file. Sono supportati solo file PNG e JPG.\par
+Si possono usare anche filmati come mappe. I formati supportati sono .AVI, .MPEG, .MPG e in generale tutti i formati per cui esista un codec video (Microsoft compatibile) installato nel computer.\par
+\cf4\b Il campo mipmaplevels \cf0\b0 indica i livelli di mipmap associati alla bitmap. Tali livelli verranno generati automaticamente usando un filtro triangolare.\par
+\cf5 Il valore di default \'e8 1\cf0 .\par
+\par
+Nel casi di filmati sono supportati i seguenti parametri:\par
+\par
+\cf5\b start_time\b0 ="0"\par
+Indica il frame (riferito alla frameline del 3DSMax) a cui iniziare la riproduzione.\par
+\b playback_rate\b0 ="1.5"\par
+Indica la velocit\'e0 di riproduzione. In realt\'e0 indica il fattore di velocit\'e0. Un valore di 2.0 significa ad esempio che il filmato sar\'e0 riprodotto al doppio della velocit\'e0 standard con la quale \'e8 stato "encodato".\par
+\b end_condition\b0 ="PINGPONG"\par
+Indica cosa fare a filmato concluso. I possibili valori sono:\par
+\par
+HOLD: indica di arrestarsi sull'ultimo frame prodotto.\par
+LOOP: esegue un loop del filmato.\par
+PINGPONG: effettua il ping pong del filmato, andando avanti e indietro.\cf0\par
+\par
+-----------------------------------------------------------------------\par
+\par
+Il generico materiale ha la seguente forma (elenco tutti i parametri per completezza).\par
+\par
+  material "nome del materiale" \par
+  \lang1033\{\par
+    map1="\cf2\b 0\cf0\b0 ";\par
+    map1channel="TEX1";\par
+    map1tile="2, 3, 0.2";\par
+    map1angle="0, 0, 1.35";\par
+    map1offset="0.56, -1.4";\par
+\par
+    map2="\cf2\b 1\cf0\b0 ";\par
+    map2channel="ENV";\par
+    map2tile="2, 3, 0.2";\par
+    map2angle="0, 0, -0.52";\par
+    map2offset="2.56, -0.002";\par
+\par
+    mapsmixtype="MODULATE";\par
+    lightmixtype="MODULATE2X";\par
+\cf4\lang1040\b\par
+    \cf5\b0\i // questa riga \'e8 un commento e non viene elaborata\cf0\i0\par
+\lang1033\par
+    transparency_type="ADD";\par
+    transparency_amount="156";\par
+    specular="ON";\par
+\lang1040     wireframe="OFF";\lang1033\par
+    next_material="NONE";\par
+\par
+    bumpmap="EMBM, AUTOMATIC";\par
+    bumpscale="0.4, 0.4";\par
+\par
+    backfaceculling="BACKFACE";\par
+\par
+    fog="LINEAR, 255, 25, 129, 0.5, 300.5, 0.33";\par
+  \lang1040\}\par
+I parametri possono apparire in ordine sparso, non necessariamente in fila in quest\rquote ordine.\par
+\par
+Ogni materiale pu\'f2 usare \ul un massimo di due mappe (bumpmap e alphamap escluse)\ulnone . I parametri che riguardano la prima mappa sono:\par
+\par
+\b map1\b0 ="\cf2\b 0\cf0\b0 "\par
+questo indica che la prima mappa user\'e0 la bitmap avente \cf2\b l'id\cf0\b0  pari a 0.\par
+\par
+\b map1channel="TEX1"\par
+\b0 questo parametro indica il canale da cui la prima mappa "attinge" le coordinate di mapping.\par
+Il valore \b TEX1\b0  indica che le uv saranno quelle associate al canale di mapping numero 1 (lo stesso che si setta nel max).\par
+Il valore \b TEX2\b0  indica che le uv saranno quelle associate al canale di mapping numero 2 (lo stesso che si setta nel max).\par
+Il valore \b ENV\b0  indica che le uv saranno generate in automatico a runtime con la tecnica dell'environment mapping.\par
+Il valore \b SPEC\b0  indica che le uv saranno generate in automatico (a runtime) per specularit\'e0.\par
+\cf5 Il valore di default \'e8 TEX1\cf0 .\par
+\par
+\b map1tile="2, 3.1, 0.2"\par
+\b0 indica che le u saranno scalate di 2, le v di 3.1 e le w di 0.2\par
+I valori di default sono 1, 1, 1.\par
+\b map1angle="0, 0, 1.35"\par
+\b0 indica che le u saranno ruotate di 0(radianti), le v di 0 e le w di 1.35 (nell'engine sono supportate solo le rotazioni w).\par
+I valori di default sono 0, 0, 0.\par
+\b map1offset="0.56, -1.4"\par
+\b0 indica che le u saranno traslate di 0.56 e le v di -1.4.\par
+I valori di default sono 0, 0.\par
+\par
+Questi parametri permettono di settare delle trasformazioni sulle uv; i valori vengono esportati in coerenza con quelli settati nel 3dsmax. Se nel 3dsmax vengono settate delle tracce animate per tali parametri, nello script appariranno i valori al tempo t=0, ma comunque il player di scene user\'e0 le tracce impostate dal max.\par
+NB: i valori numerici decimali (tipo 1.35) \ul devono tassativamente\ulnone  essere espressi col punto decimale, e non con la virgola (es: 1,35 sarebbe sbagliato!).\par
+\par
+Per quanto riguarda la seconda mappa i parametri hanno lo stesso significato (i nomi cambiano in \b map2\b0 , \b map2channel\b0 , \b map2tile\b0 , \b map2angle\b0 , \b map2offset\b0 ).\par
+Il valore di default per \b map2channel\b0  \'e8 ENV.\par
+Per i \b map\b0 X\b channel \b0 non ci sono limitazioni alle combinazioni.\par
+Gli unici accorgimenti da seguire sono (se non vengono seguiti il player dovrebbe segnalare gli errori con appositi messaggi):\par
+\par
+a) un materiale non pu\'f2 avere la mappa2 se non ha anche la mappa1.\par
+b) le mappe di un materiale non possono usare TEX2 se non usano anche TEX1.\par
+\par
+\b Esempi corretti:\par
+\b0\par
+map1="0";\par
+\lang1036 map1channel="ENV";\par
+map2="1";\par
+map2channel="ENV";\par
+\par
+map1="0";\par
+map1channel="TEX1";\par
+map2="1";\par
+map2channel="ENV";\par
+\par
+map1="0";\par
+map1channel="TEX1";\par
+map2="1";\par
+map2channel="TEX1";\par
+\par
+map1="0";\par
+map1channel="TEX2";\par
+map2="1";\par
+\lang1040 map2channel="TEX1";\par
+\par
+\par
+\b Esempi sbagliati:\par
+\ul (si sta usando la mappa2 senza che la mappa1 sia usata!)\par
+\ulnone\b0 map2="1";\par
+map2channel="ENV";\par
+\par
+\ul\b (si sta usando TEX2 senza usare anche TEX1!)\par
+\ulnone\b0 map1="0";\par
+map1channel="TEX2";\par
+map2="1";\par
+map2channel="ENV";\par
+\par
+\b lightmixtype="MODULATE2X"\par
+\b0 Questo parametro dice come la luce si deve mixare alle/a mappe/a.\par
+I parametri possibili sono:\par
+\par
+\lang1033 ADD\par
+SUB\par
+MODULATE\par
+MODULATE2X\par
+MODULATE4X\par
+ADDSIGNED\par
+ADDSIGNED2X\par
+ADDSMOOTH\par
+TOONSHADE\par
+NONE\par
+\par
+\lang1040 Il valore di default \'e8 MODULATE.\par
+Nel caso si usi il valore TOONSHADE (che quivale a realizzare una illuminazione tipo cartone animato), possono essere impostati anche ulteriori parametri, ecco la sintassi generale per il caso di TOONSHADE\par
+\par
+\b lightmixtype="TOONSHADE, <toonscale>, <lightsmix>, <mapmix>, <toonmap>"\b0\par
+il parametro <toonscale> regola lo spessore della silouette (in maniera implicita); in particolare deve essere usato un valore maggiore di 1 (il valore di default \'e8 1.015, a valore maggiori corrispondono spessori maggiori).\par
+Il parametro <lightmix> specifica come le luci devono essere mixate tra loro; sono possibili solo i valori di ADD, MODULATE e ADDSMOOTH.\par
+Il parametro <mapmix> specifica come la (eventuale) mappa (che rappresenta la passata finale) deve mixarsi alle luci; sono possibili solo i valori di ADD, MODULATE, MODULATE2X e ADDSMOOTH.\par
+Il parametro <toonmap> indica l'eventuale mappa di gradiente da usare.\par
+ALcuni esempi:\par
+\par
+lightmixtype="TOONSHADE, 1.01, ADD, ADD"\par
+lightmixtype="TOONSHADE, 1.5, ADDSMOOTH, MODULATE"\par
+lightmixtype="TOONSHADE, 1.0044, MODULATE, MODULATE2X"\par
+lightmixtype="TOONSHADE, 1.0109, MODULATE, ADDSMOOTH"\par
+lightmixtype="TOONSHADE, 1.0207, MODULATE, ADDSMOOTH, c:\\maps\\mygradient.png"\par
+\par
+\par
+\lang1033\par
+\b mapsmixtype="MODULATE"\par
+\lang1040\b0 Questo parametro dice come le due mappe (map1 e map2) si devono mixare tra loro.\par
+I parametri possibili sono gli stessi della \b lightmixtype\b0 .\par
+Il valore di default \'e8 MODULATE.\par
+\par
+\lang1033\b transparency_type="ADD"\par
+\lang1040 transparency_amount="156"\par
+\b0 Questi due parametri governano la trasparenza. \b transparency_type\b0  indica che tipo di trasparenza usare, i valori possibili sono:\par
+\par
+ADD (trasparenza additiva)\par
+ALPHA (trasparenza in alphablending)\par
+MAP1 (prende la trasparenza dalla mappa1; se la mappa1 non ha il canale alpha allora esso viene generato basandosi sulla luminosit\'e0 dei pixel)\par
+NONE (nessuna trasparenza)\par
+\cf2\b id\cf0\b0  (prende come mappa alpha la bitmap avente come \cf2\b id\cf0\b0  quello specificato)\par
+\b\par
+\b0 Il valore di default \'e8 NONE.\par
+\b\par
+transparency_amount\b0  indica il grado di trasparenza, e pu\'f2 variare da 0 a 255 compresi.\par
+Questo parametro ha senso solo se \lang1033\b transparency_type\b0  \'e8 settato ad ADD o ALPHA).\lang1040\b\par
+\b0 Il valore di default \'e8 128.\par
+\par
+\lang1033\b specular="ON"\par
+\lang1040\b0 il parametro specular indica se usare o meno la luce speculare. Ovvero se in fase di illuminazione considerare o meno la luce speculare (calcolata a livello di vertice). I possibili valori sono \b ON\b0  (luce speculare attiva) e \b OFF\b0  (luce speculare non attiva).\par
+Il valore di default \'e8 OFF.\par
+\par
+\b wireframe="ON, 255, 20, 134"\par
+\b0 il parametro permette di specificare un rendering a fili di ferro. Il valore pu\'f2 essere o ON o OFF a seconda si voglia attivare o meno il wireframe. I seguenti parametri indicano le componenti RGB da usare come colore del wireframe. Non sono obbligatori, e nel caso non vengono specificati venogno usati gli stili del materiale.\par
+\par
+\lang1033\b fog="LINEAR, 255, 25, 129, 0.5, 300.5, 0.33"\par
+\lang1040\b0 il parametro permette di usare nebbia o meno sul materiale.\par
+Il primo valore pu\'f2 essere LINEAR, EXP o EXP2 e serve a scegliere il tipo di nebbia.\par
+I seguenti 3 valori sono le componenti RGB del colore della nebbia.\par
+Seguono i parametri di znear e zfar a cui far iniziare e finire la nebbia. \ul Essi sono in worldspace\ulnone .\par
+Il valore rimanente \'e8 la densit\'e0 della nebbia e pu\'f2 variare nell'intervallo [0..1].\par
+\par
+\lang1033\b next_material="NONE"\par
+\lang1040\b0 Il parametro in questione indica la sequenza dei materiali da stratificare. Se il valore \'e8 NONE significa che non ci sono successivi materiali da considerare in fase di rendering. Impostando come valore il nome di un materiale presente nella lista si fa in modo di stratificare il materiale indicato. Per ora la features \'e8 in fase di pre-alpha ed \'e8 meglio non usarla. Quindi si consiglia \ul\b\i caldamente\ulnone\b0\i0  di lasciare come valore di default NONE.\par
+Il valore di default \'e8 NONE.\par
+\par
+\lang1033\b bumpmap="EMBM, AUTOMATIC"\par
+bumpscale="0.4, 1.25"\par
+\b0\par
+La sintassi \'e8 del tipo \b bumpmap\b0 ="<\i tipo di bump\i0 >, <\i mappa di bump\i0 >".\par
+I tipi di bump supportati sono due:\par
+\par
+EMBM (Environmental Map Bump Mapping): supportato in hardware solo dalla Matrox (G400, G450, G550), nVidea (GeForce 3, GeForce 4), ATI (Radeon 7200, Radeon 7500, Radeon 8500), KyroI e KyroII.\par
+DOT3: supportato in hardware solo da nVidea(GeForce 1, GeForce 2, GeForce 3, GeForce 4), ATI (Radeon 7200, Radeon 7500, Radeon 8500), KyroI e KyroII.\par
+Il parametro \b bumpscale\b0  ha significato solo se si usa un bump di tipo EMBM. In questo caso \'e8 possibile settare la "potenza" del bump (i due valori si riferiscono alle u e v).\par
+Il bump di tipo EMBM \ul necessita tassativamente di entrambe le mappe\ulnone  (map1 e map2), in cui la mappa2 deve venire usata come envmap (quindi il parametro map2channel deve essere pari a ENV).\par
+Se non vengono rispettate queste regole il player dovrebbe segnalare errore con appositi messaggi.\par
+Pr quanto riguarda la <\i mappa di bump\i0 >, \'e8 possibile generarla automaticamente (usando AUTOMATIC) basandosi sulla luminosit\'e0 della texture usata come mappa1, oppure \'e8 possibile specificare un \cf2\b id\cf0\b0  di bitmap tra quelle elencate nello script (la bitmap dovr\'e0 essere a 8bit scala di grigio, comunque il player si fa carico di segnalare eventuali errori).\par
+Il bump di tipo DOT3 invece non necessita di entrambe le mappe, basta anche la mappa1.\par
+\par
+\b backfaceculling="BACKFACE"\par
+\lang1040\b0 Questo parametro permette di settare lo stato del faceculling. I possibili valori sono:\par
+\par
+FRONTFACE (vengono cullate le facce visibili, ovvero vengono disegnate le facce non visibili)\par
+BACKFACE (vengono cullate le facce non visibili, ovvero vengono disegnate le facce visibili)\par
+NONE (non vengono cullate le facce, utile ad esempio per impostare un doubleface drawing).\par
+Il valore di default \'e8 BACKFACE.\par
+\par
+\par
+\par
+\b\fs28 Appendice A\par
+\b0\fs20 Ecco alcune limitazioni dei sistemi di shading.\par
+\par
+\ul Filmati/Texture animate\ulnone\par
+Per ora non sono supportati i filmati per le mappe di bump e per le mappe alpha.\par
+Ci\'f2 significa che un filmato non pu\'f2 essere usato come mappa bump o come mappa alpha.\par
+Ma ovviemante \'e8 possibile usare un filmato (ad esempio nella Map1) assieme a bump e mappe alpha.\par
+\par
+\ul Fog\par
+\ulnone La nebbia non pu\'f2 essere usata assieme al bump DOT3 e nemmeno assieme al toon shading\par
+\par
+\ul Bump di tipo DOT3\par
+\ulnone Con questo tipo di bump non \'e8 possibile usare nessun tipo di trasparenze data la natura multipass (su frame buffer) della tecnica.\par
+Inoltre con questo tipo di bump sono possibili solo due opzioni per il parametro \b lightmixtype\b0 , cio\'e8 MODULATE, ADD (ovviamente si puo' mettere anche NONE ma non ha senso, visto ch questo tipo di bump \'e8 basato sulle luci).\par
+\par
+\ul Toon shading\par
+\ulnone Con questo tipo di illuminazione non \'e8 possibile usare nessun tipo di trasparenze data la natura multipass (su frame buffer) della tecnica.\par
+\b\fs28\par
+\ul\b0\fs20 Trasparenze\par
+\ulnone Non \'e8 possibile eseguire un caso particolare, che riguarda due (o pi\'f9) materiali che condividono \ul la stessa mappa base\ulnone  e uno dei due (o piu') materiali usa una mappa alpha (con l'id o MAP1) per le trasparenze.\par
+Esempio:\par
+\par
+  bitmap "0" \par
+  \{\par
+    id="0";\par
+    filename="basemap.png";\par
+  \}\par
+\par
+  bitmap "1" \par
+  \{\par
+    id="1";\par
+    filename="alphamap.png";\par
+  \}\par
+\par
+  material "1 - Default" \par
+  \{\par
+    map1="0";\par
+    map1channel="TEX1";\par
+    transparency_type="1";\par
+  \}\par
+\par
+  material "3 - Default" \par
+  \{\par
+    map1="0";\par
+    map1channel="TEX1";\par
+  \}\par
+\par
+In questo caso vi sono problemi di rendering.\par
+Non vi sono problemi se la trasparenza \'e8 ADD o ALPHA come segue:\par
+\par
+  material "1 - Default" \par
+  \{\par
+    map1="0";\par
+    map1channel="TEX1";\par
+    transparency_type="ADD";\par
+  \}\par
+\par
+  material "3 - Default" \par
+  \{\par
+    map1="0";\par
+    map1channel="TEX1";\par
+    transparency_type="ADD";\par
+  \}\par
+\par
+  material "4 - Default" \par
+  \{\par
+    map1="0";\par
+    map1channel="TEX1";\par
+    transparency_type="NONE";\par
+  \}\par
+\par
+\ul ToonShading, bump DOT3 e fixed pipeline\ulnone\par
+Il toonshader e il bump DOT3 sono realizzati coi vertex shaders.\par
+Quindi \'e8 come se fossero delle scatolette "preconfezionate". Questo comporta che non possono essere usati assieme.\par
+Gli unici parametri dello script che "vanno d'accordo" (cio\'e8 che sono sfruttati) con questi due tipi di shading sono il \b lithgmixtype\b0  (che ha solo un paio di possibilit\'e0, come si legge poco sopra), il \b backfaceculling\b0  e basta (non \'e8 supportata per ora la seconda mappa, e quindi anche il campo mapsmixtype e il bump EMBM non possono essere usati se si usa il toon o il dot3).\par
+\ul Tutto ci\'f2 che non \'e8 toonshading e bumop dot3 \'e8 soggetto alla pi\'f9 completa fantasia dei parametri\ulnone .\par
+}
+ 
