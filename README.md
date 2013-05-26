@@ -11,7 +11,7 @@ The code you can find in this repository is pretty outdated, badly written (ofte
 Furthermore if you can understand Italian you may find some funny comments in the source code.
 
 Some of the C++ projects have been updated and fixed to work on current PCs, porting the projects to *Visual Studio Express 2012 for Windows Desktop* (which is a free download) and upgrading the DirectX code to version 9. In some cases we also updated third-party libraries to the latest versions.
-Some Other projects are still in the original format and they probably don't even compile any more.
+Some other projects are still in the original format and may not even compile.
 
 We are releasing all this code and data as Public Domain. This means you can do anything you like with it.
 Obviously this does not apply to external libraries, which have their own license.
