@@ -11,9 +11,9 @@ Apocalypse Design tools, in a more or less chronological order:
 
 * **ADinterface** was an attempt to create a stylish display-mode selection dialog in Delphi, then compile it to a DLL and use this DLL from C++. It worked, but we never actually used it in a demo (we ended up writing these dialogs directly in C++/Win32 API).
 
-* **VAdesso-alpha2** (which stands for "Visual Adesso") was a first attempt to create a WYSIWYG demo contruction tool.
+* **VAdesso-alpha2** (which stands for "Visual Adesso") was a first attempt to create a WYSIWYG demo construction tool.
 
-* **VAdesso-v0.5.4** is the latest version of our WYSIWYG demo sequencing tool. It was intended only for software demos and it's quite functional, even if it wasn't yet production-ready.
+* **VAdesso-v0.5.4** is the latest version of our WYSIWYG demo sequencing tool. It was intended only for software demos and it's quite functional, but not yet production-ready.
 
 * **ADplayer** was a simple player for demos created using VAdesso (there was also a ActiveX version of this player in the works, that could be used to run demos inside Internet Explorer).
 
