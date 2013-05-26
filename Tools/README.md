@@ -11,9 +11,9 @@ Apocalypse Design tools, in a more or less chronological order:
 
 * **ADinterface** was an attempt to create a stylish display-mode selection dialog in Delphi, then compile it to a DLL and use this DLL from C++. It worked, but we never actually used it in a demo (we ended up writing these dialogs directly in C++/Win32 API).
 
-* **VAdesso-alpha2** (which stands for "Visual Adesso") was a first attempt to create a WYSIWYG demo contruction tool.
+* **VAdesso-alpha2** (which stands for "Visual Adesso") was a first attempt to create a WYSIWYG demo construction tool.
 
-* **VAdesso-v0.5.4** is the latest version of our WYSIWYG demo sequencing tool. It was intended only for software demos and it's quite functional, even if it wasn't yet production-ready.
+* **VAdesso-v0.5.4** is the latest version of our WYSIWYG demo sequencing tool. It was intended only for software demos and it's quite functional, but not yet production-ready.
 
 * **ADplayer** was a simple player for demos created using VAdesso (there was also a ActiveX version of this player in the works, that could be used to run demos inside Internet Explorer).
 
@@ -21,4 +21,8 @@ Apocalypse Design tools, in a more or less chronological order:
 
 * **inJPEG** is a library used by VAdesso and ADplayer to load JPEG textures.
 
-* **ADrender** is the base for our latest 3D engine, it is a library that abstracts 3D rasterization and texture management, so that we could write both software and hardware-accelerated demos using almost the same code. The first versions used DirectX 6, we then ugraded to version 7 and then to version 8. The version here has been upgraded to DirectX 9.
+* **ADrender** was the base for our 3D engine (later replaced by renderLib), this library abstracted 3D rasterization and texture management, so that we could write both software and hardware-accelerated demos using more or less the same code. The first versions used DirectX 6, we then ugraded to version 7 and then to version 8. The version here has been upgraded to DirectX 9.
+
+* **3DFileFormats** provides some documentation (in Italian) about our 3D file formats. These files were exported directly from 3DStudio Max using our exporter plugin.
+
+* **3DSMaxExporter** is a plugin for 3DStudio Max (version 3.0/4.0/5.0). This plugin exports scenes to our proprietary 3D formats.
