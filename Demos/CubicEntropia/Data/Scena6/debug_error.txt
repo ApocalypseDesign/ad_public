@@ -1,0 +1,1 @@
+Debug_Error: AD-RenderLib Error: CRenderLib::m_OpenScreen, p_D3D->CreateDevice failed! - D3DERR_INVALIDCALL

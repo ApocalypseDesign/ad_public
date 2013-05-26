@@ -1,0 +1,28 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="C:\Redshift\Demo_sw\Data\Scena2\EarthLights.jpg";
+    mipmaplevels="1";
+  }
+
+  bitmap "1" 
+  {
+    id="1";
+    filename="C:\Redshift\Demo_sw\Data\Scena2\tube31.jpg";
+    mipmaplevels="1";
+  }
+
+  material "1 - Default" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+

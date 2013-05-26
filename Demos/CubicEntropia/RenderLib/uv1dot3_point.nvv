@@ -1,0 +1,49 @@
+#include "DOT3TOON_VS.H"
+
+#define V_POSITION v0
+#define V_NORMAL v1
+#define V_TEXTURE v2
+#define V_T v3
+
+#define S_WORLD r0
+#define T_WORLD r1
+#define SxT_WORLD r2
+#define LIGHT_LOCAL r3
+#define POSITION_WORLD r4
+#define LIGHT_DIRECTION r5
+#define R_AUX r5
+
+vs.1.1
+
+; Transform position to clip space and output it
+m4x4 oPos, V_POSITION, c[CV_WORLDVIEWPROJ_0]
+
+; Calculate the vector to the light from the world vertex
+add LIGHT_DIRECTION, -V_POSITION, c[CV_LIGHT_OBJECT_POSITION]
+
+; genero i due vettori del tangent space
+mov SxT_WORLD, V_NORMAL
+mul S_WORLD, V_T.zxy, SxT_WORLD.yzx
+mad S_WORLD, V_T.yzx, SxT_WORLD.zxy, -S_WORLD
+
+
+; transform light by basis vectors to put it into texture space
+dp3 LIGHT_LOCAL.x, V_NORMAL.xyz, LIGHT_DIRECTION
+dp3 LIGHT_LOCAL.y, V_T.xyz, LIGHT_DIRECTION
+dp3 LIGHT_LOCAL.z, S_WORLD.xyz, LIGHT_DIRECTION
+
+
+; Normalize the light vector
+dp3 LIGHT_LOCAL.w, LIGHT_LOCAL, LIGHT_LOCAL
+rsq LIGHT_LOCAL.w, LIGHT_LOCAL.w
+mul oT1, LIGHT_LOCAL, LIGHT_LOCAL.w
+mov oT1.w, c[CV_ONE]
+
+; output tex coords (tiene conto che la matrixe che ci interessa e' la 3x2 superiore sinistra)
+mov R_AUX, V_TEXTURE
+mov R_AUX.z, c[CV_ONE]
+dp3 oT0.x, R_AUX.xyz, c[CV_MAP1UVMATRIX_0]
+dp3 oT0.y, R_AUX.xyz, c[CV_MAP1UVMATRIX_1]
+
+; Put the light color in diffuse
+mov oD0, c[CV_LIGHT_COLOR]

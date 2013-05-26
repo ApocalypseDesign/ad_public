@@ -1,0 +1,76 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="dblue004.jpg";
+    mipmaplevels="1";
+  }
+
+  bitmap "1" 
+  {
+    id="1";
+    filename="metal6.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "2" 
+  {
+    id="2";
+    filename="apoc.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "3" 
+  {
+    id="3";
+    filename="lightEnv.png";
+    mipmaplevels="1";
+  }
+  
+  
+  material "1 - Default" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    //map2="2";
+    //map2channel="TEX1";
+    //mapsmixtype="ADDSMOOTH";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    transparency_type="ADD";
+    transparency_amount="200";
+    specular="ON";
+    next_material="NONE";
+  }
+
+  material "2 - Default" 
+  {
+    map1="1";
+    map1channel="TEX1";
+    map2="3";
+    map2channel="SPEC";
+    mapsmixtype="ADD";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="150";
+    next_material="NONE";
+  }
+
+  material "3 - Default" 
+  {
+    map1="2";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="170";
+    next_material="NONE";
+  }
+
+

@@ -1,0 +1,22 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Light script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  light "Omni02"
+  {
+    material="NONE";
+    attenuation0="1.0";
+    attenuation1="0";
+    attenuation2="0";
+    max_range="999999.000000";
+  }
+
+  light "Omni01"
+  {
+    material="NONE";
+    attenuation0="1.0";
+    attenuation1="0";
+    attenuation2="0";
+    max_range="999999.000000";
+  }
+

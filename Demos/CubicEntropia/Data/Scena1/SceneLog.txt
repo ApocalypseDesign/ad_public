@@ -1,0 +1,42 @@
+################################
+Printing debug information
+################################
+
+Loading ADM.., hr=0
+ADM loading done, hr=0
+Auxiliary materials added, hr=0
+A3D loading done, hr=0
+ADL loading done, hr=0
+ADO loading done, hr=0
+ADP loading done, hr=0
+
+
+Scene Init begin.., hr=0
+Materials initialization done, hr=0
+
+Meshes initialization done, hr=0
+
+Lights initialization done, hr=0
+
+Cameras initialization done, hr=0
+
+Objects initialization done, hr=0
+
+Font allocated, hr=0
+Font m_SetWorkBuffer done, hr=0
+Font m_SetWorkBuffer done, hr=0
+Font m_SetWorkBuffer done, hr=0
+Font phrases added, hr=0
+CFont m_LoadAnimation: LoadPosTrack Done, hr=0
+CFont m_LoadAnimation: LoadRotTrack Done, hr=0
+Font m_LoadAnimation done, hr=0
+CFDont Init CEfx2D done, hr=0
+CFont Keyframer done, hr=0
+CFont InitMaterial done, hr=0
+CFont Init cerate vertex buffer done, hr=0
+CFont Init phrases done, hr=0
+Font m_Init done, hr=0
+CFade2D Init cerate vertex buffer done, hr=0
+CFlash2D Init cerate vertex buffer done, hr=0
+Timer settings.., hr=0
+Timer ahs started.., hr=0

@@ -1,0 +1,163 @@
+Ecco le specifiche del nuovo engine sia hw che sw.
+Si punta molto sull'isolamento e sulla derivazione.
+
+
+Math Lib
+--------
+Descrizione: libreria matematica di base: deve contenere un insieme di procedure che operano
+su vettori, matrici, quanternioni.
+Le procedure devono essere in puro C, e si vuole fornire un'interfaccia generale.
+Poi verranno realizzate le realizzazioni in SSE e 3DNow.
+La MathLib prevede anche la relaizzazione di una fastmath lib in cui vengono usati i trucchi
+tipici del tipo "float".
+
+
+
+Strutture di base
+-----------------
+Comprendono la definizione diun vertice geometrico, triangolo, bounding box e bounding sphere.
+I triangoli devono prevedere clipping, ed altro.
+Le "bounding" devono prevedere operazioni di collisione ed intersezione con punti, linee e
+bounding.
+
+
+
+Keyframer
+---------
+Descrizione: si occupa di riprodurre curve parametriche per le posizioni, rotazioni, scalature,
+colori ecc.
+Si deve definire un keyframer per triplette di float (vettori), rotazioni e scalari.
+Il keyframer di rotazione deve essere dotato di un supporto che permetta tracce assolute e
+tracce relative.
+
+Si utilizzera' una classe traccia base che abbia i metodi virtuali di:
+
+- Init
+- GetData
+
+
+Mesh
+-----
+Definizione di una forma geometrica:
+- Vettori geometrici in object space
+- Vertici di mapping uv
+- Array di normali
+- Array di triangoli
+- Metodo virtuale di Init()
+- Metodo virtuale di Load (char *nomefileA3D, char *nomemesh)
+
+Dalla classe delle mesh triangolari deriveranno:
+- Patch
+- Nurbs
+
+
+
+Oggetti geometrici
+------------------
+Classe base da cui partiranno la definizione di tutti gli oggetti geometrici.
+Un oggetto geometrico generico possiede campi di:
+
+- Nome
+- Puntatore oggetto figlio (eventualmente nullo)
+- Puntatore al matriale di base (eventualmente nullo)
+- Puntatore ad un oggetto mesh (eventualmente nullo per telecamere, dummy ecc)
+- Tracce di posizione, rotazione e scaling (eventualmente con 0 key ognuna)
+- Posizione corrente nello spazio
+- Matrice di rotazione corrente (eventualmente anche nel formato di quaternione)
+- Scalatura corrente (magari anche in forma di matrice)
+- Matrice che permette di trasformare un punto espresso nel suo sistema di coordinate nello
+  spazio mondo.
+
+- Metodo virtuale di Init()
+- Metodo virtuale di Update(frame)
+- Metodo virtuale di Paint(void *arg1, void *arg2, void *arg3)
+
+La Init() deve poter essere richiamata quando si pare senza che questo causi problemi interni.
+Da questa classe deriveranno:
+
+- Telecamera
+- Luci
+- Dummy
+- Particle system
+- Bones
+
+
+
+AD-Render
+---------
+E' la libreria di rendering indipendente dall'engine. Esisteranno tre realizzazioni: una
+DIrect3D 8.x, una OpenGL 1.1 ed una software.
+L'interfaccia dovra' essere uguale.
+
+
+Regole di stesura del codice
+----------------------------
+Ogni classe, procedure o pezzo di codice deve seguire le seguenti regole:
+
+- Ogni nome di classe deve Iniziare con la lettera maiuscola, eventualmente
+anche con caps per ogni parola. NB: non deve contenere il simbolo di underbar _
+
+class CTelecamera
+{
+};
+
+class CTelecameraVirtuale
+{
+};
+
+
+- Ogni membro della classe deve iniziare con p_
+class CTelecamera
+{
+   public:
+            float p_Roll;
+            float p_fov;
+};
+
+
+- Ogni metodo di una classe deve iniziare con m_ e la lettera maiuscola. NB: non devono
+  contenere il carattere di underbar _
+class CTelecamera
+{
+   public:
+            void m_UpdateCamera(void);
+};
+
+
+- Ogni variabile usata dentro una procedura (o un metodo) che non sia un 
+  membro deve iniziare con l_
+
+void Telecamera::updateCamera(void);
+{
+   float l_fov;
+
+   l_fov=p_fov;
+}
+
+
+- NB: la realizzazione del costruttore deve essere fatta nel file .CPP e non nel .H
+
+- Usare come variabili di ciclo (che non seguono nessuna regola) solo i, j, k.
+  Ovviamente è possibile definire delle variabili di cilo del tipo
+  int l_ciclox, l_cicloy.
+
+- Le procedure in C globali o le variabili globali devono essere in minuscolo (o per lo meno
+  iniziare con lettere in minuscolo)
+
+  es:  float globalFOV;
+       void vect_add(...)
+
+
+CODICI DI RITORNO
+-----------------
+Qualuque procedura che effetta un codice di ritorno del tipo (concettuale) booleano, DEVE ritornare un valore pari a 0 (zero) se la procedura ha avuto esito NEGATIVO (ad esempio una inizializzazione è avvenuta male), altrimenti DEVE restituire un codice numerico MAGGIORE di zero.
+
+
+
+TO DO:
+-----------------------------------------------
+- fare la classe patch
+- fare la classe particle (con modificatori WSM)
+- fare i OSM modifier
+- fare le bonez
+- usare il pivot (eventualmente decidere se è della mesh o del GeometricObject)

@@ -1,0 +1,14 @@
+#include "DOT3TOON_VS.H"
+
+#define V_POSITION v0
+#define V_NORMAL v1
+#define V_TEXTURE v2
+
+vs.1.0
+
+; transform position scaled
+m4x4 oPos, V_POSITION, c[CV_WORLDVIEWPROJ_0]
+
+; colore nero per la silouette
+mov oD0, c[CV_ZERO]
+

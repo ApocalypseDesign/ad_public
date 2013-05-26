@@ -1,0 +1,673 @@
+CoInitialize(NULL), hr=0
+CreateDevice, hr=0
+Render states done, hr=0
+Texture stage 0 done, hr=0
+Texture stage 1 done, hr=0
+Texture stage 2 done, hr=0
+Begin shader creation, hr=0
+Toon gradient added, hr=0
+End shader creation, hr=0
+Begin blur(s) creation, hr=0
+Begin motion blur creation, hr=0
+p_VertexBufferBlur2 creation done, hr=0
+Motion blur VB creation done, hr=0
+New front buffer cleared, hr=0
+Motion blur creation done, hr=0
+Begin radial blur creation, hr=0
+Motion blur VB creation started, hr=0
+p_VertexBufferBlur1 creation done, hr=0
+Radial blur creation done, hr=0
+Old buffer cleared, hr=0
+Blur(s) creation done, hr=0
+Base matrix cration done, hr=0
+p_Height: -1
+, hr=0
+m_GetVideoInfo: put_AutoShow done, hr=0
+m_GetVideoInfo: pSeek done, hr=0
+m_GetVideoInfo: GetDuration done, hr=0
+m_GetVideoInfo: hr==S_OK, hr=0
+m_GetVideoInfo: GetConnectedMediaType done, hr=0
+m_GetVideoInfo: pVideoHeader done, hr=0
+m_GetVideoInfo: width=64, height=64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_LoadVideo allocation done, hr=0
+p_Height: 64
+, hr=0
+p_LoadVideo allocation done1, hr=0
+p_LoadVideo allocation done2, hr=0
+p_LoadVideo allocation done3, hr=0
+p_LoadVideo frame 0 read done
+, hr=0
+p_LoadVideo frame 1 read done
+, hr=0
+p_LoadVideo frame 2 read done
+, hr=0
+p_LoadVideo frame 3 read done
+, hr=0
+p_LoadVideo frame 4 read done
+, hr=0
+p_LoadVideo frame 5 read done
+, hr=0
+p_LoadVideo frame 6 read done
+, hr=0
+p_LoadVideo frame 7 read done
+, hr=0
+p_LoadVideo frame 8 read done
+, hr=0
+p_LoadVideo frame 9 read done
+, hr=0
+p_LoadVideo frame 10 read done
+, hr=0
+p_LoadVideo frame 11 read done
+, hr=0
+p_LoadVideo frame 12 read done
+, hr=0
+p_LoadVideo frame 13 read done
+, hr=0
+p_LoadVideo frame 14 read done
+, hr=0
+p_LoadVideo frame 15 read done
+, hr=0
+p_LoadVideo frame 16 read done
+, hr=0
+p_LoadVideo frame 17 read done
+, hr=0
+p_LoadVideo frame 18 read done
+, hr=0
+p_LoadVideo frame 19 read done
+, hr=0
+p_LoadVideo frame 20 read done
+, hr=0
+p_LoadVideo frame 21 read done
+, hr=0
+p_LoadVideo frame 22 read done
+, hr=0
+p_LoadVideo frame 23 read done
+, hr=0
+p_LoadVideo frame 24 read done
+, hr=0
+p_LoadVideo frame 25 read done
+, hr=0
+p_LoadVideo frame 26 read done
+, hr=0
+p_LoadVideo frame 27 read done
+, hr=0
+p_LoadVideo frame 28 read done
+, hr=0
+p_LoadVideo frame 29 read done
+, hr=0
+p_LoadVideo frame 30 read done
+, hr=0
+p_LoadVideo frame 31 read done
+, hr=0
+p_LoadVideo frame 32 read done
+, hr=0
+p_LoadVideo frame 33 read done
+, hr=0
+p_LoadVideo frame 34 read done
+, hr=0
+p_LoadVideo frame 35 read done
+, hr=0
+p_LoadVideo frame 36 read done
+, hr=0
+p_LoadVideo frame 37 read done
+, hr=0
+p_LoadVideo frame 38 read done
+, hr=0
+p_LoadVideo frame 39 read done
+, hr=0
+p_LoadVideo frame 40 read done
+, hr=0
+p_LoadVideo frame 41 read done
+, hr=0
+p_LoadVideo frame 42 read done
+, hr=0
+p_LoadVideo frame 43 read done
+, hr=0
+p_LoadVideo frame 44 read done
+, hr=0
+p_LoadVideo frame 45 read done
+, hr=0
+p_LoadVideo frame 46 read done
+, hr=0
+p_LoadVideo frame 47 read done
+, hr=0
+p_LoadVideo frame 48 read done
+, hr=0
+p_LoadVideo frame 49 read done
+, hr=0
+p_LoadVideo frame 50 read done
+, hr=0
+p_LoadVideo frame 51 read done
+, hr=0
+p_LoadVideo frame 52 read done
+, hr=0
+p_LoadVideo frame 53 read done
+, hr=0
+p_LoadVideo frame 54 read done
+, hr=0
+p_LoadVideo frame 55 read done
+, hr=0
+p_LoadVideo frame 56 read done
+, hr=0
+p_LoadVideo frame 57 read done
+, hr=0
+p_LoadVideo frame 58 read done
+, hr=0
+p_LoadVideo frame 59 read done
+, hr=0
+p_LoadVideo frame 60 read done
+, hr=0
+p_LoadVideo frame 61 read done
+, hr=0
+p_LoadVideo frame 62 read done
+, hr=0
+p_LoadVideo frame 63 read done
+, hr=0
+p_LoadVideo frame 64 read done
+, hr=0
+p_LoadVideo frame 65 read done
+, hr=0
+p_LoadVideo frame 66 read done
+, hr=0
+p_LoadVideo frame 67 read done
+, hr=0
+p_LoadVideo frame 68 read done
+, hr=0
+p_LoadVideo frame 69 read done
+, hr=0
+p_LoadVideo frame 70 read done
+, hr=0
+p_LoadVideo frame 71 read done
+, hr=0
+p_LoadVideo frame 72 read done
+, hr=0
+p_LoadVideo frame 73 read done
+, hr=0
+p_LoadVideo frame 74 read done
+, hr=0
+p_LoadVideo frame 75 read done
+, hr=0
+p_LoadVideo frame 76 read done
+, hr=0
+p_LoadVideo frame 77 read done
+, hr=0
+p_LoadVideo frame 78 read done
+, hr=0
+p_LoadVideo frame 79 read done
+, hr=0
+p_LoadVideo frame 80 read done
+, hr=0
+p_LoadVideo frame 81 read done
+, hr=0
+p_LoadVideo frame 82 read done
+, hr=0
+p_LoadVideo frame 83 read done
+, hr=0
+p_LoadVideo frame 84 read done
+, hr=0
+p_LoadVideo frame 85 read done
+, hr=0
+p_LoadVideo frame 86 read done
+, hr=0
+p_LoadVideo frame 87 read done
+, hr=0
+p_LoadVideo frame 88 read done
+, hr=0
+p_LoadVideo frame 89 read done
+, hr=0
+p_LoadVideo frame 90 read done
+, hr=0
+p_LoadVideo frame 91 read done
+, hr=0
+p_LoadVideo frame 92 read done
+, hr=0
+p_LoadVideo frame 93 read done
+, hr=0
+p_LoadVideo frame 94 read done
+, hr=0
+p_LoadVideo frame 95 read done
+, hr=0
+p_LoadVideo closing done, hr=0
+p_Height: -1
+, hr=0
+m_GetVideoInfo: put_AutoShow done, hr=0
+m_GetVideoInfo: pSeek done, hr=0
+m_GetVideoInfo: GetDuration done, hr=0
+m_GetVideoInfo: hr==S_OK, hr=0
+m_GetVideoInfo: GetConnectedMediaType done, hr=0
+m_GetVideoInfo: pVideoHeader done, hr=0
+m_GetVideoInfo: width=64, height=64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_LoadVideo allocation done, hr=0
+p_Height: 64
+, hr=0
+p_LoadVideo allocation done1, hr=0
+p_LoadVideo allocation done2, hr=0
+p_LoadVideo allocation done3, hr=0
+p_LoadVideo frame 0 read done
+, hr=0
+p_LoadVideo frame 1 read done
+, hr=0
+p_LoadVideo frame 2 read done
+, hr=0
+p_LoadVideo frame 3 read done
+, hr=0
+p_LoadVideo frame 4 read done
+, hr=0
+p_LoadVideo frame 5 read done
+, hr=0
+p_LoadVideo frame 6 read done
+, hr=0
+p_LoadVideo frame 7 read done
+, hr=0
+p_LoadVideo frame 8 read done
+, hr=0
+p_LoadVideo frame 9 read done
+, hr=0
+p_LoadVideo frame 10 read done
+, hr=0
+p_LoadVideo frame 11 read done
+, hr=0
+p_LoadVideo frame 12 read done
+, hr=0
+p_LoadVideo frame 13 read done
+, hr=0
+p_LoadVideo frame 14 read done
+, hr=0
+p_LoadVideo frame 15 read done
+, hr=0
+p_LoadVideo frame 16 read done
+, hr=0
+p_LoadVideo frame 17 read done
+, hr=0
+p_LoadVideo frame 18 read done
+, hr=0
+p_LoadVideo frame 19 read done
+, hr=0
+p_LoadVideo frame 20 read done
+, hr=0
+p_LoadVideo frame 21 read done
+, hr=0
+p_LoadVideo frame 22 read done
+, hr=0
+p_LoadVideo frame 23 read done
+, hr=0
+p_LoadVideo frame 24 read done
+, hr=0
+p_LoadVideo frame 25 read done
+, hr=0
+p_LoadVideo frame 26 read done
+, hr=0
+p_LoadVideo frame 27 read done
+, hr=0
+p_LoadVideo frame 28 read done
+, hr=0
+p_LoadVideo frame 29 read done
+, hr=0
+p_LoadVideo frame 30 read done
+, hr=0
+p_LoadVideo frame 31 read done
+, hr=0
+p_LoadVideo frame 32 read done
+, hr=0
+p_LoadVideo frame 33 read done
+, hr=0
+p_LoadVideo frame 34 read done
+, hr=0
+p_LoadVideo frame 35 read done
+, hr=0
+p_LoadVideo frame 36 read done
+, hr=0
+p_LoadVideo frame 37 read done
+, hr=0
+p_LoadVideo frame 38 read done
+, hr=0
+p_LoadVideo frame 39 read done
+, hr=0
+p_LoadVideo frame 40 read done
+, hr=0
+p_LoadVideo frame 41 read done
+, hr=0
+p_LoadVideo frame 42 read done
+, hr=0
+p_LoadVideo frame 43 read done
+, hr=0
+p_LoadVideo frame 44 read done
+, hr=0
+p_LoadVideo frame 45 read done
+, hr=0
+p_LoadVideo frame 46 read done
+, hr=0
+p_LoadVideo frame 47 read done
+, hr=0
+p_LoadVideo frame 48 read done
+, hr=0
+p_LoadVideo frame 49 read done
+, hr=0
+p_LoadVideo frame 50 read done
+, hr=0
+p_LoadVideo frame 51 read done
+, hr=0
+p_LoadVideo frame 52 read done
+, hr=0
+p_LoadVideo frame 53 read done
+, hr=0
+p_LoadVideo frame 54 read done
+, hr=0
+p_LoadVideo frame 55 read done
+, hr=0
+p_LoadVideo frame 56 read done
+, hr=0
+p_LoadVideo frame 57 read done
+, hr=0
+p_LoadVideo frame 58 read done
+, hr=0
+p_LoadVideo frame 59 read done
+, hr=0
+p_LoadVideo frame 60 read done
+, hr=0
+p_LoadVideo frame 61 read done
+, hr=0
+p_LoadVideo frame 62 read done
+, hr=0
+p_LoadVideo frame 63 read done
+, hr=0
+p_LoadVideo frame 64 read done
+, hr=0
+p_LoadVideo frame 65 read done
+, hr=0
+p_LoadVideo frame 66 read done
+, hr=0
+p_LoadVideo frame 67 read done
+, hr=0
+p_LoadVideo frame 68 read done
+, hr=0
+p_LoadVideo frame 69 read done
+, hr=0
+p_LoadVideo frame 70 read done
+, hr=0
+p_LoadVideo frame 71 read done
+, hr=0
+p_LoadVideo frame 72 read done
+, hr=0
+p_LoadVideo frame 73 read done
+, hr=0
+p_LoadVideo frame 74 read done
+, hr=0
+p_LoadVideo frame 75 read done
+, hr=0
+p_LoadVideo frame 76 read done
+, hr=0
+p_LoadVideo frame 77 read done
+, hr=0
+p_LoadVideo frame 78 read done
+, hr=0
+p_LoadVideo frame 79 read done
+, hr=0
+p_LoadVideo frame 80 read done
+, hr=0
+p_LoadVideo frame 81 read done
+, hr=0
+p_LoadVideo frame 82 read done
+, hr=0
+p_LoadVideo frame 83 read done
+, hr=0
+p_LoadVideo frame 84 read done
+, hr=0
+p_LoadVideo frame 85 read done
+, hr=0
+p_LoadVideo frame 86 read done
+, hr=0
+p_LoadVideo frame 87 read done
+, hr=0
+p_LoadVideo frame 88 read done
+, hr=0
+p_LoadVideo frame 89 read done
+, hr=0
+p_LoadVideo frame 90 read done
+, hr=0
+p_LoadVideo frame 91 read done
+, hr=0
+p_LoadVideo frame 92 read done
+, hr=0
+p_LoadVideo frame 93 read done
+, hr=0
+p_LoadVideo frame 94 read done
+, hr=0
+p_LoadVideo frame 95 read done
+, hr=0
+p_LoadVideo closing done, hr=0
+p_Height: -1
+, hr=0
+m_GetVideoInfo: put_AutoShow done, hr=0
+m_GetVideoInfo: pSeek done, hr=0
+m_GetVideoInfo: GetDuration done, hr=0
+m_GetVideoInfo: hr==S_OK, hr=0
+m_GetVideoInfo: GetConnectedMediaType done, hr=0
+m_GetVideoInfo: pVideoHeader done, hr=0
+m_GetVideoInfo: width=64, height=64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_Height: 64
+, hr=0
+p_LoadVideo allocation done, hr=0
+p_Height: 64
+, hr=0
+p_LoadVideo allocation done1, hr=0
+p_LoadVideo allocation done2, hr=0
+p_LoadVideo allocation done3, hr=0
+p_LoadVideo frame 0 read done
+, hr=0
+p_LoadVideo frame 1 read done
+, hr=0
+p_LoadVideo frame 2 read done
+, hr=0
+p_LoadVideo frame 3 read done
+, hr=0
+p_LoadVideo frame 4 read done
+, hr=0
+p_LoadVideo frame 5 read done
+, hr=0
+p_LoadVideo frame 6 read done
+, hr=0
+p_LoadVideo frame 7 read done
+, hr=0
+p_LoadVideo frame 8 read done
+, hr=0
+p_LoadVideo frame 9 read done
+, hr=0
+p_LoadVideo frame 10 read done
+, hr=0
+p_LoadVideo frame 11 read done
+, hr=0
+p_LoadVideo frame 12 read done
+, hr=0
+p_LoadVideo frame 13 read done
+, hr=0
+p_LoadVideo frame 14 read done
+, hr=0
+p_LoadVideo frame 15 read done
+, hr=0
+p_LoadVideo frame 16 read done
+, hr=0
+p_LoadVideo frame 17 read done
+, hr=0
+p_LoadVideo frame 18 read done
+, hr=0
+p_LoadVideo frame 19 read done
+, hr=0
+p_LoadVideo frame 20 read done
+, hr=0
+p_LoadVideo frame 21 read done
+, hr=0
+p_LoadVideo frame 22 read done
+, hr=0
+p_LoadVideo frame 23 read done
+, hr=0
+p_LoadVideo frame 24 read done
+, hr=0
+p_LoadVideo frame 25 read done
+, hr=0
+p_LoadVideo frame 26 read done
+, hr=0
+p_LoadVideo frame 27 read done
+, hr=0
+p_LoadVideo frame 28 read done
+, hr=0
+p_LoadVideo frame 29 read done
+, hr=0
+p_LoadVideo frame 30 read done
+, hr=0
+p_LoadVideo frame 31 read done
+, hr=0
+p_LoadVideo frame 32 read done
+, hr=0
+p_LoadVideo frame 33 read done
+, hr=0
+p_LoadVideo frame 34 read done
+, hr=0
+p_LoadVideo frame 35 read done
+, hr=0
+p_LoadVideo frame 36 read done
+, hr=0
+p_LoadVideo frame 37 read done
+, hr=0
+p_LoadVideo frame 38 read done
+, hr=0
+p_LoadVideo frame 39 read done
+, hr=0
+p_LoadVideo frame 40 read done
+, hr=0
+p_LoadVideo frame 41 read done
+, hr=0
+p_LoadVideo frame 42 read done
+, hr=0
+p_LoadVideo frame 43 read done
+, hr=0
+p_LoadVideo frame 44 read done
+, hr=0
+p_LoadVideo frame 45 read done
+, hr=0
+p_LoadVideo frame 46 read done
+, hr=0
+p_LoadVideo frame 47 read done
+, hr=0
+p_LoadVideo frame 48 read done
+, hr=0
+p_LoadVideo frame 49 read done
+, hr=0
+p_LoadVideo frame 50 read done
+, hr=0
+p_LoadVideo frame 51 read done
+, hr=0
+p_LoadVideo frame 52 read done
+, hr=0
+p_LoadVideo frame 53 read done
+, hr=0
+p_LoadVideo frame 54 read done
+, hr=0
+p_LoadVideo frame 55 read done
+, hr=0
+p_LoadVideo frame 56 read done
+, hr=0
+p_LoadVideo frame 57 read done
+, hr=0
+p_LoadVideo frame 58 read done
+, hr=0
+p_LoadVideo frame 59 read done
+, hr=0
+p_LoadVideo frame 60 read done
+, hr=0
+p_LoadVideo frame 61 read done
+, hr=0
+p_LoadVideo frame 62 read done
+, hr=0
+p_LoadVideo frame 63 read done
+, hr=0
+p_LoadVideo frame 64 read done
+, hr=0
+p_LoadVideo frame 65 read done
+, hr=0
+p_LoadVideo frame 66 read done
+, hr=0
+p_LoadVideo frame 67 read done
+, hr=0
+p_LoadVideo frame 68 read done
+, hr=0
+p_LoadVideo frame 69 read done
+, hr=0
+p_LoadVideo frame 70 read done
+, hr=0
+p_LoadVideo frame 71 read done
+, hr=0
+p_LoadVideo frame 72 read done
+, hr=0
+p_LoadVideo frame 73 read done
+, hr=0
+p_LoadVideo frame 74 read done
+, hr=0
+p_LoadVideo frame 75 read done
+, hr=0
+p_LoadVideo frame 76 read done
+, hr=0
+p_LoadVideo frame 77 read done
+, hr=0
+p_LoadVideo frame 78 read done
+, hr=0
+p_LoadVideo frame 79 read done
+, hr=0
+p_LoadVideo frame 80 read done
+, hr=0
+p_LoadVideo frame 81 read done
+, hr=0
+p_LoadVideo frame 82 read done
+, hr=0
+p_LoadVideo frame 83 read done
+, hr=0
+p_LoadVideo frame 84 read done
+, hr=0
+p_LoadVideo frame 85 read done
+, hr=0
+p_LoadVideo frame 86 read done
+, hr=0
+p_LoadVideo frame 87 read done
+, hr=0
+p_LoadVideo frame 88 read done
+, hr=0
+p_LoadVideo frame 89 read done
+, hr=0
+p_LoadVideo frame 90 read done
+, hr=0
+p_LoadVideo frame 91 read done
+, hr=0
+p_LoadVideo frame 92 read done
+, hr=0
+p_LoadVideo frame 93 read done
+, hr=0
+p_LoadVideo frame 94 read done
+, hr=0
+p_LoadVideo frame 95 read done
+, hr=0
+p_LoadVideo closing done, hr=0

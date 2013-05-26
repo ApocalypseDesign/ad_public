@@ -1,0 +1,1 @@
+Debug_Error: C:\Redshift\Demo_sw\Data\Scena3\cnn.png has no power of 2 dimensions

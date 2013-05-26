@@ -1,0 +1,1 @@
+Debug_Error: AD-RenderLib Error: CRenderLib::m_UpdateScreen failed! - D3DERR_DEVICELOST

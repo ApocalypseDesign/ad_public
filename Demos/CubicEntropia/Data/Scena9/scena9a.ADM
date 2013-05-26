@@ -1,0 +1,37 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="trans.png";
+    mipmaplevels="1";
+  }
+  
+  bitmap "1" 
+  {
+    id="1";
+    filename="animation1.avi";
+    start_time="0";
+    playback_rate="5";
+    end_condition="LOOP";
+    mipmaplevels="1";
+  }
+
+  material "1 - Default" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    map1tile="2.000000, 2.000000";
+    map2="1";
+    map2channel="TEX1";
+    mapsmixtype="SUB";
+    lightmixtype="NONE";
+    backfaceculling="NONE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="10";
+    next_material="NONE";
+  }
+

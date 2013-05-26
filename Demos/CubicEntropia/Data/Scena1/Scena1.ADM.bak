@@ -1,0 +1,21 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="C:\Redshift\Demo_sw\Data\Scena1\synaps.png";
+    mipmaplevels="1";
+  }
+
+  material "20 - Default" 
+  {
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ALPHA";
+    transparency_amount="0";
+    next_material="NONE";
+  }
+

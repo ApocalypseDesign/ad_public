@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PlayerSW - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x410 /fo"Release/ADdemo.res" /i "\redshift\Demo_sw\ScenePlayers" /d "NDEBUG" "D:\redshift\Demo_sw\ScenePlayers\ADdemo.rc"" 
+Creating temporary file "C:\DOCUME~1\matteo\LOCALS~1\Temp\RSPE1.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/PlayerSW.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\redshift\Demo_sw\Math\fastmath.cpp"
+"D:\redshift\Demo_sw\Math\matrix.cpp"
+"D:\redshift\Demo_sw\Math\quater.cpp"
+"D:\redshift\Demo_sw\Math\vect3d.cpp"
+"D:\redshift\Demo_sw\Engines\Camera.cpp"
+"D:\redshift\Demo_sw\Engines\Keyframe.cpp"
+"D:\redshift\Demo_sw\Engines\OSMobj.cpp"
+"D:\redshift\Demo_sw\Engines\UtilsA3D.cpp"
+"D:\redshift\Demo_sw\Engines\utilsscript.cpp"
+"D:\redshift\Demo_sw\Engines\WSMobj.cpp"
+"D:\redshift\Demo_sw\Engines\EngineSW\triangle.cpp"
+"D:\redshift\Demo_sw\Engines\EngineSW\lights.cpp"
+"D:\redshift\Demo_sw\Engines\EngineSW\Object3d.cpp"
+"D:\redshift\Demo_sw\Engines\EngineSW\particle.cpp"
+"D:\redshift\Demo_sw\Engines\EngineSW\patch.cpp"
+"D:\redshift\Demo_sw\Engines\EngineSW\Scene3d.cpp"
+"D:\redshift\Demo_sw\ScenePlayers\ADdemo.cpp"
+"D:\redshift\Demo_sw\cpu_detect.cpp"
+"D:\redshift\Demo_sw\dtimer.cpp"
+"D:\redshift\Demo_sw\efx2D.cpp"
+"D:\redshift\Demo_sw\utility.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\matteo\LOCALS~1\Temp\RSPE1.tmp" 
+Creating temporary file "C:\DOCUME~1\matteo\LOCALS~1\Temp\RSPE2.tmp" with contents
+[
+libjpeg.lib libpng.lib fmod.lib libsw_Release.lib d3d8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/PlayerSW.pdb" /machine:I386 /nodefaultlib:"libc" /out:"Release/PlayerSW.exe" 
+.\Release\fastmath.obj
+.\Release\matrix.obj
+.\Release\quater.obj
+.\Release\vect3d.obj
+.\Release\Camera.obj
+.\Release\Keyframe.obj
+.\Release\OSMobj.obj
+.\Release\UtilsA3D.obj
+.\Release\utilsscript.obj
+.\Release\WSMobj.obj
+.\Release\triangle.obj
+.\Release\lights.obj
+.\Release\Object3d.obj
+.\Release\particle.obj
+.\Release\patch.obj
+.\Release\Scene3d.obj
+.\Release\ADdemo.obj
+.\Release\ADdemo.res
+.\Release\cpu_detect.obj
+.\Release\dtimer.obj
+.\Release\efx2D.obj
+.\Release\utility.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\matteo\LOCALS~1\Temp\RSPE2.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+fastmath.cpp
+matrix.cpp
+quater.cpp
+vect3d.cpp
+D:\redshift\Demo_sw\Math\vect3d.cpp(342) : warning C4035: 'vect_dot_asm' : no return value
+Camera.cpp
+Keyframe.cpp
+OSMobj.cpp
+UtilsA3D.cpp
+utilsscript.cpp
+WSMobj.cpp
+triangle.cpp
+lights.cpp
+Object3d.cpp
+particle.cpp
+patch.cpp
+Scene3d.cpp
+ADdemo.cpp
+D:\redshift\Demo_sw\ScenePlayers\ADdemo.cpp(242) : warning C4800: 'long' : forcing value to bool 'true' or 'false' (performance warning)
+cpu_detect.cpp
+dtimer.cpp
+efx2D.cpp
+utility.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+PlayerSW.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

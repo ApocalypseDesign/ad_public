@@ -1,0 +1,1 @@
+Debug_Error: ani.avi has no power of 2 dimensions

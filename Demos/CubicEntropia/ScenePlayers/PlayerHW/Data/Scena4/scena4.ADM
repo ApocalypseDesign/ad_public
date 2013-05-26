@@ -1,0 +1,111 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="AngelT.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "1" 
+  {
+    id="1";
+    filename="pesciolino.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "2" 
+  {
+    id="2";
+    filename="DemeKiT2.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "3" 
+  {
+    id="3";
+    //filename="roccia.png";
+    filename="terra.jpg";
+    mipmaplevels="1";
+  }
+
+  bitmap "4" 
+  {
+    id="4";
+    filename="metal4.PNG";
+    mipmaplevels="1";
+  }
+
+  bitmap "5" 
+  {
+    id="5";
+    filename="caustic.avi";
+    mipmaplevels="1";
+    playback_rate="6";
+  }
+
+  material "Material #3" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    map2="4";
+    map2channel="ENV";
+    mapsmixtype="ADD";
+    bumpmap="EMBM, AUTOMATIC";
+    bumpscale="2, 2";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+    //fog="EXP, 20, 164, 140, 5, 3000, 0.0002";
+    fog="LINEAR, 20, 80, 120, 200, 3500, 0.0003";
+  }
+
+  material "Material #49" 
+  {
+    map1="1";
+    map1channel="TEX1";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+    //fog="EXP, 20, 164, 140, 5, 3000, 0.0002";
+    fog="LINEAR, 20, 80, 120, 200, 3500, 0.0003";
+  }
+
+  material "Material #2" 
+  {
+    map1="2";
+    map1channel="TEX1";
+    map2="4";
+    map2channel="ENV";
+    mapsmixtype="ADD";
+    bumpmap="EMBM, AUTOMATIC";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+    //fog="EXP, 20, 164, 140, 5, 3000, 0.0002";
+    fog="LINEAR, 20, 80, 120, 200, 3500, 0.0003";
+  }
+
+  material "01 - Default" 
+  {
+    map1="3";
+    map1channel="TEX1";
+    map2="5";
+    map2channel="TEX1";
+    //map2channel="ENV";
+    //bumpmap="DOT3, AUTOMATIC";
+    map2tile="6, 6";
+    mapsmixtype="ADD";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+    //fog="EXP, 20, 124, 140, 5, 3000, 0.0002";
+    fog="LINEAR, 20, 80, 120, 200, 3500, 0.0003";
+  }
+

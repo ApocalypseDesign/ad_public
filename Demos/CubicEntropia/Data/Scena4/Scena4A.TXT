@@ -1,0 +1,4198 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 810
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -932,451416, -1925,791626, -23,218332
+max : 1326,231201, 759,656860, 882,319824
+
+
+Material list 
+Numero di materiali : 4
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Global ID = 1
+Material Global ID = 2
+Material Global ID = 3
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 4
+Material name : Material #49 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 5
+Material name : Material #52 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 6
+Material name : Material #2 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 7
+Material name : Material #3 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #35 (pesciolino.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #36 (roccia.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #34 (DemeKiT2.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #33 (AngelT.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+***Elenco dei nodi***
+
+Name: Rectangle22, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 854,891174, -986,064148, 220,977127
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 81,014984, -445,648346, 220,977127
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value -53,169220, -445,648346, 220,977127
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -134,147552, -559,019226, 220,977127
+inTan: -54,375397, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra22, Father Name: Rectangle22
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Plane01, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 121
+Number of vertex (optimized): 121
+Number of triangles (non optimized): 200
+Number of triangles (optimized): 200
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 143
+Numero di vertici texture (optimized): 121
+Numero di facce texture : 200
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #52
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 203,032730, -365,753937, 5,048184
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 2,010000, 2,010000, 2,010000
+Noise(irule!) OSM found at order 0...
+Seed: 5 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 0 
+Frequency: 0,250000 
+Phase: 0 
+Strength0: 40,000000, 45,000000, 35,000000
+tmControl->GetPositionController: 0924F820, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 0924F750, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 0924F670, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Rectangle23, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 882,432251, -977,920715, 69,388702
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 108,556061, -437,504974, 69,388702
+inTan: -460,722137, 154,404495, 0,000000, -40000,000000
+outTan: -184,288864, 61,761799, 0,000000 16000,000000
+timepos : 350,  value -25,628143, -437,504974, 69,388702
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -106,606468, -550,875854, 69,388702
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra01, Father Name: Rectangle23
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle24, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 858,277161, -1027,831787, 203,830063
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 84,401031, -487,416046, 203,830063
+inTan: -460,722107, 154,404495, 0,000000, -40000,000000
+outTan: -184,288849, 61,761799, 0,000000 16000,000000
+timepos : 350,  value -49,783173, -487,416046, 203,830063
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -130,761505, -600,786926, 203,830063
+inTan: -54,375397, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra24, Father Name: Rectangle24
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle25, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 864,466980, -923,473511, 160,784851
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 90,590851, -383,057770, 160,784851
+inTan: -460,722107, 154,404495, 0,000000, -40000,000000
+outTan: -184,288849, 61,761799, 0,000000 16000,000000
+timepos : 350,  value -43,593353, -383,057770, 160,784851
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -124,571686, -496,428650, 160,784851
+inTan: -54,375397, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra02, Father Name: Rectangle25
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle26, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 918,210510, -883,915466, 160,502319
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 144,334320, -343,499664, 160,502319
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 10,150116, -343,499664, 160,502319
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -70,828209, -456,870544, 160,502319
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra27, Father Name: Rectangle26
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle27, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 908,466125, -911,196228, 116,051239
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 134,589996, -370,780426, 116,051239
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 0,405792, -370,780426, 116,051239
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -80,572533, -484,151306, 116,051239
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra25, Father Name: Rectangle27
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle28, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 940,547424, -924,192810, 180,158188
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 166,671234, -383,777008, 180,158188
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 32,487030, -383,777008, 180,158188
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -48,491295, -497,147888, 180,158188
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra28, Father Name: Rectangle28
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle29, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 908,107056, -972,209106, 159,180573
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 134,230865, -431,793304, 159,180573
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 0,046661, -431,793304, 159,180573
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -80,931664, -545,164185, 159,180573
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra26, Father Name: Rectangle29
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle30, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 868,750793, -1065,190674, 156,973175
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427185, 0,000000 40000,000000
+timepos : 250,  value 94,874664, -524,774841, 156,973175
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value -39,309540, -524,774841, 156,973175
+inTan: -107,581268, -56,685455, 0,000000, -16000,000000
+outTan: -107,581268, -56,685455, 0,000000 16000,000000
+timepos : 450,  value -120,287865, -638,145752, 156,973175
+inTan: -54,375385, -170,056366, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra29, Father Name: Rectangle30
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle31, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 993,190979, -1025,032104, 164,600311
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 219,314789, -484,616302, 164,600311
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 85,130585, -484,616302, 164,600311
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value 4,152260, -597,987183, 164,600311
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra30, Father Name: Rectangle31
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle32, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 928,437561, -1061,101563, 192,513809
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427185, 0,000000 40000,000000
+timepos : 250,  value 154,561371, -520,685730, 192,513809
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 20,377167, -520,685730, 192,513809
+inTan: -107,581268, -56,685455, 0,000000, -16000,000000
+outTan: -107,581268, -56,685455, 0,000000 16000,000000
+timepos : 450,  value -60,601158, -634,056641, 192,513809
+inTan: -54,375385, -170,056366, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra31, Father Name: Rectangle32
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle33, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 992,363770, -1003,148438, 151,572159
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 218,487640, -462,732635, 151,572159
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 84,303436, -462,732635, 151,572159
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value 3,325111, -576,103516, 151,572159
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra36, Father Name: Rectangle33
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle34, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 985,938110, -933,122498, 198,279602
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 212,061920, -392,706696, 198,279602
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 77,877716, -392,706696, 198,279602
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -3,100609, -506,077576, 198,279602
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra33, Father Name: Rectangle34
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle35, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 898,747681, -1005,629395, 182,082916
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 124,871552, -465,213593, 182,082916
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value -9,312653, -465,213593, 182,082916
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -90,290977, -578,584473, 182,082916
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra34, Father Name: Rectangle35
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle36, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 1012,158813, -970,346924, 177,834183
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 238,282684, -429,931183, 177,834183
+inTan: -460,722107, 154,404495, 0,000000, -40000,000000
+outTan: -184,288849, 61,761799, 0,000000 16000,000000
+timepos : 350,  value 104,098480, -429,931183, 177,834183
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value 23,120155, -543,302063, 177,834183
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra35, Father Name: Rectangle36
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle37, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 954,607788, -976,524353, 200,243851
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 180,731598, -436,108551, 200,243851
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 46,547394, -436,108551, 200,243851
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -34,430931, -549,479431, 200,243851
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra32, Father Name: Rectangle37
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle38, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 949,742493, -1060,582764, 115,779373
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 175,866364, -520,166992, 115,779373
+inTan: -460,722107, 154,404510, 0,000000, -40000,000000
+outTan: -184,288849, 61,761803, 0,000000 16000,000000
+timepos : 350,  value 41,682159, -520,166992, 115,779373
+inTan: -107,581268, -56,685455, 0,000000, -16000,000000
+outTan: -107,581268, -56,685455, 0,000000 16000,000000
+timepos : 450,  value -39,296165, -633,537903, 115,779373
+inTan: -54,375385, -170,056366, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra37, Father Name: Rectangle38
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle39, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 872,040283, -946,005005, 106,206787
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 98,164154, -405,589203, 106,206787
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value -36,020050, -405,589203, 106,206787
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -116,998375, -518,960083, 106,206787
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra38, Father Name: Rectangle39
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle40, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 826,594421, -998,656372, 131,668350
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 52,718231, -458,240631, 131,668350
+inTan: -460,722137, 154,404495, 0,000000, -40000,000000
+outTan: -184,288864, 61,761799, 0,000000 16000,000000
+timepos : 350,  value -81,465973, -458,240631, 131,668350
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -162,444305, -571,611511, 131,668350
+inTan: -54,375397, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra39, Father Name: Rectangle40
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle41, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 970,510498, -999,483704, 105,464310
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 196,634369, -459,067902, 105,464310
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 62,450165, -459,067902, 105,464310
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -18,528160, -572,438782, 105,464310
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra40, Father Name: Rectangle41
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle42, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 1022,592285, -942,094360, 140,751480
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 248,716156, -401,678558, 140,751480
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 114,531952, -401,678558, 140,751480
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value 33,553627, -515,049438, 140,751480
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra41, Father Name: Rectangle42
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle43, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 827,023193, -1023,926453, 127,495918
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 53,147064, -483,510712, 127,495918
+inTan: -460,722107, 154,404495, 0,000000, -40000,000000
+outTan: -184,288849, 61,761799, 0,000000 16000,000000
+timepos : 350,  value -81,037140, -483,510712, 127,495918
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -162,015472, -596,881592, 127,495918
+inTan: -54,375397, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra42, Father Name: Rectangle43
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle44, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 929,042847, -909,959656, 137,003220
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 155,166656, -369,543915, 137,003220
+inTan: -460,722137, 154,404495, 0,000000, -40000,000000
+outTan: -184,288864, 61,761799, 0,000000 16000,000000
+timepos : 350,  value 20,982452, -369,543915, 137,003220
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -59,995872, -482,914795, 137,003220
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra43, Father Name: Rectangle44
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle45, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 898,073975, -943,731323, 81,125961
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 124,197784, -403,315582, 81,125961
+inTan: -460,722137, 154,404495, 0,000000, -40000,000000
+outTan: -184,288864, 61,761799, 0,000000 16000,000000
+timepos : 350,  value -9,986420, -403,315582, 81,125961
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -90,964745, -516,686462, 81,125961
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra44, Father Name: Rectangle45
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle46, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 849,618774, -1059,948608, 90,357407
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427185, 0,000000 40000,000000
+timepos : 250,  value 75,742584, -519,532776, 90,357407
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value -58,441620, -519,532776, 90,357407
+inTan: -107,581268, -56,685455, 0,000000, -16000,000000
+outTan: -107,581268, -56,685455, 0,000000 16000,000000
+timepos : 450,  value -139,419952, -632,903687, 90,357407
+inTan: -54,375397, -170,056366, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra45, Father Name: Rectangle46
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle47, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 936,439270, -1036,503540, 96,913567
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 162,563141, -496,087799, 96,913567
+inTan: -460,722107, 154,404495, 0,000000, -40000,000000
+outTan: -184,288849, 61,761799, 0,000000 16000,000000
+timepos : 350,  value 28,378937, -496,087799, 96,913567
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -52,599388, -609,458679, 96,913567
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra46, Father Name: Rectangle47
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle48, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 900,585693, -1046,706177, 138,665695
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427002, 0,000000 40000,000000
+timepos : 250,  value 126,709503, -506,290405, 138,665695
+inTan: -460,722137, 154,404510, 0,000000, -40000,000000
+outTan: -184,288864, 61,761803, 0,000000 16000,000000
+timepos : 350,  value -7,474701, -506,290405, 138,665695
+inTan: -107,581268, -56,685425, 0,000000, -16000,000000
+outTan: -107,581268, -56,685425, 0,000000 16000,000000
+timepos : 450,  value -88,453026, -619,661255, 138,665695
+inTan: -54,375385, -170,056274, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra47, Father Name: Rectangle48
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle49, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 925,925293, -987,546326, 93,178619
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 152,049103, -447,130524, 93,178619
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 17,864899, -447,130524, 93,178619
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -63,113426, -560,501404, 93,178619
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra48, Father Name: Rectangle49
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle50, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 964,463440, -917,520203, 94,109505
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 190,587311, -377,104401, 94,109505
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 56,403107, -377,104401, 94,109505
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -24,575218, -490,475281, 94,109505
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra49, Father Name: Rectangle50
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle51, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 906,252502, -1022,196960, 78,838737
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030151, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 132,376373, -481,781158, 78,838737
+inTan: -460,722107, 154,404526, 0,000000, -40000,000000
+outTan: -184,288849, 61,761806, 0,000000 16000,000000
+timepos : 350,  value -1,807831, -481,781158, 78,838737
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -82,786156, -595,152039, 78,838737
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra50, Father Name: Rectangle51
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle52, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 990,684265, -966,862183, 135,745163
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 216,808075, -426,446381, 135,745163
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 82,623871, -426,446381, 135,745163
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value 1,645546, -539,817261, 135,745163
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra51, Father Name: Rectangle52
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: Rectangle53, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 34
+Number of vertex (optimized): 34
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 52
+Numero di vertici texture (optimized): 52
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is Bezier
+Number of keys : 4
+timepos : 0,  value 946,963196, -955,708130, 114,477074
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1087,030273, 926,427124, 0,000000 40000,000000
+timepos : 250,  value 173,087006, -415,292328, 114,477074
+inTan: -460,722137, 154,404526, 0,000000, -40000,000000
+outTan: -184,288864, 61,761806, 0,000000 16000,000000
+timepos : 350,  value 38,902802, -415,292328, 114,477074
+inTan: -107,581268, -56,685440, 0,000000, -16000,000000
+outTan: -107,581268, -56,685440, 0,000000 16000,000000
+timepos : 450,  value -42,075523, -528,663208, 114,477074
+inTan: -54,375385, -170,056320, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 0,  value 0,334814, 0,883774, 0,326869, 1,691566
+timepos : 250,  value 0,000000, 0,000000, -1,000000, 0,471239
+timepos : 350,  value 0,000000, 0,000000, -1,000000, 0,986111
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,418291, 1,418291, 1,418291
+
+
+
+----------------------------------------------------
+Name: Hedra52, Father Name: Rectangle53
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=2DF2E3A, B=72BA4E1F
+Number of vertex (non optimized) : 6
+Number of vertex (optimized): 6
+Number of triangles (non optimized): 8
+Number of triangles (optimized): 8
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 6
+Numero di vertici texture (optimized): 6
+Numero di facce texture : 8
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #49
+Pivot point : 0,000000, 5,466212, 12,634363
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,046224, -0,207201, 10,464570
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 3
+timepos : 20,  value 0,000000, -0,173648, -0,984808, 3,141593
+timepos : 60,  value -1,000000, -0,000000, -0,000000, 0,558505
+timepos : 80,  value 1,000000, 0,000000, 0,000000, 0,279253
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,571429, 0,089792, 0,555555
+
+
+
+----------------------------------------------------
+Name: object, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 2168
+Number of vertex (optimized): 2168
+Number of triangles (non optimized): 4270
+Number of triangles (optimized): 4270
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 2168
+Numero di vertici texture (optimized): 1173
+Numero di facce texture : 4270
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 9
+timepos : 0,  value 306,881470, -1671,833008, 251,344879
+timepos : 100,  value 220,292450, -1507,971802, 251,344879
+timepos : 200,  value 158,318192, -1308,111084, 251,344879
+timepos : 300,  value 157,484299, -1108,989380, 251,344879
+timepos : 400,  value 217,643570, -983,809631, 251,344879
+timepos : 500,  value 363,044647, -956,653503, 251,344879
+timepos : 600,  value 544,698792, -783,121216, 251,344879
+timepos : 700,  value 799,131592, -585,828125, 251,344879
+timepos : 810,  value 943,145020, -120,890442, 251,344879
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 9
+timepos : 0,  value 0,000000, 0,000000, 1,000000, 1,029744
+timepos : 100,  value 0,000000, 0,000000, 1,000000, 0,113446
+timepos : 200,  value 0,000000, 0,000000, 1,000000, 0,122173
+timepos : 300,  value 0,000000, 0,000000, 1,000000, 0,174533
+timepos : 400,  value 0,000000, 0,000000, 1,000000, 0,314159
+timepos : 500,  value 0,000000, 0,000000, 1,000000, 0,794125
+timepos : 600,  value 0,000000, 0,000000, 1,000000, 0,218166
+timepos : 700,  value 0,000000, 0,000000, -1,000000, 0,401426
+timepos : 810,  value 0,000000, 0,000000, -1,000000, 0,349066
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1337,688477, 1337,688477, 1337,688477
+
+
+
+----------------------------------------------------
+Name: object4, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 208
+Number of vertex (optimized): 208
+Number of triangles (non optimized): 264
+Number of triangles (optimized): 264
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 208
+Numero di vertici texture (optimized): 104
+Numero di facce texture : 264
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,095636, 0,044919, -0,068764
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object12, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 145
+Number of vertex (optimized): 145
+Number of triangles (non optimized): 256
+Number of triangles (optimized): 256
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 145
+Numero di vertici texture (optimized): 145
+Numero di facce texture : 256
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,153262, 0,038035, -0,012989
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object11, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 145
+Number of vertex (optimized): 145
+Number of triangles (non optimized): 256
+Number of triangles (optimized): 256
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 145
+Numero di vertici texture (optimized): 145
+Numero di facce texture : 256
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,153262, -0,038035, -0,012989
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object9, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 372
+Number of vertex (optimized): 372
+Number of triangles (non optimized): 504
+Number of triangles (optimized): 504
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 372
+Numero di vertici texture (optimized): 186
+Numero di facce texture : 504
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,068889, -0,060272, 0,119043
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,120451, -0,069647, 0,126856
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object10, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 372
+Number of vertex (optimized): 372
+Number of triangles (non optimized): 504
+Number of triangles (optimized): 504
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 372
+Numero di vertici texture (optimized): 186
+Numero di facce texture : 504
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,068889, 0,060272, 0,119043
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,120451, 0,069647, 0,126856
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object6, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 136
+Number of vertex (optimized): 136
+Number of triangles (non optimized): 168
+Number of triangles (optimized): 168
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 136
+Numero di vertici texture (optimized): 68
+Numero di facce texture : 168
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,023437, 0,009490, -0,090625
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object5, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 136
+Number of vertex (optimized): 136
+Number of triangles (non optimized): 168
+Number of triangles (optimized): 168
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 136
+Numero di vertici texture (optimized): 68
+Numero di facce texture : 168
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,023437, -0,009490, -0,090625
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object2, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 316
+Number of vertex (optimized): 316
+Number of triangles (non optimized): 408
+Number of triangles (optimized): 408
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 316
+Numero di vertici texture (optimized): 158
+Numero di facce texture : 408
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,010937, -0,000000, 0,057813
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object3, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 208
+Number of vertex (optimized): 208
+Number of triangles (non optimized): 264
+Number of triangles (optimized): 264
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 208
+Numero di vertici texture (optimized): 104
+Numero di facce texture : 264
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,095636, -0,044919, -0,068764
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object8, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 118
+Number of vertex (optimized): 118
+Number of triangles (non optimized): 144
+Number of triangles (optimized): 144
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 118
+Numero di vertici texture (optimized): 59
+Numero di facce texture : 144
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,029687, 0,001145, -0,032812
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object7, Father Name: object
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 118
+Number of vertex (optimized): 118
+Number of triangles (non optimized): 144
+Number of triangles (optimized): 144
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 118
+Numero di vertici texture (optimized): 59
+Numero di facce texture : 144
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #2
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,029687, -0,001145, -0,032812
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: objectP2, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 2192
+Number of vertex (optimized): 2192
+Number of triangles (non optimized): 4220
+Number of triangles (optimized): 4220
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 2192
+Numero di vertici texture (optimized): 1154
+Numero di facce texture : 4220
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 9
+timepos : 0,  value 1028,018799, 20,425186, 520,899536
+timepos : 100,  value 880,818054, -37,632015, 520,899536
+timepos : 200,  value 816,342529, -104,625580, 520,899536
+timepos : 300,  value 721,515442, -204,928116, 520,899536
+timepos : 400,  value 681,830566, -326,212891, 520,899536
+timepos : 500,  value 547,720459, -457,684662, 520,899536
+timepos : 600,  value 359,021210, -561,211121, 520,899536
+timepos : 700,  value 114,670837, -683,813904, 520,899536
+timepos : 800,  value -162,647278, -723,591187, 520,899536
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 9
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 0,305433
+timepos : 200,  value 0,000000, 0,000000, -1,000000, 0,279253
+timepos : 300,  value 0,000000, 0,000000, -1,000000, 0,296706
+timepos : 400,  value 0,000000, 0,000000, -1,000000, 0,349066
+timepos : 500,  value 0,000000, 0,000000, 1,000000, 0,392699
+timepos : 600,  value 0,000000, 0,000000, 1,000000, 0,314159
+timepos : 700,  value 0,000000, 0,000000, 1,000000, 0,235619
+timepos : 800,  value 0,000000, 0,000000, 1,000000, 0,174533
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1167,602539, 1167,602539, 1167,602539
+
+
+
+----------------------------------------------------
+Name: object9P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 41
+Number of vertex (optimized): 41
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 41
+Numero di vertici texture (optimized): 41
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,153498, -0,012678, 0,006794
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object10P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 41
+Number of vertex (optimized): 41
+Number of triangles (non optimized): 64
+Number of triangles (optimized): 64
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 41
+Numero di vertici texture (optimized): 41
+Numero di facce texture : 64
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,153498, 0,012678, 0,006794
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object4P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 154
+Number of vertex (optimized): 154
+Number of triangles (non optimized): 192
+Number of triangles (optimized): 192
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 154
+Numero di vertici texture (optimized): 77
+Numero di facce texture : 192
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,094354, 0,022686, -0,035286
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object3P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 154
+Number of vertex (optimized): 154
+Number of triangles (non optimized): 192
+Number of triangles (optimized): 192
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 154
+Numero di vertici texture (optimized): 77
+Numero di facce texture : 192
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,094354, -0,022686, -0,035286
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object5P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 122
+Number of vertex (optimized): 122
+Number of triangles (non optimized): 160
+Number of triangles (optimized): 160
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 122
+Numero di vertici texture (optimized): 61
+Numero di facce texture : 160
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,110099, -0,010330, -0,112719
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object6P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 122
+Number of vertex (optimized): 122
+Number of triangles (non optimized): 160
+Number of triangles (optimized): 160
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 122
+Numero di vertici texture (optimized): 61
+Numero di facce texture : 160
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,110099, 0,010330, -0,112719
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object2P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 586
+Number of vertex (optimized): 586
+Number of triangles (non optimized): 768
+Number of triangles (optimized): 768
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 586
+Numero di vertici texture (optimized): 293
+Numero di facce texture : 768
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,011519, 0,000000, 0,083982
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object8P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 352
+Number of vertex (optimized): 352
+Number of triangles (non optimized): 456
+Number of triangles (optimized): 456
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 352
+Numero di vertici texture (optimized): 176
+Numero di facce texture : 456
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,106544, 0,000000, -0,020516
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object7P2, Father Name: objectP2
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 550
+Number of vertex (optimized): 550
+Number of triangles (non optimized): 720
+Number of triangles (optimized): 720
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 550
+Numero di vertici texture (optimized): 275
+Numero di facce texture : 720
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #3
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,014330, 0,000000, -0,126591
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 0,785398 
+Roll (rad) = 0,000000 
+Camera world position : x=1154,121704, y=-382,047668, z=425,678040
+Target world position : x=116,303589, y=-376,031311, z=136,023804
+Camera position track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value 1154,121704, -382,047668, 425,678040
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -519,886963, -1099,028809, -493,090027 24000,000000
+timepos : 150,  value 544,447754, -731,455566, 124,336075
+inTan: -699,460938, 400,212982, -109,593910, -24000,000000
+outTan: -466,307281, 266,808655, -73,062607 16000,000000
+timepos : 250,  value 38,235153, -131,482086, 136,494827
+inTan: -307,145782, 658,349304, 263,247040, -16000,000000
+outTan: -307,145782, 658,349304, 263,247040 16000,000000
+timepos : 350,  value -69,843773, 585,242981, 650,830139
+inTan: 20,525532, 287,525085, 257,167664, -16000,000000
+outTan: 20,525532, 287,525085, 257,167664 16000,000000
+timepos : 450,  value 79,286217, 443,568115, 650,830139
+inTan: 104,478134, -170,617096, -161,131134, -16000,000000
+outTan: 104,478134, -170,617096, -161,131134 16000,000000
+timepos : 550,  value 139,112503, 244,008789, 328,567871
+inTan: 15,174435, -228,501556, -483,393402, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+Target position track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value 116,303589, -376,031311, 136,023804
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1030,049683, 449,763580, 12,181138 24000,000000
+timepos : 150,  value -199,498550, 58,755280, 148,204941
+inTan: 398,445404, 419,809601, 12,181138, -24000,000000
+outTan: 265,630280, 279,873077, 8,120758 16000,000000
+timepos : 250,  value 383,575073, 331,971924, 156,325699
+inTan: 513,793274, -37,525726, 4,060379, -16000,000000
+outTan: 513,793274, -37,525726, 4,060379 16000,000000
+timepos : 350,  value 828,088013, -16,296173, 156,325699
+inTan: 221,617371, -589,744629, 0,000000, -16000,000000
+outTan: 221,617371, -589,744629, 0,000000 16000,000000
+timepos : 450,  value 826,809814, -847,517334, 156,325699
+inTan: -164,339645, -444,254486, 0,000000, -16000,000000
+outTan: -164,339645, -444,254486, 0,000000 16000,000000
+timepos : 550,  value 499,408722, -904,805176, 156,325699
+inTan: -490,462555, 329,678802, 0,000000, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Camera02, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera02
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 0,785398 
+Roll (rad) = 0,000000 
+Camera world position : x=1025,666138, y=-1119,317505, z=335,064301
+Target world position : x=468,466461, y=-957,565308, z=141,766296
+Camera position track present. Type is Bezier
+Number of keys : 5
+timepos : 0,  value 1025,666138, -1119,317505, 335,064301
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 5353,787109, 5082,213867, 0,000000 88160,000000
+timepos : 551,  value 1340,282837, -756,010437, 335,064301
+inTan: -4724,553711, -4355,599609, 0,000000, -88160,000000
+outTan: -420,150879, -387,340088, 0,000000 7840,000000
+timepos : 600,  value 880,280151, -1180,669556, 335,064301
+inTan: -597,254211, -115,009224, 146,066498, -7840,000000
+outTan: -609,443054, -117,356354, 149,047455 8000,000000
+timepos : 650,  value 127,926353, -975,608276, 636,200989
+inTan: -632,853821, 138,813080, 150,568344, -8000,000000
+outTan: -632,853821, 138,813080, 150,568344 8000,000000
+timepos : 700,  value -385,427460, -903,043396, 636,200989
+inTan: -393,853821, 6,316681, -150,568344, -8000,000000
+outTan: 0,000000, 0,000000, 0,000000
+Target position track present. Type is Bezier
+Number of keys : 3
+timepos : 0,  value 468,466461, -957,565308, 141,766296
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 5949,762695, -1012,195740, -2637,523193 96000,000000
+timepos : 600,  value 654,284668, -783,681458, 141,766296
+inTan: -5578,125977, 1359,963501, 2637,523193, -96000,000000
+outTan: -464,843842, 113,330292, 219,793610 8000,000000
+timepos : 650,  value 149,413422, -662,114502, 379,876038
+inTan: -544,898621, 129,803619, 256,425873, -8000,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera02.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Camera03, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera03
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 0,785398 
+Roll (rad) = 0,000000 
+Camera world position : x=458,583862, y=11,548080, z=333,767578
+Target world position : x=834,122925, y=-466,192383, z=264,436951
+Camera position track present. Type is Bezier
+Number of keys : 5
+timepos : 0,  value 458,583862, 11,548080, 333,767578
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 19853,535156, -46990,960938, -87,046738 112000,000000
+timepos : 700,  value 458,583862, 11,548082, 288,772217
+inTan: -19853,535156, 46990,960938, -2,943985, -112000,000000
+outTan: -28,362194, 67,129944, -0,004206 160,000000
+timepos : 701,  value 430,181152, 78,773926, 288,768097
+inTan: -27,573130, 66,050110, -0,004036, -160,000000
+outTan: -1351,083374, 3236,455322, -0,197754 7840,000000
+timepos : 750,  value 1070,920044, 492,289978, 288,772217
+inTan: 428,206970, 66,893234, 0,002268, -7840,000000
+outTan: 524,335083, 81,910088, 0,002777 9600,000000
+timepos : 810,  value 1276,589966, 54,482391, 288,772217
+inTan: -112,995209, -957,525208, -0,002777, -9600,000000
+outTan: 0,000000, 0,000000, 0,000000
+Target position track present. Type is Bezier
+Number of keys : 2
+timepos : 0,  value 834,122925, -466,192383, 264,436951
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -1,292603, 218,007599, 0,000000 129600,000000
+timepos : 810,  value 832,830322, -248,184784, 264,436951
+inTan: -1,292603, 218,007599, 0,000000, -129600,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera03.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni01
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=188,491608, y=-395,581757, z=162,393799
+Color : R=0,956863, G=0,521569, B=0,172549
+Intensity : 1,000000
+Light position track present. Type is Bezier
+Number of keys : 10
+timepos : 0,  value 188,491608, -395,581757, 162,393799
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 638,077087, -479,455719, 0,000000 16000,000000
+timepos : 100,  value 505,001770, -652,201843, 162,393799
+inTan: -5,056747, -33,784470, 0,000000, -16000,000000
+outTan: -5,056747, -33,784470, 0,000000 16000,000000
+timepos : 200,  value 178,378113, -463,150696, 162,393799
+inTan: 103,664215, 415,999756, 0,000000, -16000,000000
+outTan: 103,664215, 415,999756, 0,000000 16000,000000
+timepos : 300,  value 712,330200, 179,797668, 162,393799
+inTan: 246,711548, 29,031677, 0,000000, -16000,000000
+outTan: 246,711548, 29,031677, 0,000000 16000,000000
+timepos : 400,  value 671,801208, -405,087341, 162,393799
+inTan: -40,479980, -559,091309, 0,000000, -16000,000000
+outTan: -40,479980, -559,091309, 0,000000 16000,000000
+timepos : 500,  value 631,370239, -938,385010, 162,393799
+inTan: -100,898209, -248,198364, 0,000000, -16000,000000
+outTan: -151,347305, -372,297546, 0,000000 24000,000000
+timepos : 650,  value 343,971649, -669,209106, 162,393799
+inTan: -49,858383, 648,452576, 0,000000, -24000,000000
+outTan: -16,619461, 216,150848, 0,000000 8000,000000
+timepos : 700,  value 353,745544, -410,916412, 162,393799
+inTan: 171,067215, 467,404114, -41,441135, -8000,000000
+outTan: 171,067215, 467,404114, -41,441135 8000,000000
+timepos : 750,  value 686,106079, 265,599121, 79,511528
+inTan: 374,622620, 50,011604, -45,208511, -8000,000000
+outTan: 449,547150, 60,013927, -54,250214 9600,000000
+timepos : 810,  value 1196,510620, -576,552612, 79,511528
+inTan: 571,261963, -1744,317383, 54,250214, -9600,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------
+Name: Omni02, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni02
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=-127,751801, y=-1119,665161, z=762,427124
+Color : R=0,078431, G=0,529412, B=0,874510
+Intensity : 1,000000
+Light position track present. Type is Bezier
+Number of keys : 11
+timepos : 0,  value -127,751801, -1119,665161, 762,427124
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 3717,743652, 861,425415, 0,000000 24000,000000
+timepos : 150,  value 1316,139404, -375,450256, 762,427124
+inTan: -829,961487, 627,004395, 0,000000, -24000,000000
+outTan: -553,307678, 418,002930, 0,000000 16000,000000
+timepos : 250,  value -247,769409, -9,540863, 762,427124
+inTan: -124,100769, -32,169968, -42,556396, -16000,000000
+outTan: -124,100769, -32,169968, -42,556396 16000,000000
+timepos : 350,  value 1067,937866, -439,790192, 677,314331
+inTan: -44,740158, 169,886398, 107,665161, -16000,000000
+outTan: -44,740158, 169,886398, 107,665161 16000,000000
+timepos : 450,  value -337,249725, 330,231934, 977,757446
+inTan: 1009,455811, 119,600616, 225,301193, -16000,000000
+outTan: 504,727905, 59,800308, 112,650597 8000,000000
+timepos : 500,  value 771,139038, 227,426865, 1071,622559
+inTan: 717,845154, -294,106110, -48,340958, -8000,000000
+outTan: 1349,548828, -552,919434, -90,880997 15040,000000
+timepos : 594,  value 740,350586, -1001,626892, 478,128418
+inTan: -1218,500732, -407,426331, -330,251709, -15040,000000
+outTan: -725,915344, -242,722076, -196,745697 8960,000000
+timepos : 650,  value -407,097778, -952,743774, 374,810547
+inTan: -177,693893, 744,182190, 388,040344, -8960,000000
+outTan: -158,655258, 664,448364, 346,464600 8000,000000
+timepos : 700,  value 207,329285, 265,992737, 1112,982910
+inTan: 248,028580, 420,532928, 369,086182, -8000,000000
+outTan: 248,028580, 420,532928, 369,086182 8000,000000
+timepos : 750,  value 88,959366, -111,677887, 1112,982910
+inTan: 253,547226, -441,844574, 0,000000, -8000,000000
+outTan: 304,256653, -530,213501, 0,000000 9600,000000
+timepos : 810,  value 928,776733, -734,301880, 1112,982910
+inTan: 1375,378174, -715,034485, 0,000000, -9600,000000
+outTan: 0,000000, 0,000000, 0,000000
+Light color track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value 0,078431, 0,529412, 0,874510
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -0,033333, 0,700000, -0,633333 32000,000000
+timepos : 200,  value 0,078431, 0,866667, 0,560784
+inTan: 0,033333, -0,025490, 0,005882, -32000,000000
+outTan: 0,033333, -0,025490, 0,005882 32000,000000
+timepos : 400,  value 0,145098, 0,478431, 0,886275
+inTan: 0,028571, 0,168254, -0,162278, -32000,000000
+outTan: 0,021429, 0,126190, -0,121709 24000,000000
+timepos : 550,  value 0,145098, 0,917647, 0,490196
+inTan: 0,000000, 0,212834, -0,033333, -24000,000000
+outTan: 0,000000, 0,255401, -0,040000 28800,000000
+timepos : 730,  value 0,145098, 0,847059, 0,972549
+inTan: 0,000000, 0,173756, -1,079412, -28800,000000
+outTan: 0,000000, 0,077225, -0,479739 12800,000000
+timepos : 810,  value 0,145098, 0,972549, 0,184314
+inTan: 0,000000, 0,173756, -1,096732, -12800,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------

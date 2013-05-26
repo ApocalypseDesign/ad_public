@@ -1,0 +1,1608 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 200
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -88,077179, -350,839172, -1252,336792
+max : 729,125122, 229,160873, 1961,008545
+
+
+Material list 
+Numero di materiali : 3
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Global ID = 1
+Material Global ID = 2
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 3
+Material name : 2 - Default 
+Opacity : 79% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 4
+Material name : 1 - Default 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 5
+Material name : 3 - Default 
+Opacity : 0% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #3 (metal6.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #1 (dblue004.jpg)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #4 (apoc.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+       NumKeys = 10
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+Material 3 - Default:  opacity track present.
+ Type is TCB
+Number of keys : 10
+timepos : 0,  value 0,000000
+timepos : 40,  value 0,010000
+timepos : 42,  value 1,000000
+timepos : 55,  value 0,000000
+timepos : 58,  value 0,010000
+timepos : 60,  value 1,000000
+timepos : 77,  value 0,000000
+timepos : 120,  value 0,010000
+timepos : 122,  value 1,000000
+timepos : 155,  value 0,000000
+
+
+***Elenco dei nodi***
+
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 0,523599 
+Roll (rad) = 0,000000 
+Camera world position : x=902,796875, y=-50,006886, z=381,421509
+Target world position : x=400,319824, y=-50,836029, z=382,750305
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni01
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=228,128128, y=-66,225166, z=-138,440979
+Color : R=0,952941, G=0,823529, B=0,596078
+Intensity : 1,000000
+
+
+
+----------------------------------------------------
+Name: Omni02, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni02
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=491,922821, y=-60,839130, z=422,764832
+Color : R=0,972549, G=0,521569, B=0,274510
+Intensity : 1,000000
+Light position track present. Type is TCB
+Number of keys : 20
+timepos : 0,  value 491,922821, -60,839130, 422,764832
+timepos : 10,  value 475,572449, 35,298573, 422,764832
+timepos : 21,  value 430,251709, 117,853439, 422,764832
+timepos : 31,  value 361,556061, 181,229935, 422,764832
+timepos : 42,  value 275,080933, 219,832687, 422,764832
+timepos : 52,  value 176,920975, 228,095230, 422,764832
+timepos : 63,  value 83,654434, 203,977737, 422,764832
+timepos : 73,  value 5,369598, 152,288681, 422,764832
+timepos : 84,  value -52,338043, 78,623550, 422,764832
+timepos : 94,  value -83,873016, -11,422176, 422,764832
+timepos : 105,  value -83,873016, -110,256195, 422,764832
+timepos : 115,  value -52,338028, -200,301849, 422,764832
+timepos : 126,  value 5,369568, -273,966949, 422,764832
+timepos : 136,  value 83,654472, -325,656036, 422,764832
+timepos : 147,  value 176,921021, -349,773529, 422,764832
+timepos : 157,  value 275,081024, -341,510895, 422,764832
+timepos : 168,  value 361,556091, -302,908203, 422,764832
+timepos : 178,  value 430,251709, -239,531693, 422,764832
+timepos : 189,  value 475,572479, -156,976807, 422,764832
+timepos : 200,  value 491,922821, -60,839130, 422,764832
+
+
+
+----------------------------------------------------
+Name: Sphere02, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 20
+timepos : 0,  value 154,666489, -83,841019, -207,556122
+timepos : 10,  value 143,062164, -71,903053, -168,454193
+timepos : 21,  value 122,048874, -53,359825, -128,066635
+timepos : 31,  value 131,340042, -78,104706, -83,792145
+timepos : 42,  value 152,387817, -75,267876, -38,843430
+timepos : 52,  value 161,232834, -38,129318, 2,247055
+timepos : 63,  value 136,919724, -47,924950, 41,363968
+timepos : 73,  value 116,665634, -92,581482, 82,773758
+timepos : 84,  value 129,991730, -106,596298, 127,479111
+timepos : 94,  value 154,659470, -93,071213, 171,970108
+timepos : 105,  value 156,059708, -63,963394, 211,983719
+timepos : 115,  value 128,788620, -68,214478, 251,276901
+timepos : 126,  value 114,128647, -74,300903, 293,832581
+timepos : 136,  value 135,461441, -76,590302, 338,783569
+timepos : 147,  value 157,734695, -62,525566, 382,394958
+timepos : 157,  value 148,930176, -47,635582, 421,749695
+timepos : 168,  value 125,534805, -48,416595, 461,429565
+timepos : 178,  value 125,735214, -85,025894, 504,991882
+timepos : 189,  value 146,033340, -80,403152, 550,049011
+timepos : 200,  value 154,575470, -45,143990, 592,443909
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 200,  value 0,000000, 1,000000, 0,000000, 2,417281
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,983429, 1,983429, 1,983429
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 092192C0, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 092191F0, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09219110, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere01, Father Name: Sphere02
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 0921BBF0, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 0921BB20, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 0921BA40, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Helix01, Father Name: Scene Root
+Super Class ID: 40, ClassID: AA, 0
+Name: Noise01, Father Name: Scene Root
+Super Class ID: 830, ClassID: F997B124, 1
+Name: Sphere04, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 7
+timepos : 0,  value 324,997467, 20,177502, -10,333489
+timepos : 10,  value 271,667633, -14,438471, 97,699638
+timepos : 21,  value 256,185364, 65,116188, 199,161301
+timepos : 31,  value 317,351227, 20,462132, 305,583405
+timepos : 42,  value 283,675629, 5,826151, 412,078522
+timepos : 52,  value 246,286667, 17,942770, 515,454468
+timepos : 63,  value 314,061859, 60,562668, 621,097595
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 1,000000,  0,331613
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,686739, 0,686739, 0,686739
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 0921FEA0, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 0921FDD0, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 0921FCF0, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere03, Father Name: Sphere04
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 09005220, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 090053C0, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09005C10, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere06, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 8
+timepos : 0,  value 225,692642, 55,508244, 203,523056
+timepos : 10,  value 204,848190, 76,871155, 242,631851
+timepos : 21,  value 178,503738, 65,235764, 278,246033
+timepos : 31,  value 178,769455, 63,602520, 319,675354
+timepos : 42,  value 195,771896, 84,506699, 366,195251
+timepos : 52,  value 192,124985, 79,553909, 410,296692
+timepos : 63,  value 166,176010, 70,455917, 446,176270
+timepos : 73,  value 141,658829, 96,672974, 572,085266
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 1,000000,  0,157080
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,263600, 1,263600, 1,263600
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 09220130, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09220060, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09221F40, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere05, Father Name: Sphere06
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 09222AE0, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09222A10, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09222930, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere08, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 6
+timepos : 0,  value 278,912842, -70,652481, 227,086136
+timepos : 10,  value 233,012726, -73,034912, 311,457642
+timepos : 21,  value 272,413422, -55,272385, 384,571228
+timepos : 31,  value 233,454895, -57,983948, 468,539551
+timepos : 42,  value 266,839783, -63,986095, 542,488586
+timepos : 52,  value 239,705933, -24,527306, 625,632996
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,647867, 0,647867, 0,647867
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+tmControl->GetPositionController: 09223360, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09223290, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 092231B0, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere07, Father Name: Sphere08
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+tmControl->GetPositionController: 09225CB0, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09225BE0, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09225B00, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere09, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 20
+timepos : 0,  value 470,102600, -80,885269, -1232,254272
+timepos : 10,  value 416,772766, -115,501236, -1124,221191
+timepos : 21,  value 401,290497, -35,946579, -1022,759460
+timepos : 31,  value 462,456360, -80,600639, -916,337402
+timepos : 42,  value 428,780762, -95,236618, -809,842285
+timepos : 52,  value 391,391785, -83,120003, -706,466309
+timepos : 63,  value 459,166992, -40,500107, -600,823181
+timepos : 73,  value 441,147919, -120,326569, -495,883362
+timepos : 84,  value 392,776306, -69,110954, -389,554260
+timepos : 94,  value 453,432312, -48,930511, -285,409363
+timepos : 105,  value 449,065521, -121,837387, -181,312134
+timepos : 115,  value 396,938660, -79,205994, -72,666748
+timepos : 126,  value 438,135254, -38,267990, 29,975220
+timepos : 136,  value 454,518127, -115,447693, 134,355591
+timepos : 147,  value 400,898682, -101,976334, 243,572266
+timepos : 157,  value 429,966827, -51,086868, 345,413330
+timepos : 168,  value 463,044800, -88,441818, 450,567932
+timepos : 178,  value 401,143158, -111,049942, 559,031799
+timepos : 189,  value 427,911713, -51,285233, 661,129700
+timepos : 200,  value 462,140930, -45,307526, 766,729553
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 1,000000,  0,305433
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,572283, 0,572283, 0,572283
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 09226420, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09226350, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09226270, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere10, Father Name: Sphere09
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 092002A0, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09212B70, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09214840, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere11, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 20
+timepos : 0,  value 392,766998, -89,297592, -377,911377
+timepos : 10,  value 346,866882, -91,680023, -293,539856
+timepos : 21,  value 386,267578, -73,917496, -220,426270
+timepos : 31,  value 347,309052, -76,629059, -136,457947
+timepos : 42,  value 380,693939, -82,631203, -62,508911
+timepos : 52,  value 353,560089, -43,172409, 20,635498
+timepos : 63,  value 381,825531, -89,338821, 95,819519
+timepos : 73,  value 354,939301, -55,717239, 177,933899
+timepos : 84,  value 378,810120, -82,913193, 254,501160
+timepos : 94,  value 363,195129, -51,566833, 335,424805
+timepos : 105,  value 365,294312, -102,811584, 413,440979
+timepos : 115,  value 371,852264, -85,035812, 492,964172
+timepos : 126,  value 352,882751, -106,831207, 572,470642
+timepos : 136,  value 375,715393, -45,062439, 650,408142
+timepos : 147,  value 359,174988, -92,325394, 731,354065
+timepos : 157,  value 383,872772, -86,750320, 807,720520
+timepos : 168,  value 359,861053, -125,383270, 889,869446
+timepos : 178,  value 379,322296, -59,080772, 964,996887
+timepos : 189,  value 354,832794, -92,586853, 1047,911377
+timepos : 200,  value 384,346863, -69,854614, 1122,396484
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 1,000000,  0,305433
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,686739, 0,686739, 0,686739
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 09228340, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 09228270, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 09228190, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere12, Father Name: Sphere11
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 0922AD20, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 0922AC50, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 0922AB70, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere14, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. Type is TCB
+Number of keys : 12
+timepos : 0,  value 292,941620, -182,595642, 89,759949
+timepos : 10,  value 272,097137, -161,232727, 128,868713
+timepos : 21,  value 245,752716, -172,868134, 164,482910
+timepos : 31,  value 246,018402, -174,501373, 205,912231
+timepos : 42,  value 263,020844, -153,597198, 252,432129
+timepos : 52,  value 259,373932, -158,549988, 296,533569
+timepos : 63,  value 233,424957, -167,647980, 332,413116
+timepos : 73,  value 208,907806, -141,430908, 368,886719
+timepos : 84,  value 209,622223, -156,058945, 412,904907
+timepos : 94,  value 228,802521, -157,637695, 459,015442
+timepos : 105,  value 226,717072, -149,653259, 500,276428
+timepos : 115,  value 196,506622, -141,418152, 538,672546
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 1,000000,  0,305433
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,756404, 1,756404, 1,756404
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 12,000000, 15,000000, 10,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 0922B420, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 0922B350, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 0922B270, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Sphere13, Father Name: Sphere14
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 182
+Number of vertex (optimized): 182
+Number of triangles (non optimized): 360
+Number of triangles (optimized): 360
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 231
+Numero di vertici texture (optimized): 231
+Numero di facce texture : 360
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000007, -0,000004, 0,000007
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,682232, 0,682232, 0,682232
+Noise(irule!) OSM found at order 0...
+Seed: 0 
+Scale: 100,000000 
+Fractal: 0 
+Rough: 0,000000 
+Iterations: 6,000000 
+Animate noise: 1 
+Frequency: 0,330000 
+Phase: 0 
+Strength0: 10,000000, 15,000000, 12,000000
+Noise phase track present.
+ Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: 16000,000000
+timepos : 200,  value 16000,000000
+inTan: 16000,000000
+outTan: 0,000000
+tmControl->GetPositionController: 0922DD70, 0
+Osm position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 0922DCA0, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 0922DBC0, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Helix02, Father Name: Scene Root
+Super Class ID: 40, ClassID: AA, 0
+Name: Circle01, Father Name: Scene Root
+Super Class ID: 40, ClassID: 1999, 0
+Name: Plane01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 3 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 512,487488, -50,886997, 382,739227
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,577350, 0,577350, 0,577350,  4,188790
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,423840, 0,423840, 0,423840
+
+
+
+----------------------------------------------------

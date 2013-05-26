@@ -1,0 +1,32 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="DEMEKIT2.PNG";
+    mipmaplevels="1";
+  }
+
+  bitmap "1" 
+  {
+    id="1";
+    filename="metal4.PNG";
+    mipmaplevels="1";
+  }
+
+  material "Material" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    map2="1";
+    map2channel="ENV";
+    mapsmixtype="ADD";
+    bumpmap="EMBM, AUTOMATIC";
+    lightmixtype="ADDSIGNED";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+

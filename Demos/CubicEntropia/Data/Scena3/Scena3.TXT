@@ -1,0 +1,648 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 400
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -180,869675, -170,432358, -78,655617
+max : 190,837784, 152,458145, 103,794807
+
+
+Material list 
+Numero di materiali : 2
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Global ID = 1
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 2
+Material name : 1 - Default 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 3
+Material name : 2 - Default 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #1 (EarthLights.jpg)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #2 (cnn.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+***Elenco dei nodi***
+
+Name: Sphere01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 11, 0
+Number of vertex (non optimized) : 482
+Number of vertex (optimized): 482
+Number of triangles (non optimized): 960
+Number of triangles (optimized): 960
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 561
+Numero di vertici texture (optimized): 561
+Numero di facce texture : 960
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,483092, 0,966184, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 5
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 25,  value 0,000000, 0,000000, 1,000000, 1,570796
+timepos : 50,  value 0,000000, 0,000000, 1,000000, 1,570796
+timepos : 75,  value 0,000000, 0,000000, 1,000000, 1,570796
+timepos : 100,  value 0,000000, 0,000000, 1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni01
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=98,672256, y=3,780006, z=0,000000
+Color : R=0,513726, G=0,588235, B=0,909804
+Intensity : 1,000000
+Light position track present. Type is Bezier
+Number of keys : 20
+timepos : 0,  value 98,672256, 3,780006, 0,000000
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -0,643173, 32,671303, -13,868150 3368,000000
+timepos : 21,  value 93,034195, 34,295601, -12,953105
+inTan: -10,632950, 28,359890, -12,038061, -3368,000000
+outTan: -10,632950, 28,359890, -12,038061 3368,000000
+timepos : 42,  value 77,406357, 60,499783, -24,076122
+inTan: -19,653879, 23,157902, -9,829947, -3368,000000
+outTan: -19,659716, 23,164778, -9,832866 3369,000000
+timepos : 63,  value 53,718208, 80,616470, -32,615150
+inTan: -26,758469, 16,186132, -6,870607, -3369,000000
+outTan: -26,750526, 16,181328, -6,868568 3368,000000
+timepos : 84,  value 23,899185, 92,869576, -37,816288
+inTan: -31,828318, 7,438210, -3,157334, -3368,000000
+outTan: -31,837769, 7,440419, -3,158272 3369,000000
+timepos : 105,  value -9,949072, 95,492241, -38,929543
+inTan: -33,009216, -2,518196, 1,068912, -3369,000000
+outTan: -32,999416, -2,517448, 1,068595 3368,000000
+timepos : 126,  value -42,109947, 87,836983, -35,680077
+inTan: -29,577824, -12,031082, 5,106894, -3368,000000
+outTan: -29,577824, -12,031082, 5,106894 3368,000000
+timepos : 147,  value -69,104721, 71,430077, -28,715755
+inTan: -23,444553, -19,890694, 8,443100, -3368,000000
+outTan: -23,451513, -19,896599, 8,445607 3369,000000
+timepos : 168,  value -89,003906, 48,047619, -18,790491
+inTan: -15,387607, -25,986811, 11,030748, -3369,000000
+outTan: -15,383039, -25,979097, 11,027474 3368,000000
+timepos : 189,  value -99,878044, 19,465714, -6,658189
+inTan: -5,437868, -29,971815, 12,722282, -3368,000000
+outTan: -5,439483, -29,980713, 12,726060 3369,000000
+timepos : 210,  value -99,878029, -11,905733, 6,658203
+inTan: 5,439494, -29,980701, 12,726055, -3369,000000
+outTan: 5,437880, -29,971802, 12,722279 3368,000000
+timepos : 231,  value -89,003899, -40,487617, 18,790495
+inTan: 15,383032, -25,979080, 11,027467, -3368,000000
+outTan: 15,387599, -25,986794, 11,030742 3369,000000
+timepos : 252,  value -69,104721, -63,870060, 28,715755
+inTan: 23,451519, -19,896599, 8,445605, -3369,000000
+outTan: 23,444557, -19,890692, 8,443098 3368,000000
+timepos : 273,  value -42,109932, -80,276978, 35,680077
+inTan: 29,577833, -12,031088, 5,106895, -3368,000000
+outTan: 29,577833, -12,031088, 5,106895 3368,000000
+timepos : 294,  value -9,949054, -87,932236, 38,929546
+inTan: 32,999428, -2,517437, 1,068589, -3368,000000
+outTan: 33,009224, -2,518184, 1,068906 3369,000000
+timepos : 315,  value 23,899220, -85,309547, 37,816277
+inTan: 31,837761, 7,440427, -3,158275, -3369,000000
+outTan: 31,828312, 7,438219, -3,157338 3368,000000
+timepos : 336,  value 53,718212, -73,056450, 32,615147
+inTan: 26,750507, 16,181316, -6,868562, -3368,000000
+outTan: 26,758451, 16,186121, -6,870601 3369,000000
+timepos : 357,  value 77,406357, -52,939777, 24,076124
+inTan: 19,659721, 23,164780, -9,832867, -3369,000000
+outTan: 19,653887, 23,157904, -9,829947 3368,000000
+timepos : 378,  value 93,034210, -26,735579, 12,953100
+inTan: 10,632854, 28,355043, -12,036004, -3368,000000
+outTan: 10,636012, 28,363462, -12,039577 3369,000000
+timepos : 400,  value 98,672256, 3,780006, 0,000000
+inTan: 0,640081, 32,667706, -13,866623, -3369,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 0,349066 
+Roll (rad) = 0,000000 
+Camera world position : x=-331,040100, y=-115,583160, z=72,772064
+Target world position : x=-42,081573, y=-41,510612, z=21,468987
+Camera position track present. Type is Bezier
+Number of keys : 1
+timepos : 0,  value -331,040100, -115,583160, 72,772064
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Gravity01, Father Name: Scene Root
+Super Class ID: 830, ClassID: E523C, 0
+Gravity space modifier found
+Name : Gravity01
+Pivot point : 0,000000, 0,000000, 0,000000
+Strength: 50,000000
+Decay: 0,000000
+Type: 0
+Object position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,459671, 0,056931, 0,064143
+Object rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,000000, 0,000000, 0,000000,  3,141593
+Gravity scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+Name: Plane01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 25
+Number of vertex (optimized): 25
+Number of triangles (non optimized): 32
+Number of triangles (optimized): 32
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 35
+Numero di vertici texture (optimized): 25
+Numero di facce texture : 32
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 2 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -106,018364, -57,574375, 8,938493
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,699687, 0,529182, 0,480005,  2,020858
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,167302, 0,167302, 0,167302
+
+
+
+----------------------------------------------------
+Name: Omni02, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni02
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=182,837784, y=2,050639, z=-70,655617
+Color : R=1,000000, G=0,682353, B=0,125490
+Intensity : 1,000000
+Light position track present. Type is Bezier
+Number of keys : 20
+timepos : 0,  value 182,837784, 2,050639, -70,655617
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -14,353779, -135,285248, 9,181602 3368,000000
+timepos : 21,  value 140,473175, -107,815620, -61,474014
+inTan: -70,375443, -84,447281, 9,181602, -3368,000000
+outTan: -70,375443, -84,447281, 9,181602 3368,000000
+timepos : 42,  value 42,086906, -166,843918, -52,292412
+inTan: -104,620117, -22,721935, 9,180238, -3368,000000
+outTan: -104,651184, -22,728682, 9,182963 3369,000000
+timepos : 63,  value -68,801826, -153,244675, -43,110813
+inTan: -93,920036, 45,214180, 9,182963, -3369,000000
+outTan: -93,892159, 45,200756, 9,180238 3368,000000
+timepos : 84,  value -145,735367, -76,447746, -33,929211
+inTan: -44,992046, 90,820915, 9,180240, -3368,000000
+outTan: -45,005405, 90,847885, 9,182965 3369,000000
+timepos : 105,  value -158,780304, 28,432451, -24,747608
+inTan: 19,834223, 96,513565, 9,182963, -3369,000000
+outTan: 19,828337, 96,484917, 9,180238 3368,000000
+timepos : 126,  value -106,092323, 116,555695, -15,566010
+inTan: 72,814400, 62,045460, 9,181601, -3368,000000
+outTan: 72,814400, 62,045460, 9,181601 3368,000000
+timepos : 147,  value -13,151517, 152,523376, -6,384407
+inTan: 92,711456, 4,012220, 9,180240, -3368,000000
+outTan: 92,738983, 4,013412, 9,182965 3369,000000
+timepos : 168,  value 79,357986, 124,562347, 2,797195
+inTan: 73,247490, -52,247463, 9,182965, -3369,000000
+outTan: 73,225746, -52,231953, 9,180240 3368,000000
+timepos : 189,  value 133,333160, 48,058376, 11,978798
+inTan: 24,794718, -83,490791, 9,180240, -3368,000000
+outTan: 24,802080, -83,515579, 9,182965 3369,000000
+timepos : 210,  value 128,937454, -42,448174, 21,160400
+inTan: -30,812920, -78,431717, 9,182962, -3369,000000
+outTan: -30,803772, -78,408440, 9,180237 3368,000000
+timepos : 231,  value 71,732147, -108,788956, 30,341995
+inTan: -70,070793, -41,409206, 9,180237, -3368,000000
+outTan: -70,091599, -41,421501, 9,182962 3369,000000
+timepos : 252,  value -11,232571, -125,264076, 39,523598
+inTan: -77,905525, 10,144102, 9,182965, -3369,000000
+outTan: -77,882401, 10,141091, 9,180240 3368,000000
+timepos : 273,  value -84,058792, -88,519562, 48,705200
+inTan: -53,145458, 53,908737, 9,181602, -3368,000000
+outTan: -53,145458, 53,908737, 9,181602 3368,000000
+timepos : 294,  value -117,523491, -17,446604, 57,886803
+inTan: -8,364141, 72,357452, 9,180243, -3368,000000
+outTan: -8,366625, 72,378937, 9,182969 3369,000000
+timepos : 315,  value -100,774651, 56,217590, 67,068413
+inTan: 36,506817, 59,736797, 9,182965, -3369,000000
+outTan: 36,495979, 59,719067, 9,180240 3368,000000
+timepos : 336,  value -44,532425, 102,017525, 76,250008
+inTan: 62,862843, 23,577402, 9,180233, -3368,000000
+outTan: 62,881508, 23,584402, 9,182959 3369,000000
+timepos : 357,  value 24,973639, 103,366196, 85,431602
+inTan: 61,335651, -19,322939, 9,182965, -3369,000000
+outTan: 61,317444, -19,317204, 9,180240 3368,000000
+timepos : 378,  value 78,125519, 63,389652, 94,613213
+inTan: 34,781334, -50,647106, 9,180240, -3368,000000
+outTan: 34,791660, -50,662144, 9,182965 3369,000000
+timepos : 400,  value 94,535721, 2,050606, 103,794807
+inTan: -1,971256, -72,015945, 9,180223, -3369,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------
+Name: Helix01, Father Name: Scene Root
+Super Class ID: 40, ClassID: 1994, 0
+Name: Ellipse01, Father Name: Scene Root
+Super Class ID: 40, ClassID: 1097, 0
+Name: Omni03, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni03
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=-172,869675, y=-72,902649, z=0,000000
+Color : R=0,717647, G=0,717647, B=0,717647
+Intensity : 1,000000
+
+
+
+----------------------------------------------------

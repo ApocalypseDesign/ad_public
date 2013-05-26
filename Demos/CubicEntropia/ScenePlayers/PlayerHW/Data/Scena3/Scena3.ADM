@@ -1,0 +1,181 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="sfondo1.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "1" 
+  {
+    id="1";
+    filename="quad3a.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "2" 
+  {
+    id="2";
+    filename="quad4a.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "3" 
+  {
+    id="3";
+    filename="quad1a.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "4" 
+  {
+    id="4";
+    filename="quad2a.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "5" 
+  {
+    id="5";
+    filename="blu.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "6" 
+  {
+    id="6";
+    filename="Envmap.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "7" 
+  {
+    id="7";
+    filename="Turbo.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "8" 
+  {
+    id="8";
+    filename="Ska.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "9" 
+  {
+    id="9";
+    filename="Cicci.png";
+    mipmaplevels="1";
+  }
+
+  material "8 - Default" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+
+  material "3 - Default" 
+  {
+    map1="1";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="255";
+    next_material="NONE";
+  }
+
+  material "7 - Default" 
+  {
+    map1="2";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="255";
+    next_material="NONE";
+  }
+
+  material "1 - Default" 
+  {
+    map1="3";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="255";
+    next_material="NONE";
+  }
+
+  material "2 - Default" 
+  {
+    map1="4";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    transparency_type="ADD";
+    transparency_amount="255";
+    next_material="NONE";
+  }
+
+  material "9 - Default" 
+  {
+    map1="5";
+    map1channel="TEX1";
+    // map2="6";
+    map2channel="ENV";
+    mapsmixtype="ADDSIGNED";
+    lightmixtype="MODULATE4X";
+    backfaceculling="BACKFACE";
+    specular="ON";
+    next_material="NONE";
+  }
+
+  material "13 - Default" 
+  {
+    map1="7";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    transparency_type="ADD";
+    transparency_amount="255";
+    specular="OFF";
+    next_material="NONE";
+  }
+
+  material "14 - Default" 
+  {
+    map1="8";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    transparency_type="ADD";
+    transparency_amount="255";
+    specular="OFF";
+    next_material="NONE";
+  }
+
+  material "15 - Default" 
+  {
+    map1="9";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    transparency_type="ADD";
+    transparency_amount="255";
+    specular="OFF";
+    next_material="NONE";
+  }
+

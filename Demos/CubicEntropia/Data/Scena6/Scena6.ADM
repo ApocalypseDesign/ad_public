@@ -1,0 +1,109 @@
+// *** Apocalypse Design Scripting System v1.0 ***
+// Material script auto-created by Turbo's MAX-plugin
+// Design is simply all...
+
+  bitmap "0" 
+  {
+    id="0";
+    filename="marble2.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "1" 
+  {
+    id="1";
+    filename="lightEnv.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "2" 
+  {
+    id="2";
+    filename="marble.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "3" 
+  {
+    id="3";
+    filename="marble3.png";
+    mipmaplevels="1";
+  }
+
+  bitmap "4" 
+  {
+    id="4";
+    filename="piastre.png";
+    mipmaplevels="1";
+  }
+
+
+  bitmap "5" 
+  {
+    id="5";
+    filename="blood.png";
+    mipmaplevels="1";
+  }
+
+  material "Material #34" 
+  {
+    map1="0";
+    map1channel="TEX1";
+    // map2="1";
+    map2channel="SPEC";
+    mapsmixtype="ADD";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="ON";
+    next_material="NONE";
+  }
+
+  material "Material #33" 
+  {
+    map1="2";
+    map1channel="TEX1";
+    map2="1";
+    map2channel="SPEC";
+    mapsmixtype="ADD";
+    lightmixtype="ADDSIGNED";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+
+  material "Material #39" 
+  {
+    map1="3";
+    map1channel="TEX1";
+    map2="1";
+    map2channel="SPEC";
+    mapsmixtype="ADD";
+    lightmixtype="MODULATE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+
+  material "Material #35" 
+  {
+    map1="4";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+
+
+  material "Material #30" 
+  {
+    map1="5";
+    map1channel="TEX1";
+    lightmixtype="NONE";
+    transparency_type="ADD";
+    transparency_amount="110";
+    backfaceculling="BACKFACE";
+    specular="OFF";
+    next_material="NONE";
+  }
+

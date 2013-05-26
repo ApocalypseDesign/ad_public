@@ -1,0 +1,965 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 30
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -36893488147419103000,000000, -6,881526, -8,000000
+max : 10,838123, 9,132174, 11,952660
+
+
+Material list 
+Numero di materiali : 1
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 1
+Material name : Material 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #32 (AngelT.bmp)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: RGB Level: None
+    Anim44:  Amount
+    Anim45: RGB Offset: None
+    Anim46:  Amount
+    Anim47: Composite: None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+***Elenco dei nodi***
+
+Name: ROOT, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente ROOT
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: BODY01TRNL, Father Name: ROOT
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BODY01TRNL
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: BODY01L, Father Name: BODY01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BODY01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object, Father Name: BODY01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 621
+Number of vertex (optimized): 621
+Number of triangles (non optimized): 1086
+Number of triangles (optimized): 1086
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 1249
+Numero di vertici texture (optimized): 733
+Numero di facce texture : 1086
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,560318, 0,000000, 0,921459
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: object1, Father Name: BODY01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente object1
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: BACK01TRNL, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BACK01TRNL
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,011519, 0,000000, 0,083982
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: BACK01L, Father Name: BACK01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BACK01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object2, Father Name: BACK01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 424
+Number of vertex (optimized): 424
+Number of triangles (non optimized): 494
+Number of triangles (optimized): 494
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 516
+Numero di vertici texture (optimized): 258
+Numero di facce texture : 494
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,737131, 0,000000, 2,210588
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: BUST01TRNL, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BUST01TRNL
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,094354, -0,022686, -0,035286
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: BUST01L, Father Name: BUST01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BUST01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object3, Father Name: BUST01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 79
+Number of vertex (optimized): 79
+Number of triangles (non optimized): 92
+Number of triangles (optimized): 92
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 120
+Numero di vertici texture (optimized): 60
+Numero di facce texture : 92
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,888020, -0,348229, 0,379825
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: BUST01TRNR, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BUST01TRNR
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,094354, 0,022686, -0,035286
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: BUST01R, Father Name: BUST01TRNR
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente BUST01R
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object4, Father Name: BUST01R
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 79
+Number of vertex (optimized): 79
+Number of triangles (non optimized): 92
+Number of triangles (optimized): 92
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 120
+Numero di vertici texture (optimized): 60
+Numero di facce texture : 92
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,888020, 0,348229, 0,379825
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: WAIST01TRN, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente WAIST01TRN
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,110099, -0,010330, -0,112719
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: WAIST01L, Father Name: WAIST01TRN
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente WAIST01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object5, Father Name: WAIST01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 88
+Number of vertex (optimized): 88
+Number of triangles (non optimized): 110
+Number of triangles (optimized): 110
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 112
+Numero di vertici texture (optimized): 56
+Numero di facce texture : 110
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,129708, -0,158564, -0,808772
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: WAIST01TR1, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente WAIST01TR1
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,110099, 0,010330, -0,112719
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: WAIST01R, Father Name: WAIST01TR1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente WAIST01R
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object6, Father Name: WAIST01R
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 88
+Number of vertex (optimized): 88
+Number of triangles (non optimized): 110
+Number of triangles (optimized): 110
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 112
+Numero di vertici texture (optimized): 56
+Numero di facce texture : 110
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,129708, 0,158564, -0,808772
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: HIP01TRNL, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente HIP01TRNL
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,014330, 0,000000, -0,126591
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: HIP01L, Father Name: HIP01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente HIP01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object7, Father Name: HIP01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 200
+Number of vertex (optimized): 200
+Number of triangles (non optimized): 218
+Number of triangles (optimized): 218
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 331
+Numero di vertici texture (optimized): 174
+Numero di facce texture : 218
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,780279, 0,000000, -1,021718
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: TAIL01TRNL, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente TAIL01TRNL
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,106544, 0,000000, -0,020516
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: TAIL01L, Father Name: TAIL01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente TAIL01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object8, Father Name: TAIL01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 258
+Number of vertex (optimized): 258
+Number of triangles (non optimized): 270
+Number of triangles (optimized): 270
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 335
+Numero di vertici texture (optimized): 168
+Numero di facce texture : 270
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 2,195765, 0,000000, 0,606543
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: EYE01TRNL, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente EYE01TRNL
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,153498, -0,012678, 0,006794
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: EYE01L, Father Name: EYE01TRNL
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente EYE01L
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object9, Father Name: EYE01L
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 39
+Number of vertex (optimized): 39
+Number of triangles (non optimized): 60
+Number of triangles (optimized): 60
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 41
+Numero di vertici texture (optimized): 41
+Numero di facce texture : 60
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,795879, -0,194614, 1,025743
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: EYE01TRNR, Father Name: object1
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente EYE01TRNR
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,153498, 0,012678, 0,006794
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: EYE01R, Father Name: EYE01TRNR
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente EYE01R
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: object10, Father Name: EYE01R
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 39
+Number of vertex (optimized): 39
+Number of triangles (non optimized): 60
+Number of triangles (optimized): 60
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 41
+Numero di vertici texture (optimized): 41
+Numero di facce texture : 60
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,795879, 0,194614, 1,025743
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 16,350000, 16,350000, 16,350000
+
+
+
+----------------------------------------------------
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 1,000000 
+Zfar = 100,000000 
+FOV (rad) = 1,047198 
+Roll (rad) = 0,000000 
+Camera world position : x=-7,381609, y=7,406401, z=1,659765
+Target world position : x=0,078271, y=0,027501, z=0,000000
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni01
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=2,838124, y=1,132174, z=3,952659
+Color : R=0,964706, G=0,501961, B=0,086275
+Intensity : 1,000000
+
+
+
+----------------------------------------------------
+Name: Omni02, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni02
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=-3,269118, y=1,118474, z=0,000000
+Color : R=0,458824, G=0,376471, B=0,886275
+Intensity : 1,000000
+
+
+
+----------------------------------------------------

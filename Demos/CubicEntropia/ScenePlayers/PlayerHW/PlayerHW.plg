@@ -1,0 +1,141 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PlayerHW - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSP17C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/PlayerHW.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Redshift\Demo_sw\ScenePlayers\ADdemo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSP17C.tmp" 
+Creating temporary file "C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSP17D.tmp" with contents
+[
+Bass.lib Strmiids.lib D3dx8.lib RenderLib_Release.lib libjpeg.lib libpng.lib fmod.lib d3d8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Release/PlayerHW_Release.pdb" /machine:I386 /nodefaultlib:"libc" /out:"Release/PlayerHW_Release.exe" 
+.\Release\ADdemo.obj
+.\Release\cpu_detect.obj
+.\Release\dtimer.obj
+.\Release\efx2D.obj
+.\Release\utility.obj
+.\Release\BoundPrimitives.obj
+.\Release\BoundVolumes.obj
+.\Release\Camera.obj
+.\Release\GeometricObject.obj
+.\Release\Helpers.obj
+.\Release\Lights.obj
+.\Release\Mesh.obj
+.\Release\OSM.obj
+.\Release\ParticleSystem.obj
+.\Release\Scene3D.obj
+.\Release\UtilsA3D.obj
+.\Release\UtilsA3D_LoadSpecific.obj
+.\Release\UtilsScript.obj
+.\Release\WSMObject.obj
+.\Release\fastmath.obj
+.\Release\Keyframe.obj
+.\Release\matrix.obj
+.\Release\quater.obj
+.\Release\vect3d.obj
+.\Release\TexFont.obj
+.\Release\fade2D_hw.obj
+.\Release\Flash2D_hw.obj
+.\Release\Sprite2D_hw.obj
+.\Release\ADdemo.res
+]
+Creating command line "link.exe @C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSP17D.tmp"
+<h3>Output Window</h3>
+Compiling...
+ADdemo.cpp
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(210) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(210) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(210) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(211) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(211) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(211) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(212) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(212) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(213) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(213) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(231) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(231) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(231) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(232) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(232) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(233) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(233) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(233) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(234) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(234) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(235) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(235) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(235) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(236) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(236) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(237) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(237) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(237) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(238) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(238) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(267) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(267) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(268) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(268) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(268) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(269) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(269) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(269) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(270) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(291) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(292) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(293) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(294) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(295) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(296) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(297) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(298) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(299) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(300) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(301) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(302) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(303) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(304) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(305) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(306) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(307) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(308) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(309) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(310) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(311) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(312) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(313) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(314) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(315) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(316) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(317) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(318) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(319) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(320) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(321) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(322) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(323) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(324) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(325) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(326) : warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(451) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(464) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(476) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(495) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(507) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+C:\Redshift\Demo_sw\ScenePlayers\ADmain.h(545) : warning C4244: 'argument' : conversion from 'double' to 'unsigned long', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+PlayerHW_Release.exe - 0 error(s), 81 warning(s)
+</pre>
+</body>
+</html>

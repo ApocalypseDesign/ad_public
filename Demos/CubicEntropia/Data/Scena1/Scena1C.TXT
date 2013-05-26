@@ -1,0 +1,225 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 500
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -216,435440, -63,510643, -66,090820
+max : 139,406677, 332,589325, 98,834915
+
+
+Material list 
+Numero di materiali : 0
+
+----------------------------------------------------
+
+***Elenco dei nodi***
+
+Name: Spray01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 9BD61AA0, 0
+Spray particle system found
+Name : Spray01
+Parent name : Scene Root
+Pivot point : 0,000000, 0,000000, 0,000000
+Emitter width: 5,000000
+Emitter height: 5,000000
+Emitter speed (init vel): 2,000000
+Emitter variation: 0,000000
+Life: 100
+Start time: 0
+Stop time: 500
+Max particles: 100
+Modificatori (wind, gravity, bomb) collegati: 2
+Modificatore 0: Gravity02
+Modificatore 1: Gravity01
+Particle position track present.
+ Type is Bezier
+Number of keys : 11
+timepos : 0,  value 136,742218, -56,925751, 95,551270
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -26,771461, 112,581009, 64,491821 8000,000000
+timepos : 50,  value 101,448608, 18,128256, 123,263184
+inTan: -43,815758, 37,527004, -9,067993, -8000,000000
+outTan: -43,815758, 37,527004, -9,067993 8000,000000
+timepos : 100,  value 49,110703, 18,128258, 77,415283
+inTan: -24,944715, 22,506994, -22,923950, -8000,000000
+outTan: -24,944715, 22,506994, -22,923950 8000,000000
+timepos : 150,  value 51,559177, 63,142246, 77,415283
+inTan: 23,278233, 7,941635, 0,000000, -8000,000000
+outTan: 23,278233, 7,941635, 0,000000 8000,000000
+timepos : 200,  value 95,667168, 34,011528, 77,415283
+inTan: 5,790564, -43,054951, 0,000000, -8000,000000
+outTan: 5,790564, -43,054951, 0,000000 8000,000000
+timepos : 250,  value 63,140305, -22,967649, 77,415283
+inTan: -56,331905, -43,649521, 0,000000, -8000,000000
+outTan: -56,331905, -43,649521, 0,000000 8000,000000
+timepos : 300,  value -16,996645, -53,287510, 77,415283
+inTan: -73,627289, 11,731380, 0,000000, -8000,000000
+outTan: -73,627289, 11,731380, 0,000000 8000,000000
+timepos : 350,  value -84,114265, 0,495110, 77,415283
+inTan: -3,262973, 53,257492, 0,000000, -8000,000000
+outTan: -3,262973, 53,257492, 0,000000 8000,000000
+timepos : 400,  value -23,522591, 53,227474, 77,415283
+inTan: 38,444668, 0,340002, 0,000000, -8000,000000
+outTan: 38,444668, 0,340002, 0,000000 8000,000000
+timepos : 450,  value -7,224928, 1,175114, 77,415283
+inTan: 7,327014, -24,724005, -104,038086, -8000,000000
+outTan: 7,327014, -24,724005, -104,038086 8000,000000
+timepos : 500,  value -8,868562, 3,779466, -130,660889
+inTan: -10,614283, 29,932709, -312,114258, -8000,000000
+outTan: 0,000000, 0,000000, 0,000000
+Particle rotation track present.
+ Type is TCB
+Number of keys : 11
+timepos : 0,  value 0,763939, 0,077521, -0,640616, 1,757151
+timepos : 50,  value 0,528407, 0,834550, 0,155925, 0,540473
+timepos : 100,  value 0,596176, 0,173769, 0,783823, 0,712032
+timepos : 150,  value 0,000000, 0,000000, 1,000000, 0,907571
+timepos : 200,  value 0,377643, 0,342279, 0,860367, 1,332542
+timepos : 250,  value 0,190202, -0,634322, 0,749305, 1,312487
+timepos : 300,  value -0,780781, -0,274423, 0,561314, 1,142943
+timepos : 350,  value -0,315110, -0,249128, 0,915774, 1,269858
+timepos : 400,  value -0,627946, -0,495032, 0,600522, 1,839624
+timepos : 450,  value -0,953644, 0,143595, 0,264469, 2,186042
+timepos : 500,  value 0,355215, 0,387649, -0,850618, 1,817427
+Particle scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+Particle emitter width track present.
+ Type is Bezier
+Number of keys : 1
+timepos : 0,  value 5,000000
+inTan: 0,000000
+outTan: 0,000000
+Particle emitter length track present.
+ Type is Bezier
+Number of keys : 1
+timepos : 0,  value 5,000000
+inTan: 0,000000
+outTan: 0,000000
+
+
+Name: Dummy01, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente Dummy01
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -215,551117, 331,704987, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,020000, 0,020000, 0,100000
+
+
+
+----------------------------------------------------
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 0,656195 
+Roll (rad) = -1,797657 
+Camera world position : x=81,612602, y=-94,026520, z=-1010,320496
+Target world position : x=15,765244, y=-14,302227, z=-6,809418
+Camera position track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value 81,612602, -94,026520, -1010,320496
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 0,000000, 76,106232, 549,692383 16000,000000
+timepos : 100,  value 81,612602, -29,438988, -643,858887
+inTan: 0,000000, 53,068832, 183,230804, -16000,000000
+outTan: 0,000000, 53,068832, 183,230804 16000,000000
+timepos : 200,  value 81,612602, 12,111141, -643,858887
+inTan: 0,000000, 39,193237, 0,000000, -16000,000000
+outTan: 0,000000, 39,193237, 0,000000 16000,000000
+timepos : 300,  value 81,612602, 48,947491, -643,858887
+inTan: 0,000004, 115,112015, 84,801804, -16000,000000
+outTan: 0,000004, 115,112015, 84,801804 16000,000000
+timepos : 400,  value 81,612610, 242,335175, -474,255280
+inTan: 0,000004, 71,320160, 242,574722, -16000,000000
+outTan: 0,000004, 71,320160, 242,574722 16000,000000
+timepos : 500,  value 81,612610, 191,587814, -158,709442
+inTan: -0,000004, -172,814880, 388,516968, -16000,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Gravity01, Father Name: Scene Root
+Super Class ID: 830, ClassID: E523C, 0
+Gravity space modifier found
+Name : Gravity01
+Pivot point : 0,000000, 0,000000, 0,000000
+Strength: 0,000000
+Decay: 0,000000
+Type: 0
+Object position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -3,912587, -17,736355, -38,328339
+Object rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,000000, 0,000000, 0,000000,  3,141593
+Gravity scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+Gravity strength track present.
+ Type is Bezier
+Number of keys : 3
+timepos : 0,  value 0,000000
+inTan: 0,000000
+outTan: -2,000000
+timepos : 250,  value 0,000000
+inTan: 2,000000
+outTan: 2,000000
+timepos : 500,  value 4,000000
+inTan: 6,000000
+outTan: 0,000000
+
+
+Name: Gravity02, Father Name: Scene Root
+Super Class ID: 830, ClassID: E523C, 0
+Gravity space modifier found
+Name : Gravity02
+Pivot point : 0,000000, 0,000000, 0,000000
+Strength: 4,000000
+Decay: 0,000000
+Type: 0
+Object position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 45,006477, -48,413071, -33,330803
+Object rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,000000, 0,000000, 0,000000,  3,141593
+Gravity scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+Gravity strength track present.
+ Type is Bezier
+Number of keys : 3
+timepos : 0,  value 4,000000
+inTan: 0,000000
+outTan: -6,000000
+timepos : 250,  value 0,000000
+inTan: -2,000000
+outTan: -2,000000
+timepos : 500,  value 0,000000
+inTan: 2,000000
+outTan: 0,000000
+
+

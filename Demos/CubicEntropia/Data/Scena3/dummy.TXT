@@ -1,0 +1,135 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 100
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -97,192230, 37,155754, -16,425121
+max : 118,675522, 70,181679, 16,425121
+
+
+Material list 
+Numero di materiali : 0
+
+----------------------------------------------------
+
+***Elenco dei nodi***
+
+Name: Dummy01, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente Dummy01
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -96,135269, 53,140095, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. Type is Bezier
+Number of keys : 2
+timepos : 0,  value 0,064350, 0,064350, 0,064350
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 0,939511, 0,939511, 0,939511 1600,000000
+timepos : 10,  value 1,003861, 1,003861, 1,003861
+inTan: 0,939511, 0,939511, 0,939511, -1600,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------
+Name: Dummy02, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente Dummy02
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -48,535908, 53,932892, 0,000000
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 5
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 10,  value 0,000000, 0,000000, 1,000000, 1,570796
+timepos : 20,  value 0,000000, 0,000000, 1,000000, 1,570796
+timepos : 30,  value 0,000000, 0,000000, 1,000000, 1,570796
+timepos : 40,  value 0,000000, 0,000000, 1,000000, 1,570796
+Object scaling track present. Type is Bezier
+Number of keys : 5
+timepos : 0,  value 0,300000, 0,300000, 0,300000
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 3,950000, 3,950000, 3,950000 4000,000000
+timepos : 25,  value 2,400000, 2,400000, 2,400000
+inTan: 0,250000, 0,250000, 0,250000, -4000,000000
+outTan: 0,250000, 0,250000, 0,250000 4000,000000
+timepos : 50,  value 0,800000, 0,800000, 0,800000
+inTan: -0,300000, -0,300000, -0,300000, -4000,000000
+outTan: -0,300000, -0,300000, -0,300000 4000,000000
+timepos : 75,  value 1,800000, 1,800000, 1,800000
+inTan: 0,300000, 0,300000, 0,300000, -4000,000000
+outTan: 0,300000, 0,300000, 0,300000 4000,000000
+timepos : 100,  value 1,400000, 1,400000, 1,400000
+inTan: -1,100000, -1,100000, -1,100000, -4000,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------
+Name: Dummy03, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente Dummy03
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,847019, 53,756557, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Dummy04, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente Dummy04
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 51,142067, 53,580875, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Dummy05, Father Name: Scene Root
+Super Class ID: 50, ClassID: 876234, 0
+Dummy helper presente Dummy05
+Geometric object found
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 102,250397, 53,580875, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------

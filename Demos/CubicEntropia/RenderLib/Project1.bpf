@@ -1,0 +1,19 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+USEUNIT("..\Utility.cpp");
+USEUNIT("..\Enumerate.cpp");
+USEUNIT("..\Error.cpp");
+USEUNIT("..\GraphicSurface.cpp");
+USEUNIT("..\Materials.cpp");
+USEUNIT("..\Renderlib.cpp");
+USEUNIT("..\Textures.cpp");
+USELIB("..\..\..\libPNG\lpng1011\projects\borland\zlibstat.lib");
+USELIB("..\..\..\libPNG\lpng1011\projects\borland\libpngstat.lib");
+USEUNIT("..\bump.cpp");
+//---------------------------------------------------------------------------
+#define Library
+
+// To add a file to the library use the Project menu 'Add to Project'.
+

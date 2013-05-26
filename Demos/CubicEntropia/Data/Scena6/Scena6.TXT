@@ -1,0 +1,1615 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 100
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -19,062449, -19,523952, -8,000000
+max : 24,115490, 17,859224, 18,008192
+
+
+Material list 
+Numero di materiali : 5
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Global ID = 1
+Material Global ID = 2
+Material Global ID = 3
+Material Global ID = 4
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 5
+Material name : Material #34 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+Mapping Type required: environment mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 6
+Material name : Material #33 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 7
+Material name : Material #39 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 8
+Material name : Material #35 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 9
+Material name : Material #30 
+Opacity : 29% 
+Two sided : no 
+U Offset track present.
+ Type is TCB
+Number of keys : 4
+timepos : 0,  value 0,000000
+timepos : 10,  value 0,100000
+timepos : 20,  value -0,100000
+timepos : 30,  value 0,000000
+V Offset track present.
+ Type is TCB
+Number of keys : 4
+timepos : 5,  value 0,000000
+timepos : 15,  value 0,100000
+timepos : 25,  value -0,100000
+timepos : 35,  value 0,000000
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #4 (marble2.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+       SubAnim = 0
+    Anim19: Reflection: Map #9 (lightEnv.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #3 (marble.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #7 (marble3.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #6 (piastre.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #10 (blood.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 0991D1C0
+                SubAnim = 0
+                NumKeys = 4
+             Anim1: V Offset
+Control pointer: 0A4D6880
+                SubAnim = 0
+                NumKeys = 4
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+    Anim5: Specular Color: None
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+***Elenco dei nodi***
+
+Name: Form01, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 1901
+Number of vertex (optimized): 1880
+Number of triangles (non optimized): 2542
+Number of triangles (optimized): 2542
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 7626
+Numero di vertici texture (optimized): 2988
+Numero di facce texture : 2542
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #34
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,214402, -1,009146, -2,947445
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,416699, 0,418524, -0,806969,  1,774292
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Form02, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 1901
+Number of vertex (optimized): 1880
+Number of triangles (non optimized): 2542
+Number of triangles (optimized): 2542
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 1901
+Numero di vertici texture (optimized): 1876
+Numero di facce texture : 2542
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #34
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,196714, -0,320494, -2,947445
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,241097, 0,847774, 0,472390,  1,092502
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Form03, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+mod cid A=C4D31, B=0
+Number of vertex (non optimized) : 1901
+Number of vertex (optimized): 1880
+Number of triangles (non optimized): 2542
+Number of triangles (optimized): 2542
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 7626
+Numero di vertici texture (optimized): 2985
+Numero di facce texture : 2542
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #34
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,364507, -0,635326, -2,947445
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,453779, 0,129047, 0,881721,  2,654880
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Capsule01, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+Number of vertex (non optimized) : 73
+Number of vertex (optimized): 73
+Number of triangles (non optimized): 132
+Number of triangles (optimized): 132
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 100
+Numero di vertici texture (optimized): 90
+Numero di facce texture : 132
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #33
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,004061, -0,882777, 1,530414
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,707107, -0,707107, -0,000000,  3,141593
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Gengon01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 49BF599F, 35F945AB
+Number of vertex (non optimized) : 12
+Number of vertex (optimized): 12
+Number of triangles (non optimized): 20
+Number of triangles (optimized): 20
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 24
+Numero di vertici texture (optimized): 18
+Numero di facce texture : 20
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #33
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,037350, -0,866149, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Gengon02, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+Number of vertex (non optimized) : 22
+Number of vertex (optimized): 22
+Number of triangles (non optimized): 40
+Number of triangles (optimized): 40
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 120
+Numero di vertici texture (optimized): 50
+Numero di facce texture : 40
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #34
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,037350, -0,866149, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Gengon03, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+Number of vertex (non optimized) : 22
+Number of vertex (optimized): 22
+Number of triangles (non optimized): 40
+Number of triangles (optimized): 40
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 120
+Numero di vertici texture (optimized): 48
+Numero di facce texture : 40
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #33
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,015488, -0,866149, -0,858565
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Gengon04, Father Name: Scene Root
+Super Class ID: 10, ClassID: 49BF599F, 35F945AB
+Number of vertex (non optimized) : 12
+Number of vertex (optimized): 12
+Number of triangles (non optimized): 20
+Number of triangles (optimized): 20
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 24
+Numero di vertici texture (optimized): 18
+Numero di facce texture : 20
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #39
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,016519, -0,866149, -3,249747
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Gengon05, Father Name: Scene Root
+Super Class ID: 10, ClassID: 49BF599F, 35F945AB
+Number of vertex (non optimized) : 12
+Number of vertex (optimized): 12
+Number of triangles (non optimized): 20
+Number of triangles (optimized): 20
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 24
+Numero di vertici texture (optimized): 18
+Numero di facce texture : 20
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #39
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,006431, -0,866149, -3,797333
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Gengon06, Father Name: Scene Root
+Super Class ID: 10, ClassID: 49BF599F, 35F945AB
+Number of vertex (non optimized) : 12
+Number of vertex (optimized): 12
+Number of triangles (non optimized): 20
+Number of triangles (optimized): 20
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 24
+Numero di vertici texture (optimized): 18
+Numero di facce texture : 20
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #39
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,006431, -0,866149, -4,428283
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Tube01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 7B21, 0
+Number of vertex (non optimized) : 72
+Number of vertex (optimized): 72
+Number of triangles (non optimized): 144
+Number of triangles (optimized): 144
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 91
+Numero di vertici texture (optimized): 91
+Numero di facce texture : 144
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #39
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,126569, -0,929477, -5,598229
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane01, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+mod cid A=F72B1, B=0
+Number of vertex (non optimized) : 25
+Number of vertex (optimized): 25
+Number of triangles (non optimized): 32
+Number of triangles (optimized): 32
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 25
+Numero di vertici texture (optimized): 25
+Numero di facce texture : 32
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #35
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,370859, -0,832364, -5,598229
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,934579, 0,934579, 0,934579
+
+
+
+----------------------------------------------------
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni01
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=16,115490, y=-0,053676, z=0,000000
+Color : R=0,623529, G=0,713726, B=0,780392
+Intensity : 1,000000
+Light position track present. Type is Bezier
+Number of keys : 10
+timepos : 0,  value 16,115490, -0,053676, 0,000000
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -12,707532, -27,425001, 1,122538 1777,000000
+timepos : 11,  value 2,405559, -14,960963, 1,122222
+inTan: -14,712330, -2,389574, 1,121907, -1777,000000
+outTan: -14,720609, -2,390918, 1,122538 1778,000000
+timepos : 22,  value -13,318579, -4,820076, 2,244445
+inTan: -4,497976, 12,967973, 1,122222, -1778,000000
+outTan: -4,497976, 12,967973, 1,122222 1778,000000
+timepos : 33,  value -6,590394, 10,974983, 3,366667
+inTan: 10,965405, 6,090016, 1,122222, -1778,000000
+outTan: 10,965405, 6,090016, 1,122222 1778,000000
+timepos : 44,  value 8,612231, 7,359956, 4,488889
+inTan: 7,138686, -8,840506, 1,122538, -1778,000000
+outTan: 7,134671, -8,835533, 1,121907 1777,000000
+timepos : 55,  value 7,692030, -6,695179, 5,611112
+inTan: -6,695257, -7,662145, 1,121907, -1777,000000
+outTan: -6,699025, -7,666457, 1,122538 1778,000000
+timepos : 66,  value -4,788553, -7,961447, 6,733334
+inTan: -7,683337, 4,676844, 1,122222, -1778,000000
+outTan: -7,683337, 4,676844, 1,122222 1778,000000
+timepos : 77,  value -7,674644, 2,658510, 7,855556
+inTan: 2,866989, 7,267099, 1,122222, -1778,000000
+outTan: 2,866989, 7,267099, 1,122222 1778,000000
+timepos : 88,  value 0,945425, 6,572751, 8,977778
+inTan: 6,489534, -1,356094, 1,122222, -1778,000000
+outTan: 6,489534, -1,356094, 1,122222 1778,000000
+timepos : 100,  value 5,304424, -0,053678, 10,100000
+inTan: 2,228464, -11,896764, 1,122222, -1778,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------
+Name: Omni02, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni02
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=0,165947, y=-0,526760, z=10,008192
+Color : R=0,972549, G=0,800000, B=0,619608
+Intensity : 1,000000
+
+
+
+----------------------------------------------------
+Name: Helix01, Father Name: Scene Root
+Super Class ID: 40, ClassID: 1994, 0
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 1,396263 
+Roll (rad) = 0,000000 
+Camera world position : x=16,471043, y=-0,099377, z=-2,865083
+Target world position : x=0,138987, y=-0,513716, z=0,000000
+Camera position track present. Type is TCB
+Number of keys : 25
+timepos : 0,  value 16,471043, -0,099377, -2,865083
+timepos : 4,  value 14,030686, -8,445522, -0,859824
+timepos : 8,  value 7,818877, -14,378644, 0,496665
+timepos : 12,  value -0,425262, -16,383642, 1,398160
+timepos : 16,  value -8,465388, -14,025283, 1,985761
+timepos : 20,  value -14,174488, -8,037498, 2,360677
+timepos : 25,  value -16,097488, -0,099376, 2,594316
+timepos : 29,  value -13,821129, 7,634730, 2,736153
+timepos : 33,  value -8,057361, 13,119811, 2,819776
+timepos : 37,  value -0,425261, 14,960813, 2,867484
+timepos : 41,  value 7,002826, 12,766451, 2,893708
+timepos : 45,  value 12,263887, 7,226702, 2,907521
+timepos : 50,  value 14,022890, -0,099380, 2,914451
+timepos : 54,  value 11,910521, -7,221453, 2,917734
+timepos : 58,  value 6,594802, -12,258483, 2,919188
+timepos : 62,  value -0,425266, -13,935491, 2,919782
+timepos : 66,  value -7,241315, -11,905121, 2,920003
+timepos : 70,  value -12,054328, -6,813420, 2,920075
+timepos : 75,  value -13,649337, -0,099377, 2,920095
+timepos : 79,  value -11,700961, 6,410665, 2,920099
+timepos : 83,  value -6,833289, 10,999647, 2,920100
+timepos : 87,  value -0,425253, 12,512661, 2,920100
+timepos : 91,  value 5,778757, 10,646284, 2,920100
+timepos : 95,  value 10,143726, 6,002625, 2,920100
+timepos : 100,  value 11,574739, -0,099381, 2,920100
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Spray01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 9BD61AA0, 0
+Spray particle system found
+Name : Spray01
+Parent name : Scene Root
+Pivot point : 0,000000, 0,000000, 0,000000
+Emitter width: 1,000000
+Emitter height: 1,000000
+Emitter speed (init vel): 2,000000
+Emitter variation: 0,000000
+Life: 30
+Start time: 0
+Stop time: 100
+Max particles: 100
+Modificatori (wind, gravity, bomb) collegati: 1
+Modificatore 0: Gravity01
+Particle position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 3,122168, -2,610005, 2,788733
+Particle rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,273070, 0,960125, 0,059940,  2,575699
+Particle scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+Name: Spray02, Father Name: Scene Root
+Super Class ID: 10, ClassID: 9BD61AA0, 0
+Spray particle system found
+Name : Spray02
+Parent name : Scene Root
+Pivot point : 0,000000, 0,000000, 0,000000
+Emitter width: 1,000000
+Emitter height: 1,000000
+Emitter speed (init vel): 2,000000
+Emitter variation: 0,000000
+Life: 30
+Start time: 0
+Stop time: 100
+Max particles: 100
+Modificatori (wind, gravity, bomb) collegati: 1
+Modificatore 0: Gravity01
+Particle position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,063413, 2,875913, 2,862232
+Particle rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,446600, 0,820871, -0,355975,  2,779087
+Particle scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+Name: Spray03, Father Name: Scene Root
+Super Class ID: 10, ClassID: 9BD61AA0, 0
+Spray particle system found
+Name : Spray03
+Parent name : Scene Root
+Pivot point : 0,000000, 0,000000, 0,000000
+Emitter width: 1,000000
+Emitter height: 1,000000
+Emitter speed (init vel): 2,000000
+Emitter variation: 0,000000
+Life: 30
+Start time: 0
+Stop time: 100
+Max particles: 100
+Modificatori (wind, gravity, bomb) collegati: 1
+Modificatore 0: Gravity01
+Particle position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -3,422876, -2,775717, 2,944276
+Particle rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,674095, -0,606620, -0,421436,  3,090662
+Particle scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+Name: Gravity01, Father Name: Scene Root
+Super Class ID: 830, ClassID: E523C, 0
+Gravity space modifier found
+Name : Gravity01
+Pivot point : 0,000000, 0,000000, 0,000000
+Strength: 1,700000
+Decay: 0,000000
+Type: 0
+Object position track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,349573, -0,634251, 6,780332
+Object rotation track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value -1,000000, 0,000000, 0,000000,  3,141593
+Gravity scaling track present. (1 key case)
+ Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+Name: Helix02, Father Name: Scene Root
+Super Class ID: 40, ClassID: 1994, 0
+Name: Plane02, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 256
+Number of vertex (optimized): 256
+Number of triangles (non optimized): 450
+Number of triangles (optimized): 450
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 288
+Numero di vertici texture (optimized): 256
+Numero di facce texture : 450
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : Material #30
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -0,108691, -0,732412, -4,296415
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------

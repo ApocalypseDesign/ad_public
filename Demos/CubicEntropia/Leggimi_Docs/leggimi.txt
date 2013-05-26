@@ -1,0 +1,197 @@
+Note interne
+------------
+
+Ho messo aposto tutto e impostato un progetto per la demo. Ora ti spiego il demosystem e come
+è strutturata la demo a livello di sorci e file dati.
+
+Nella directory principale ci sono i files base del demosystem, comprese le librerie che vengono
+linkate e i file di risorsa. L'unico file che puoi eventualmente editare sono i seguenti:
+
+- Utility.h/.cpp : contiene la definizione di funzioni di supporto, slegate dal demosystem
+  e da qualsiasi effetto. Aggiungi qui quello che ti serve, ma che siano solo funzioni di
+  supporto generiche
+
+Nella directory Data vengono messi i file dati, nell'esempio che c'e' ora ci sono 2 pic
+che servono per il bump che ti ho messo di esempio.
+
+Nella directory Efx2D sono inclusi i sorci degli effetti 2d, metti qui i tuoi. Io ho messo
+per ora il bump e flash che ho codato, ne ho molti altri ma sono di ska e per ora preferisco
+non metterli per lealta' visto che non li ho codati io. Al massimo li ricodiamo, tanto sono
+la solita roba (plasma, warmhole etc). Te venendo dal pianeta "amiga" poi sei anche piu'
+esperto di me.
+
+Nella directory Efx3D ci vanno gli eventuali effetti 3D, per ora non ho messo niente.
+
+
+Demosystem
+-----------
+
+Il demosystem comprende poche cose ma buone.
+
+- Il timer (file dtimer.h/.cpp), non lo toccare.
+- La classe basedegli effetti (efx2D.h/.cpp), non li toccare.
+- Il codice principale della demo (ADmain.h) questo va usato e modificato. Dacci un'occhiata
+per ora c'e' solo un bump di esempio con un flash verso la fine.
+
+Ti spiego veloce le due procedure base:
+
+void ADmainEnter()
+{
+  global_ib=Open_Screen(miawin, &driver_to_use);
+  ...
+  bump.set_imagebuffer(global_ib);
+  bump.set_pos(0, 1);
+  bump.set_height_map("Data\\bumpa.jpg");
+  bump.set_light_map("Data\\lightb.jpg");
+  bump.init();
+
+  flash.set_imagebuffer(global_ib);
+  flash.set_pos(0.7, 1);  // si flasha verso la fine
+  flash.init();
+  ...
+  demotimer.init(15);    // 15 secondi di demo
+  demotimer.start();
+}
+
+in questa proc viene settato la risoluzione scelta e vengono caricati i file dati della demo per
+i rispettivi effetti.
+OGNI effetto (nell'esempio il bump e il flash) deriva dalla classe base Efx2D (file efx2d.h/.cpp)
+che ha 3 metodi virtuali che sono:
+
+- set_imagebuffer : setta il buffer di immagine sul quale l'effetto "sputa il risultato"
+- set_pos(inizio, fine): inizio e fine sono nell'intervallo [0..1] float, e dice in che 
+  intervallo temporale l'effetto e' attivo
+- init(): serve per le inizializzazioni interne all'effetto (precalcolo di tabelle et simili)
+
+la init() va chiamata per ultima.
+Inoltre nella classe base Efx2D vi e' un membro pubblico chiamato image che rappresenta
+l'imagebuffer sul quale l'effetto lavora e che viene settato tramite il metodo appena detto
+set_imagebuffer
+
+
+  demotimer.init(15);    // 15 secondi di demo
+  demotimer.start();
+
+con queste due righe si dice che la demo durera' 15 secondi e sara' cosi' su tutte le macchine.
+Quindi con la riga   bump.set_pos(0, 1);  si fa in modo che il bump vada dall'inizio alla fine
+mentre con la riga  flash.set_pos(0.7, 1); accadra' che il flash andra' solo verso la fine
+della demo (0.7*15=10.5, 1*15=15, cioe' il flash iniziera' dopo 10 secondi dall'inizio della demo
+e finira' alla fine).
+
+
+void ADmainLoop() // loop principale
+{
+	global_ib->clear(0);  // si pulisce di nero il buffer video principale
+
+    // per ogni effetto vanno messe queste coppie di righe
+    if (bump.apply(curpos))
+	bump.do_efx2D(curpos);
+
+    if (flash.apply(curpos))
+	flash.do_efx2D(curpos);
+
+    // fa la copia del backbuffer (global_id) sullo schermo reale
+    Update_Screen();
+}
+
+Poi l'ultimo pezzo del demosystem e' la ADRender codata dal sottoscritto che mette a disposizione
+un layer di immediate mode di disegno di triangoli 2D, materiali etc.
+Per ora a te serve solo la classe Texture che ti mette a disposizione, studiatela che e' facile.
+Vedi il codice dei metodi   
+bump.set_height_map("Data\\bumpa.jpg"); bump.set_light_map("Data\\lightb.jpg");
+del bump per vedere come usarla.
+
+
+Ho gia' impostato il progetto della demo con possibilita' di compilare in debug e in release.
+Studiati bene le classi Texture e Imagebuffer che sono definite nella ADrender.h e tieni il codice indipendente dalla risoluzione video proprio sfruttando i campi delle strutture appena
+citate.
+Se hai domande mailami a muratmat@libero.it  ma vedrai che ti troverai bene.
+
+Anzi va te le spiego veloci qui.
+
+class imagebuffer
+{
+private:
+   unsigned char *real_where;
+   int real_height, real_channelsize;
+protected:
+public:
+   
+   void *voidptr;
+   unsigned char *uchar8ptr;
+   unsigned int *uint32ptr;
+   int channelsize, width, height;
+   int *muly;
+
+   imagebuffer() //Constructor
+   { real_channelsize=real_height=channelsize=width=height=0; }
+   imagebuffer(int sizex, int sizey); //Constructor
+
+   void clear (unsigned char value);
+   void clear (unsigned char r, unsigned char g, unsigned char b);
+   void set_cinemascope(int top, int bottom);
+};
+
+i campi rpivati lasciali perdere, tanto non servono, cosi' come il metodo set_cinemascope che
+tanto non va. La classe descrive sostanzilamente un buffer video a 32 bit (infatti internamente
+si lavora SEMPRE a 32 bit nel formato ARGB). Ad esempio per creare un buffer di 320x240 basta 
+fare
+
+imagebuffer *ib;
+ib=new Imagebuffer(320, 240);
+
+una volta fatto questo i campi voidptr, uchar8ptr et uint32ptr (che puntano tutti allo stesso
+array ma con tipi di cast differenti) punteranno all'array del buffer che avra' dimensioni pari
+a 320*240*4 bytes. I campi width e height una volta creato il buffer assumeranno i valori
+(in riferimento all'esempio) 320 e 240. Il campo channelsize vale width*height.
+Il metodo clear permette di pulire il buffer con valori prestabiliti passati come parametro.
+Questa classe in sostanza puo' servire a molte cose, sostanzialmente come buffer di lavoro 
+interno.
+
+
+
+class texture
+{
+ private:
+ ...
+
+ public:
+   int HW_ADRender_Pos;
+   int dimx, dimy, xbits, ybits, channelsize, channelsize2x;
+   float fdimx_opt, fdimy_opt;
+   char name[35];
+   unsigned char *map;
+   unsigned int *map32;
+   unsigned char *palette;  // eventuale palette
+   unsigned char type;      // tipo di texture; vedi le costanti sopra
+   imagebuffer img;
+   
+   texture ();   // costruttore
+   imagebuffer *get_my_image_buffer(void);
+   
+   // restituiscono -1 (FILENOTFOUND) oppure 0 (tutto ok)
+   int load_pcx (char *nfile, int loadmethod);
+   int load_jpg (char *nfile, int loadmethod);
+};
+
+I metodi e mebri privati lasciali stare. Per leggere una texture da file basta fare:
+
+Texture *t;
+t=New texture;
+t->load_jpg("miofile.jpg");
+
+non usare i PCX che hanno alcuni bug col Photoshop. Usa jpg che vai tranquillo.
+Una volta caricato il file, puoi accedere ai vari pixel tramite i puntatori map e map32 (anche
+qui puntano alla stessa cosa, solo con cast di tipi differenti). I campi dimx, dimy dicono le
+dimensioni in pixel della texture caricata.
+Il metodo load_jpg prende come secondo parametro una delle seguenti costanti:
+
+- RGBPLANAR
+- RGBINTERLEAVED
+
+con RGBPLANAR si fa si che la texture venga caricata in memoria a piani, quindi con prima tutto
+il piano del rosso, poi quello che verde etc.
+con RGBINTERLEAVED invece si fa si che in memoria venga caricata come interlacciata ovvero nel
+formato ARGB ARGB ...
+Usa sempre quando ti e' possibile quest'ultimo formato, a meno che l'effetto che codi giova
+molto in velocita' dal formato RRRRRR....GGGGG....BBBBBBB.

@@ -1,0 +1,454 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 100
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -259,240265, -51,180862, -53,441204
+max : 51,562958, 51,180859, 53,436462
+
+
+Material list 
+Numero di materiali : 1
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 1
+Material name : 1 - Default 
+Opacity : 100% 
+Two sided : no 
+Mapping Type required: texture mapping
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0: Ambient Color Amount
+    Anim1: Ambient Color: None
+    Anim2: Diffuse Color Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #1 (grid.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4: Specular Color Amount
+       SubAnim = 0
+    Anim5: Specular Color: Map #2 (grid.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim1: V Offset
+Control pointer: 00000000
+                SubAnim = 0
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim6: Specular Level Amount
+    Anim7: Specular Level: None
+    Anim8: Glossiness Amount
+    Anim9: Glossiness: None
+    Anim10: Self-Illumination Amount
+    Anim11: Self-Illumination: None
+    Anim12: Opacity Amount
+    Anim13: Opacity: None
+    Anim14: Filter Color Amount
+    Anim15: Filter Color: None
+    Anim16: Bump Amount
+    Anim17: Bump: None
+    Anim18: Reflection Amount
+    Anim19: Reflection: None
+    Anim20: Refraction Amount
+    Anim21: Refraction: None
+    Anim22: Displacement Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+***Elenco dei nodi***
+
+Name: Sphere01, Father Name: Scene Root
+Super Class ID: 10, ClassID: E44F10B3, 0
+Number of vertex (non optimized) : 1202
+Number of vertex (optimized): 1202
+Number of triangles (non optimized): 2400
+Number of triangles (optimized): 2400
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 1326
+Numero di vertici texture (optimized): 1326
+Numero di facce texture : 2400
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,483092, 0,000000, 0,000000
+position controller exporting done
+Object rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,854701, 0,854701, 0,854701
+Ripple OSM found at order 0...
+amplitude1: 3,000000 
+amplitude2: 3,000000 
+wave lenght: 20,000000 
+phase: 0,000000 
+decay: 0,000000 
+center pos: -38,524414, 16,388306, 30,916798 
+tmControl->GetPositionController: 09131B20, 11
+Osm position track present. Type is Bezier
+Number of keys : 11
+timepos : 0,  value 0,000001, 16,400972, 6,787442
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 29,499146, -2,984409, -34,187073 1600,000000
+timepos : 10,  value 12,578284, 14,411366, -24,017658
+inTan: -4,342578, -0,994802, -27,423128, -1600,000000
+outTan: -4,342578, -0,994802, -27,423128 1600,000000
+timepos : 20,  value -8,685155, 14,411367, -48,058815
+inTan: -10,609737, 6,196605, -0,324975, -1600,000000
+outTan: -10,609737, 6,196605, -0,324975 1600,000000
+timepos : 30,  value -8,641191, 26,804577, -24,667608
+inTan: 16,955332, 9,050706, 32,990063, -1600,000000
+outTan: 16,955332, 9,050706, 32,990063 1600,000000
+timepos : 40,  value 25,225506, 32,512779, 17,921310
+inTan: 32,300701, -1,678549, 4,931346, -1600,000000
+outTan: 32,300701, -1,678549, 4,931346 1600,000000
+timepos : 50,  value 55,960213, 23,447479, -14,804916
+inTan: 13,378891, -29,201836, -16,363113, -1600,000000
+outTan: 13,378891, -29,201836, -16,363113 1600,000000
+timepos : 60,  value 51,983288, -25,890892, -14,804916
+inTan: -27,160526, -41,517197, 0,000000, -1600,000000
+outTan: -27,160526, -41,517197, 0,000000 1600,000000
+timepos : 70,  value 1,639160, -59,586914, -14,804916
+inTan: -42,553856, -10,928080, -11,554613, -1600,000000
+outTan: -42,553856, -10,928080, -11,554613 1600,000000
+timepos : 80,  value -33,124428, -47,747051, -37,914143
+inTan: -17,381794, 25,344429, -11,554613, -1600,000000
+outTan: -17,381794, 25,344429, -11,554613 1600,000000
+timepos : 90,  value -33,124428, -8,898056, -37,914143
+inTan: 13,578066, 31,047321, 0,000000, -1600,000000
+outTan: 13,578066, 31,047321, 0,000000 1600,000000
+timepos : 100,  value -5,968296, 14,347588, -37,914143
+inTan: 40,734200, 15,443967, 0,000000, -1600,000000
+outTan: 0,000000, 0,000000, 0,000000
+tmControl->GetRotationController: 091316D0, 0
+Osm rotation track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,000000, 0,000000, 0,000000,  0,000000
+tmControl->GetScaleController: 091315F0, 0
+Osm scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+OK!
+
+
+
+----------------------------------------------------
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 1,047198 
+Roll (rad) = 0,000000 
+Camera world position : x=-163,555283, y=-2,868650, z=21,276596
+Target world position : x=-42,006004, y=5,691956, z=0,966184
+Camera position track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value -163,555283, -2,868650, 21,276596
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 38,618137, 147,111374, 11,815571 3200,000000
+timepos : 20,  value -106,396660, 102,077827, 21,276596
+inTan: 75,699112, 62,781590, -11,815571, -3200,000000
+outTan: 75,699112, 62,781590, -11,815571 3200,000000
+timepos : 40,  value -12,157066, 122,694534, -2,354546
+inTan: 122,222710, -71,285141, -7,074039, -3200,000000
+outTan: 122,222710, -71,285141, -7,074039 3200,000000
+timepos : 60,  value 138,048767, -40,492451, 7,128517
+inTan: -7,926070, -134,573608, -4,686433, -3200,000000
+outTan: -7,926070, -134,573608, -4,686433 3200,000000
+timepos : 80,  value -28,009207, -146,452698, -11,727411
+inTan: -119,365646, 12,928827, -70,159187, -3200,000000
+outTan: -119,365646, 12,928827, -70,159187 3200,000000
+timepos : 100,  value -100,682526, -14,634797, -133,189865
+inTan: -25,980991, 250,706985, -172,765717, -3200,000000
+outTan: 0,000000, 0,000000, 0,000000
+Target position track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value -42,006004, 5,691956, 0,966184
+inTan: 0,000000, 0,000000, 0,000000
+outTan: -0,815435, 39,623081, 0,000000 3200,000000
+timepos : 20,  value -34,153259, 37,449707, 0,966184
+inTan: 16,520926, 23,892422, 0,000000, -3200,000000
+outTan: 16,520926, 23,892422, 0,000000 3200,000000
+timepos : 40,  value -8,964153, 53,476799, 0,966184
+inTan: 42,045208, -27,267641, 0,000000, -3200,000000
+outTan: 42,045208, -27,267641, 0,000000 3200,000000
+timepos : 60,  value 49,937160, -17,085575, 0,966184
+inTan: 9,775366, -34,315002, -1,840861, -3200,000000
+outTan: 9,775366, -34,315002, -1,840861 3200,000000
+timepos : 80,  value 10,586578, -15,153207, -2,715538
+inTan: -41,414429, 0,966184, -15,414537, -3200,000000
+outTan: -41,414429, 0,966184, -15,414537 3200,000000
+timepos : 100,  value -32,891693, -15,153207, -29,862890
+inTan: -45,542114, -0,966184, -38,880165, -3200,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+
+Name: Omni01, Father Name: Scene Root
+Super Class ID: 30, ClassID: 1011, 0
+Name : Omni01
+Omni light found
+Pivot point : 0,000000, 0,000000, 0,000000
+World position : x=-251,240265, y=-3,628853, z=43,155537
+Color : R=0,925490, G=0,725490, B=0,290196
+Intensity : 1,000000
+Light position track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value -251,240265, -3,628853, 43,155537
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 42,686035, 240,693878, 16,591478 3200,000000
+timepos : 20,  value -172,200348, 152,147125, 39,105785
+inTan: 115,393791, 70,858070, -24,690981, -3200,000000
+outTan: 115,393791, 70,858070, -24,690981 3200,000000
+timepos : 40,  value -20,452671, 138,087280, -6,226425
+inTan: 167,599838, -100,012825, -13,487365, -3200,000000
+outTan: 167,599838, -100,012825, -13,487365 3200,000000
+timepos : 60,  value 162,999313, -47,878517, 12,131058
+inTan: -5,007360, -168,352737, -7,289482, -3200,000000
+outTan: -5,007360, -168,352737, -7,289482 3200,000000
+timepos : 80,  value -30,467392, -198,618179, -20,805389
+inTan: -147,779968, 18,134169, -95,232208, -3200,000000
+outTan: -147,779968, 18,134169, -95,232208 3200,000000
+timepos : 100,  value -132,560608, -11,610181, -178,333359
+inTan: -56,406475, 355,881836, -219,823746, -3200,000000
+outTan: 0,000000, 0,000000, 0,000000
+Light color track present. Type is Bezier
+Number of keys : 6
+timepos : 0,  value 0,925490, 0,725490, 0,290196
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 0,064706, -0,211765, 0,056863 3200,000000
+timepos : 20,  value 0,964706, 0,482353, 0,290196
+inTan: 0,013725, -0,274510, -0,056863, -3200,000000
+outTan: 0,013725, -0,274510, -0,056863 3200,000000
+timepos : 40,  value 0,952941, 0,176471, 0,176471
+inTan: 0,000000, -0,109804, 0,250980, -3200,000000
+outTan: 0,000000, -0,109804, 0,250980 3200,000000
+timepos : 60,  value 0,964706, 0,262745, 0,792157
+inTan: -0,149020, 0,043137, 0,390196, -3200,000000
+outTan: -0,149020, 0,043137, 0,390196 3200,000000
+timepos : 80,  value 0,654902, 0,262745, 0,956863
+inTan: -0,294118, 0,076471, 0,082353, -3200,000000
+outTan: -0,294118, 0,076471, 0,082353 3200,000000
+timepos : 100,  value 0,376471, 0,415686, 0,956863
+inTan: -0,262745, 0,229412, -0,082353, -3200,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+
+----------------------------------------------------

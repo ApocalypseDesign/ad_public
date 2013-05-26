@@ -1,0 +1,21 @@
+#include "DOT3TOON_VS.H"
+
+#define V_POSITION v0
+#define V_NORMAL v1
+#define V_TEXTURE v2
+
+#define R_AUX r0
+
+vs.1.1
+
+; Transform position to clip space and output it
+m4x4 oPos, V_POSITION, c[CV_WORLDVIEWPROJ_0]
+
+; output tex coords
+; mov oT0.xy, V_TEXTURE
+
+mov R_AUX, V_TEXTURE
+mov R_AUX.z, c[CV_ONE]
+; mov oT0.xy, V_TEXTURE
+dp3 oT0.x, R_AUX.xyz, c[CV_MAP1UVMATRIX_0]
+dp3 oT0.y, R_AUX.xyz, c[CV_MAP1UVMATRIX_1]

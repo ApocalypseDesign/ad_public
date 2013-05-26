@@ -1,0 +1,1390 @@
+[AD]Turbo ROX as usual !! 
+
+First frame : 0
+Last frame : 100
+Frame speed : 30
+Scene Bounding Box at time 0
+min : -99,464012, -100,014214, -99,520348
+max : 100,535988, 100,016975, 100,523308
+
+
+Material list 
+Numero di materiali : 1
+
+----------------------------------------------------
+
+Material Global ID = 0
+Material Class Name: Standard
+Material ClassID: (2, 0)
+Material Global ID = 1
+Material name : 1 - Default 
+Opacity : 5% 
+Two sided : no 
+Mapping Type required: texture mapping
+
+----------------------------------------------------
+
+ SubAnim = 5
+ Anim0: Maps
+    SubAnim = 48
+    Anim0:  Amount
+    Anim1: Ambient Color: None
+    Anim2:  Amount
+       SubAnim = 0
+    Anim3: Diffuse Color: Map #1 (trans.png)
+       SubAnim = 4
+       Anim0: Coordinates
+          SubAnim = 1
+          Anim0: Parameters
+             SubAnim = 13
+             Anim0: U Offset
+Control pointer: 091C6D10
+                SubAnim = 0
+                NumKeys = 3
+             Anim1: V Offset
+Control pointer: 091C6BB0
+                SubAnim = 0
+                NumKeys = 3
+             Anim2: U Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim3: V Tiling
+Control pointer: 00000000
+                SubAnim = 0
+             Anim4: U Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim5: V Angle
+Control pointer: 00000000
+                SubAnim = 0
+             Anim6: W Angle
+                SubAnim = 0
+             Anim7: Blur
+                SubAnim = 0
+             Anim8: Noise Amount
+                SubAnim = 0
+             Anim9: Noise Size
+                SubAnim = 0
+             Anim10: Noise Levels
+                SubAnim = 0
+             Anim11: Phase
+                SubAnim = 0
+             Anim12: Blur Offset
+                SubAnim = 0
+       Anim1: Parameters
+          SubAnim = 5
+          Anim0: Clip U Offset
+             SubAnim = 0
+          Anim1: Clip V Offset
+             SubAnim = 0
+          Anim2: Clip U Width
+             SubAnim = 0
+          Anim3: Clip V Width
+             SubAnim = 0
+          Anim4: Jitter Placement
+             SubAnim = 0
+       Anim2: Output
+          SubAnim = 3
+          Anim0: Parameters
+             SubAnim = 4
+             Anim0: RGB Level
+                SubAnim = 0
+             Anim1: RGB Offset
+                SubAnim = 0
+             Anim2: Output Amount
+                SubAnim = 0
+             Anim3: Bump Amount
+                SubAnim = 0
+          Anim1: RGB Color Map
+          Anim2: Mono Color Map
+       Anim3: Parameters
+          SubAnim = 0
+    Anim4:  Amount
+    Anim5: Specular Color: None
+    Anim6:  Amount
+    Anim7: Specular Level: None
+    Anim8:  Amount
+    Anim9: Glossiness: None
+    Anim10:  Amount
+    Anim11: Self-Illumination: None
+    Anim12:  Amount
+    Anim13: Opacity: None
+    Anim14:  Amount
+    Anim15: Filter Color: None
+    Anim16:  Amount
+    Anim17: Bump: None
+    Anim18:  Amount
+    Anim19: Reflection: None
+    Anim20:  Amount
+    Anim21: Refraction: None
+    Anim22:  Amount
+    Anim23: Displacement: None
+    Anim24:  Amount
+    Anim25: : None
+    Anim26:  Amount
+    Anim27: : None
+    Anim28:  Amount
+    Anim29: : None
+    Anim30:  Amount
+    Anim31: : None
+    Anim32:  Amount
+    Anim33: : None
+    Anim34:  Amount
+    Anim35: : None
+    Anim36:  Amount
+    Anim37: : None
+    Anim38:  Amount
+    Anim39: : None
+    Anim40:  Amount
+    Anim41: : None
+    Anim42:  Amount
+    Anim43: : None
+    Anim44:  Amount
+    Anim45: : None
+    Anim46:  Amount
+    Anim47: : None
+ Anim1: Shader Basic Parameters
+    SubAnim = 1
+    Anim0: Parameters
+       SubAnim = 8
+       Anim0: Ambient Color
+          SubAnim = 0
+       Anim1: Diffuse Color
+          SubAnim = 0
+       Anim2: Specular Color
+          SubAnim = 0
+       Anim3: Self-Illumination
+          SubAnim = 0
+       Anim4: Self-Illum Color
+          SubAnim = 0
+       Anim5: Specular Level
+          SubAnim = 0
+       Anim6: Glossiness
+          SubAnim = 0
+       Anim7: Soften
+          SubAnim = 0
+ Anim2: Extended Parameters
+    SubAnim = 7
+    Anim0: Opacity
+       SubAnim = 0
+    Anim1: Filter Color
+       SubAnim = 0
+    Anim2: Falloff
+       SubAnim = 0
+    Anim3: Index of Refraction
+       SubAnim = 0
+    Anim4: Wire Size
+       SubAnim = 0
+    Anim5: Dim Level
+       SubAnim = 0
+    Anim6: Reflection Level
+       SubAnim = 0
+ Anim3: SuperSampling
+    SubAnim = 2
+    Anim0: Sampler Quality
+       SubAnim = 0
+    Anim1: Sampler Enable
+       SubAnim = 0
+ Anim4: Dynamics Properties
+    SubAnim = 3
+    Anim0: Bounce Coefficient
+       SubAnim = 0
+    Anim1: Static Friction
+       SubAnim = 0
+    Anim2: Sliding Friction
+       SubAnim = 0
+
+
+***Elenco dei nodi***
+
+Name: Plane21, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016968, 20,459679
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane20, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016965, 100,444992
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane18, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016966, 59,994907
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane15, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016967, 40,611198
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane13, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016965, 80,293472
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane12, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016971, -39,674091
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane10, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016969, 0,775997
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane08, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016970, -19,375523
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane05, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016972, -59,057800
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane03, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016972, -79,209320
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane01, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,016973, -99,507889
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, 0,000000, 0,000000, 0,000000
+timepos : 100,  value 0,000000, 0,000000, -1,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane25, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 80,224968, 0,016969, 0,479660
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane27, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 60,073444, 0,016969, 0,479656
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane30, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 20,391171, 0,016969, 0,479658
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane32, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,239649, 0,016969, 0,479658
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane34, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 40,689735, 0,016969, 0,479656
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane35, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -79,277824, 0,016969, 0,479660
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane36, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -39,595554, 0,016969, 0,479656
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane39, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -58,979263, 0,016969, 0,479656
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane41, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -99,429344, 0,016969, 0,479660
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane42, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value -19,444031, 0,016969, 0,479658
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane43, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 100,523537, 0,016969, 0,479660
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 0,000000, 1,000000, 0,000000, 1,570796
+timepos : 100,  value 1,000000, -0,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane44, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 79,787148, 0,523281
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane45, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 99,938683, 0,523278
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane46, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 40,104877, 0,523283
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane47, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 59,488590, 0,523282
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane48, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 19,953360, 0,523286
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane49, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, 0,269677, 0,523289
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane50, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, -19,881842, 0,523291
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane51, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, -40,180408, 0,523296
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane52, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, -59,564125, 0,523297
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane53, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, -79,715645, 0,523304
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Plane54, Father Name: Scene Root
+Super Class ID: 10, ClassID: 81F1DFC, 77566F65
+Number of vertex (non optimized) : 4
+Number of vertex (optimized): 4
+Number of triangles (non optimized): 2
+Number of triangles (optimized): 2
+Numer of mapping channels used: 2
+Skipping channel 0 (unused)
+Channel 1
+Numero di vertici texture (non optimized): 8
+Numero di vertici texture (optimized): 4
+Numero di facce texture : 2
+Finito di esportare i canali di mapping
+Geometric object found
+Material used : 1 - Default
+Pivot point : 0,000000, 0,000000, 0,000000
+Object position track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 0,535989, -100,014214, 0,523309
+position controller exporting done
+Object rotation track present. Type is TCB
+Number of keys : 2
+timepos : 0,  value 1,000000, -0,000000, -0,000000, 1,570796
+timepos : 100,  value -0,000000, -1,000000, -0,000000, 1,570796
+Object scaling track present. (1 key case) Type is TCB
+Number of keys : 1
+timepos : 0,  value 1,000000, 1,000000, 1,000000
+
+
+
+----------------------------------------------------
+Name: Camera01, Father Name: Scene Root
+Super Class ID: 20, ClassID: 1002, 0
+Targeted camera found
+Name : Camera01
+Znear = 2,000000 
+Zfar = 2000,000000 
+FOV (rad) = 1,047198 
+Roll (rad) = 0,000000 
+Camera world position : x=78,846283, y=74,824158, z=-17,068220
+Target world position : x=-0,483092, y=0,966184, z=0,000000
+Camera position track present. Type is Bezier
+Number of keys : 50
+timepos : 0,  value 78,846283, 74,824158, -17,068220
+inTan: 0,000000, 0,000000, 0,000000
+outTan: 21,996342, -138,144608, 21,660004 326,000000
+timepos : 2,  value 76,077927, -32,969833, 7,193195
+inTan: -27,533056, -77,443367, 26,862825, -326,000000
+outTan: -27,617514, -77,680923, 26,945227 327,000000
+timepos : 4,  value 23,543552, -80,113647, 36,755817
+inTan: -55,657471, -20,195950, 0,965172, -327,000000
+outTan: -55,487267, -20,134190, 0,962220 326,000000
+timepos : 6,  value -35,047741, -73,464539, 9,295227
+inTan: -49,126961, 20,403738, -26,067013, -326,000000
+outTan: -49,277657, 20,466328, -26,146973 327,000000
+timepos : 8,  value -74,802917, -39,159069, -15,449604
+inTan: -27,073908, 39,598122, -14,414181, -327,000000
+outTan: -26,991112, 39,477028, -14,370101 326,000000
+timepos : 10,  value -89,190201, 5,578290, -19,552143
+inTan: -3,067726, 44,095177, 1,280859, -326,000000
+outTan: -3,077136, 44,230438, 1,284788 327,000000
+timepos : 12,  value -80,878227, 49,162605, -12,850879
+inTan: 18,268837, 37,379490, 7,188637, -327,000000
+outTan: 18,212969, 37,265179, 7,166653 326,000000
+timepos : 14,  value -52,769199, 80,260849, -5,199830
+inTan: 34,531670, 21,849802, 6,620986, -326,000000
+outTan: 34,637596, 21,916826, 6,641295 327,000000
+timepos : 16,  value -11,669502, 92,872406, 0,405073
+inTan: 42,129978, 3,252902, 6,838771, -327,000000
+outTan: 42,001141, 3,242954, 6,817857 326,000000
+timepos : 18,  value 31,355629, 86,813858, 8,449263
+inTan: 38,312317, -15,275831, 11,658017, -326,000000
+outTan: 38,429836, -15,322689, 11,693778 327,000000
+timepos : 20,  value 65,043694, 62,217251, 23,779074
+inTan: 25,344568, -31,620831, 19,570019, -327,000000
+outTan: 25,267063, -31,524132, 19,510172 326,000000
+timepos : 22,  value 82,018211, 23,711794, 47,503559
+inTan: 9,274028, -38,071461, 24,268326, -326,000000
+outTan: 9,302476, -38,188248, 24,342768 327,000000
+timepos : 24,  value 83,572884, -14,039789, 72,393509
+inTan: -4,949272, -29,383810, 21,315598, -327,000000
+outTan: -4,934136, -29,293951, 21,250414 326,000000
+timepos : 26,  value 72,174522, -35,017067, 90,091400
+inTan: -16,439299, -6,690532, 10,929366, -326,000000
+outTan: -16,489727, -6,711055, 10,962893 327,000000
+timepos : 28,  value 50,612885, -27,353594, 94,244179
+inTan: -24,505362, 17,822878, -0,914362, -327,000000
+outTan: -24,430422, 17,768373, -0,911565 326,000000
+timepos : 30,  value 23,256714, 0,512144, 88,296417
+inTan: -27,784351, 30,595053, -7,763722, -326,000000
+outTan: -27,869579, 30,688902, -7,787537 327,000000
+timepos : 32,  value -5,043678, 33,947128, 78,681763
+inTan: -26,481428, 29,309561, -8,535492, -327,000000
+outTan: -26,481428, 29,309561, -8,535492 327,000000
+timepos : 34,  value -29,706141, 59,131264, 71,225433
+inTan: -22,137840, 18,891968, -7,014518, -327,000000
+outTan: -22,070141, 18,834194, -6,993067 326,000000
+timepos : 36,  value -49,267078, 71,711716, 64,671478
+inTan: -17,265030, 7,161924, -8,993735, -326,000000
+outTan: -17,317991, 7,183893, -9,021323 327,000000
+timepos : 38,  value -64,275055, 73,443787, 53,195385
+inTan: -13,033172, -2,779884, -16,849934, -327,000000
+outTan: -12,993316, -2,771382, -16,798405 326,000000
+timepos : 40,  value -75,305626, 66,188004, 31,055958
+inTan: -9,194742, -10,723331, -27,184772, -326,000000
+outTan: -9,222947, -10,756225, -27,268162 327,000000
+timepos : 42,  value -82,681465, 51,942924, -1,288552
+inTan: -5,548505, -16,683865, -33,244965, -327,000000
+outTan: -5,531537, -16,632843, -33,143295 326,000000
+timepos : 44,  value -86,396828, 32,886189, -35,326805
+inTan: -1,874226, -20,332701, -30,327158, -326,000000
+outTan: -1,879976, -20,395071, -30,420185 327,000000
+timepos : 46,  value -86,424355, 11,207313, -62,013092
+inTan: 1,727843, -21,956282, -19,664101, -327,000000
+outTan: 1,722559, -21,889137, -19,603966 326,000000
+timepos : 48,  value -82,957146, -10,957539, -74,637756
+inTan: 4,809218, -21,381489, -5,403314, -326,000000
+outTan: 4,823970, -21,447075, -5,419888 327,000000
+timepos : 51,  value -76,782921, -31,616440, -72,791924
+inTan: 7,097933, -18,945711, 8,794455, -327,000000
+outTan: 7,076226, -18,887774, 8,767560 326,000000
+timepos : 53,  value -68,788628, -48,801487, -57,118176
+inTan: 8,518360, -14,375575, 21,842358, -326,000000
+outTan: 8,544490, -14,419672, 21,909359 327,000000
+timepos : 55,  value -59,716850, -60,394424, -29,002306
+inTan: 9,688362, -7,285290, 31,475973, -327,000000
+outTan: 9,658733, -7,263011, 31,379717 326,000000
+timepos : 57,  value -49,445297, -63,376095, 5,716997
+inTan: 11,073435, 2,977701, 34,224983, -326,000000
+outTan: 11,107403, 2,986835, 34,329967 327,000000
+timepos : 59,  value -37,531086, -54,393272, 39,549606
+inTan: 12,946815, 16,449406, 29,796837, -327,000000
+outTan: 12,907222, 16,399101, 29,705713 326,000000
+timepos : 61,  value -23,597567, -30,573185, 65,244194
+inTan: 14,606849, 29,016479, 19,792015, -326,000000
+outTan: 14,651654, 29,105488, 19,852728 327,000000
+timepos : 63,  value -8,268446, 3,760624, 79,158081
+inTan: 15,353596, 34,713261, 7,583483, -327,000000
+outTan: 15,306643, 34,607105, 7,560292 326,000000
+timepos : 65,  value 7,062522, 38,744862, 80,426628
+inTan: 14,610137, 30,317329, -5,393502, -326,000000
+outTan: 14,654953, 30,410328, -5,410046 327,000000
+timepos : 67,  value 20,992214, 64,459610, 68,313599
+inTan: 12,840603, 18,696699, -17,464172, -327,000000
+outTan: 12,840603, 18,696699, -17,464172 327,000000
+timepos : 69,  value 32,743729, 76,138260, 45,498283
+inTan: 10,772716, 6,264110, -24,220888, -327,000000
+outTan: 10,739771, 6,244954, -24,146818 326,000000
+timepos : 71,  value 42,510677, 77,001740, 19,954477
+inTan: 8,902252, -2,575603, -22,667988, -326,000000
+outTan: 8,929560, -2,583503, -22,737522 327,000000
+timepos : 73,  value 50,570229, 70,958023, 0,110443
+inTan: 7,280359, -7,809888, -14,284718, -327,000000
+outTan: 7,258095, -7,786005, -14,241034 326,000000
+timepos : 75,  value 57,053890, 61,416634, -8,605223
+inTan: 5,517319, -10,383951, -5,355620, -326,000000
+outTan: 5,534243, -10,415804, -5,372048 327,000000
+timepos : 77,  value 61,615852, 50,153091, -10,596580
+inTan: 3,380935, -11,421925, -1,839350, -327,000000
+outTan: 3,370596, -11,386994, -1,833725 326,000000
+timepos : 79,  value 63,812634, 38,608681, -12,279225
+inTan: 0,828502, -10,976326, -4,296755, -326,000000
+outTan: 0,831043, -11,009995, -4,309935 327,000000
+timepos : 81,  value 63,266991, 28,170261, -19,219332
+inTan: -1,867648, -9,404198, -9,234007, -327,000000
+outTan: -1,861937, -9,375439, -9,205769 326,000000
+timepos : 83,  value 60,091122, 19,822729, -30,704992
+inTan: -4,315079, -6,893680, -11,975723, -326,000000
+outTan: -4,328316, -6,914826, -12,012459 327,000000
+timepos : 85,  value 54,616596, 14,370689, -43,210526
+inTan: -6,442676, -3,595921, -11,251225, -327,000000
+outTan: -6,422974, -3,584925, -11,216817 326,000000
+timepos : 87,  value 47,231384, 12,630548, -53,180695
+inTan: -7,587234, 0,640366, -6,763527, -326,000000
+outTan: -7,610507, 0,642330, -6,784275 327,000000
+timepos : 89,  value 39,417614, 15,668013, -56,738625
+inTan: -6,792741, 6,092031, 1,752940, -327,000000
+outTan: -6,771968, 6,073401, 1,747579 326,000000
+timepos : 91,  value 33,660439, 24,777327, -49,712608
+inTan: -3,464233, 12,753202, 14,298388, -326,000000
+outTan: -3,474859, 12,792323, 14,342248 327,000000
+timepos : 93,  value 32,492611, 41,235928, -28,053305
+inTan: 2,952591, 19,505054, 24,165451, -327,000000
+outTan: 2,943562, 19,445406, 24,091551 326,000000
+timepos : 95,  value 39,531429, 63,709183, -1,470913
+inTan: 13,272649, 21,583599, 13,199474, -326,000000
+outTan: 13,313362, 21,649805, 13,239964 327,000000
+timepos : 97,  value 59,116924, 84,463867, -1,696097
+inTan: 19,657427, 5,557487, -7,798654, -327,000000
+outTan: 19,657427, 5,557487, -7,798654 327,000000
+timepos : 100,  value 78,846283, 74,824158, -17,068220
+inTan: 19,801291, -24,836906, -22,945593, -327,000000
+outTan: 0,000000, 0,000000, 0,000000
+
+
+--------------------------------------------------
+Name: Camera01.Target, Father Name: Scene Root
+Super Class ID: 10, ClassID: 1020, 0
+

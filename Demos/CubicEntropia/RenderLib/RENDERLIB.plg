@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RENDERLIB - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSPB5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/RENDERLIB.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Redshift\Demo_sw\RenderLib\bump.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Enumerate.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Error.cpp"
+"C:\Redshift\Demo_sw\RenderLib\GraphicSurface.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Materials.cpp"
+"C:\Redshift\Demo_sw\RenderLib\MotionBlur.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Renderlib.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Shaders.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Textures.cpp"
+"C:\Redshift\Demo_sw\RenderLib\ToonShade.cpp"
+"C:\Redshift\Demo_sw\RenderLib\Utility.cpp"
+"C:\Redshift\Demo_sw\RenderLib\VideoReader.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSPB5.tmp" 
+Creating temporary file "C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSPB6.tmp" with contents
+[
+/nologo /out:"Debug\RENDERLIB_Debug.lib" 
+.\Debug\bump.obj
+.\Debug\Enumerate.obj
+.\Debug\Error.obj
+.\Debug\GraphicSurface.obj
+.\Debug\Materials.obj
+.\Debug\MotionBlur.obj
+.\Debug\Renderlib.obj
+.\Debug\Shaders.obj
+.\Debug\Textures.obj
+.\Debug\ToonShade.obj
+.\Debug\Utility.obj
+.\Debug\VideoReader.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\SKAVEN~1\IMPOST~1\Temp\RSPB6.tmp"
+<h3>Output Window</h3>
+Compiling...
+bump.cpp
+Enumerate.cpp
+Error.cpp
+GraphicSurface.cpp
+C:\Redshift\Demo_sw\RenderLib\GraphicSurface.cpp(170) : warning C4018: '<' : signed/unsigned mismatch
+C:\Redshift\Demo_sw\RenderLib\GraphicSurface.cpp(315) : warning C4018: '<' : signed/unsigned mismatch
+Materials.cpp
+MotionBlur.cpp
+Renderlib.cpp
+c:\redshift\demo_sw\renderlib\renderlib.cpp(850) : warning C4715: 'CRenderLib::m_SetMaterial' : not all control paths return a value
+Shaders.cpp
+Textures.cpp
+ToonShade.cpp
+Utility.cpp
+VideoReader.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+RENDERLIB_Debug.lib - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>
